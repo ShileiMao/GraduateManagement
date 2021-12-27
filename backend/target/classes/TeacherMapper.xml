@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.github.xmchxup.latticy.mapper.TeacherMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="io.github.xmchxup.latticy.model.TeacherDO">
+        <id column="id" property="id"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="delete_time" property="deleteTime"/>
+        <result column="tid" property="tid"/>
+        <result column="name" property="name"/>
+        <result column="sex" property="sex"/>
+        <result column="college_id" property="collegeId"/>
+        <result column="position" property="position"/>
+        <result column="email" property="email"/>
+        <result column="mobile" property="mobile"/>
+        <result column="summary" property="summary"/>
+    </resultMap>
+
+    <select id="existsTeacherByTID" parameterType="String" resultType="boolean">
+        SELECT COUNT(*)
+        FROM teacher t
+        WHERE t.tid = #{tid}
+          AND t.delete_time is NULL
+    </select>
+</mapper>

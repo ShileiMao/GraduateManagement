@@ -1,0 +1,5 @@
+2021-11-30 11:50:28.053 [0:0:0:0:0:0:0:1:50500] "GET / HTTP/1.1" 404 -1 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15"
+2021-11-30 11:50:28.497 [0:0:0:0:0:0:0:1:50501] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -1 "" "Safari/17612.2.9.1.20 CFNetwork/1325.0.1 Darwin/21.1.0"
+2021-11-30 11:50:28.497 [0:0:0:0:0:0:0:1:50500] "GET /favicon.ico HTTP/1.1" 404 -1 "http://localhost:8081/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15"
+2021-11-30 11:50:28.734 [0:0:0:0:0:0:0:1:50501] "GET /apple-touch-icon.png HTTP/1.1" 404 -1 "" "Safari/17612.2.9.1.20 CFNetwork/1325.0.1 Darwin/21.1.0"
+2021-11-30 11:51:46.293 [0:0:0:0:0:0:0:1:50524] "GET / HTTP/1.1" 404 -1 "" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15"

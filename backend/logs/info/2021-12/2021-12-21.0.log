@@ -1,0 +1,16 @@
+2021-12-21 12:19:12.121 [http-nio-8081-exec-2] "OPTIONS /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/login] from: 127.0.0.1 costs: 6ms
+2021-12-21 12:19:12.534 [http-nio-8081-exec-2] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 389ms
+2021-12-21 12:19:12.543 [http-nio-8081-exec-4] "OPTIONS /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/permissions] from: 127.0.0.1 costs: 0ms
+2021-12-21 12:19:12.582 [http-nio-8081-exec-5] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 24ms
+2021-12-21 12:19:18.859 [http-nio-8081-exec-8] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 1ms
+2021-12-21 12:19:18.899 [http-nio-8081-exec-7] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 35ms
+2021-12-21 12:19:20.681 [http-nio-8081-exec-6] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-12-21 12:19:20.693 [http-nio-8081-exec-9] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 7ms
+2021-12-21 17:20:28.841 [http-nio-8081-exec-10] "OPTIONS /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/login] from: 127.0.0.1 costs: 1ms
+2021-12-21 17:20:29.144 [http-nio-8081-exec-3] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 284ms
+2021-12-21 17:20:29.154 [http-nio-8081-exec-2] "OPTIONS /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/permissions] from: 127.0.0.1 costs: 1ms
+2021-12-21 17:20:29.210 [http-nio-8081-exec-4] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 44ms
+2021-12-21 23:16:06.386 [http-nio-8081-exec-8] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 2ms
+2021-12-21 23:16:06.496 [http-nio-8081-exec-7] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 96ms
+2021-12-21 23:16:08.241 [http-nio-8081-exec-6] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-12-21 23:16:08.275 [http-nio-8081-exec-9] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 27ms

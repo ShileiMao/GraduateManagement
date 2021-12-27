@@ -1,0 +1,1086 @@
+2021-05-11 06:15:02.380 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-11 06:15:02.419 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on LifeOverflow with PID 17760 (C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\target\classes started by sunhu in C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend)
+2021-05-11 06:15:02.420 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: prod
+2021-05-11 06:15:03.854 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-11 06:15:04.272 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-05-11 06:15:04.282 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-05-11 06:15:04.282 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-11 06:15:04.282 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-11 06:15:04.284 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-05-11 06:15:04.284 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-11 06:15:04.284 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-11 06:15:04.288 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-05-11 06:15:04.409 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-11 06:15:04.409 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1928 ms
+2021-05-11 06:15:04.637 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 06:15:05.302 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-11 06:15:07.681 [main] "  " INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-11 06:15:07.742 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 06:15:07.802 [main] "  " INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2021-05-11 06:15:08.033 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-05-11 06:15:08.056 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-05-11 06:15:08.057 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-11 06:15:08.075 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-11 06:15:08.135 [main] "  " INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-11 06:15:08.271 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-05-11 06:15:08.274 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+2021-05-11 06:15:08.294 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_2
+2021-05-11 06:15:08.295 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_2
+2021-05-11 06:15:08.299 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_1
+2021-05-11 06:15:08.305 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2021-05-11 06:15:08.306 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-05-11 06:15:08.309 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_3
+2021-05-11 06:15:08.311 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_3
+2021-05-11 06:15:08.314 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_2
+2021-05-11 06:15:08.320 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_2
+2021-05-11 06:15:08.321 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchMajorByNameUsingGET_1
+2021-05-11 06:15:08.323 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-05-11 06:15:08.332 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_4
+2021-05-11 06:15:08.334 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_4
+2021-05-11 06:15:08.337 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_3
+2021-05-11 06:15:08.345 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_3
+2021-05-11 06:15:08.346 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_3
+2021-05-11 06:15:08.356 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_5
+2021-05-11 06:15:08.366 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_4
+2021-05-11 06:15:08.390 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_4
+2021-05-11 06:15:08.391 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_4
+2021-05-11 06:15:08.396 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_5
+2021-05-11 06:15:08.397 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_6
+2021-05-11 06:15:08.401 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_5
+2021-05-11 06:15:08.404 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_5
+2021-05-11 06:15:08.406 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_5
+2021-05-11 06:15:08.409 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_6
+2021-05-11 06:15:08.411 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_7
+2021-05-11 06:15:08.413 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_6
+2021-05-11 06:15:08.418 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_6
+2021-05-11 06:15:08.420 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_6
+2021-05-11 06:15:08.425 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_7
+2021-05-11 06:15:08.426 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_8
+2021-05-11 06:15:08.430 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_7
+2021-05-11 06:15:08.435 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_7
+2021-05-11 06:15:08.436 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_7
+2021-05-11 06:15:08.441 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_8
+2021-05-11 06:15:08.442 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_9
+2021-05-11 06:15:08.444 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_8
+2021-05-11 06:15:08.454 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_8
+2021-05-11 06:15:08.455 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_8
+2021-05-11 06:15:08.728 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-5000"]
+2021-05-11 06:15:08.913 [main] "  " INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-11 06:15:08.916 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-5000"]
+2021-05-11 06:15:08.921 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-5000"]
+2021-05-11 06:15:08.924 [main] "  " INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-11 06:15:08.937 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 06:15:08.940 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-05-11 06:15:09.065 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-05-11 06:17:27.355 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-11 06:17:27.383 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on LifeOverflow with PID 4620 (C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\target\classes started by sunhu in C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend)
+2021-05-11 06:17:27.385 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: prod
+2021-05-11 06:17:29.167 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-11 06:17:29.427 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-05-11 06:17:29.435 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-05-11 06:17:29.435 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-11 06:17:29.435 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-11 06:17:29.437 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-05-11 06:17:29.437 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-11 06:17:29.437 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-11 06:17:29.440 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-05-11 06:17:29.553 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-11 06:17:29.553 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2098 ms
+2021-05-11 06:17:29.874 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 06:17:30.550 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-11 06:17:32.845 [main] "  " INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-11 06:17:32.935 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 06:17:33.095 [main] "  " INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2021-05-11 06:17:33.723 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-05-11 06:17:33.796 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-05-11 06:17:33.799 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-11 06:17:33.847 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-11 06:17:34.058 [main] "  " INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-11 06:17:34.398 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-05-11 06:17:34.401 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+2021-05-11 06:17:34.452 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_2
+2021-05-11 06:17:34.456 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_2
+2021-05-11 06:17:34.462 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_1
+2021-05-11 06:17:34.480 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2021-05-11 06:17:34.486 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-05-11 06:17:34.495 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_3
+2021-05-11 06:17:34.499 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_3
+2021-05-11 06:17:34.505 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_2
+2021-05-11 06:17:34.521 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_2
+2021-05-11 06:17:34.525 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchMajorByNameUsingGET_1
+2021-05-11 06:17:34.527 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-05-11 06:17:34.555 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_4
+2021-05-11 06:17:34.560 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_4
+2021-05-11 06:17:34.567 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_3
+2021-05-11 06:17:34.593 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_3
+2021-05-11 06:17:34.597 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_3
+2021-05-11 06:17:34.626 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_5
+2021-05-11 06:17:34.645 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_4
+2021-05-11 06:17:34.702 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_4
+2021-05-11 06:17:34.707 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_4
+2021-05-11 06:17:34.719 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_5
+2021-05-11 06:17:34.722 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_6
+2021-05-11 06:17:34.731 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_5
+2021-05-11 06:17:34.738 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_5
+2021-05-11 06:17:34.742 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_5
+2021-05-11 06:17:34.750 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_6
+2021-05-11 06:17:34.753 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_7
+2021-05-11 06:17:34.759 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_6
+2021-05-11 06:17:34.774 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_6
+2021-05-11 06:17:34.779 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_6
+2021-05-11 06:17:34.794 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_7
+2021-05-11 06:17:34.796 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_8
+2021-05-11 06:17:34.808 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_7
+2021-05-11 06:17:34.822 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_7
+2021-05-11 06:17:34.825 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_7
+2021-05-11 06:17:34.834 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_8
+2021-05-11 06:17:34.837 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_9
+2021-05-11 06:17:34.844 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_8
+2021-05-11 06:17:34.884 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_8
+2021-05-11 06:17:34.888 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_8
+2021-05-11 06:17:41.538 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Started LatticyApplication in 14.947 seconds (JVM running for 16.543)
+2021-05-11 06:17:49.754 [http-nio-5000-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 06:17:49.755 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-11 06:17:49.794 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 39 ms
+2021-05-11 06:17:49.850 [http-nio-5000-exec-1] "OPTIONS /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/login] from: 127.0.0.1 costs: 19ms
+2021-05-11 06:17:51.576 [http-nio-5000-exec-2] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 1682ms
+2021-05-11 06:17:51.597 [http-nio-5000-exec-3] "OPTIONS /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/permissions] from: 127.0.0.1 costs: 1ms
+2021-05-11 06:17:52.028 [http-nio-5000-exec-4] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 279ms
+2021-05-11 06:17:59.962 [http-nio-5000-exec-6] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 1ms
+2021-05-11 06:18:00.239 [http-nio-5000-exec-7] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 164ms
+2021-05-11 06:18:00.875 [http-nio-5000-exec-8] "OPTIONS /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log/users] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:18:01.323 [http-nio-5000-exec-9] "GET /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 127.0.0.1 costs: 236ms
+2021-05-11 06:18:01.342 [http-nio-5000-exec-10] "OPTIONS /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log] from: 127.0.0.1 costs: 1ms
+2021-05-11 06:18:01.556 [http-nio-5000-exec-1] "GET /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 127.0.0.1 costs: 57ms
+2021-05-11 06:18:01.942 [http-nio-5000-exec-2] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 1ms
+2021-05-11 06:18:01.942 [http-nio-5000-exec-3] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 1ms
+2021-05-11 06:18:02.062 [http-nio-5000-exec-5] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 108ms
+2021-05-11 06:18:02.141 [http-nio-5000-exec-4] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 134ms
+2021-05-11 06:18:04.550 [http-nio-5000-exec-6] "OPTIONS /cms/admin/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/users] from: 127.0.0.1 costs: 1ms
+2021-05-11 06:18:04.995 [http-nio-5000-exec-7] "GET /cms/admin/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/users] from: 127.0.0.1 costs: 220ms
+2021-05-11 06:18:05.046 [http-nio-5000-exec-8] "OPTIONS /cms/admin/group/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 1ms
+2021-05-11 06:18:05.309 [http-nio-5000-exec-9] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 107ms
+2021-05-11 06:18:06.584 [http-nio-5000-exec-10] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 103ms
+2021-05-11 06:18:18.557 [http-nio-5000-exec-3] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 56ms
+2021-05-11 06:18:19.675 [http-nio-5000-exec-5] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 52ms
+2021-05-11 06:18:19.712 [http-nio-5000-exec-4] "OPTIONS /v1/major/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/major/page] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:18:19.872 [http-nio-5000-exec-6] "GET /v1/major/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/page] from: 127.0.0.1 costs: 96ms
+2021-05-11 06:18:20.938 [http-nio-5000-exec-7] "OPTIONS /v1/major/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/major/all] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:18:21.108 [http-nio-5000-exec-8] "GET /v1/major/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/all] from: 127.0.0.1 costs: 54ms
+2021-05-11 06:18:21.232 [http-nio-5000-exec-9] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 51ms
+2021-05-11 06:18:21.249 [http-nio-5000-exec-10] "OPTIONS /v1/class/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/class/page] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:18:21.397 [http-nio-5000-exec-1] "GET /v1/class/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/page] from: 127.0.0.1 costs: 87ms
+2021-05-11 06:18:23.337 [http-nio-5000-exec-2] "OPTIONS /v1/question/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/question/page] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:18:23.468 [http-nio-5000-exec-3] "GET /v1/question/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/question/page] from: 127.0.0.1 costs: 123ms
+2021-05-11 06:18:24.194 [http-nio-5000-exec-5] "OPTIONS /v1/card/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/card/] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:18:24.335 [http-nio-5000-exec-4] "GET /v1/card/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/card/] from: 127.0.0.1 costs: 128ms
+2021-05-11 06:18:24.354 [http-nio-5000-exec-6] "OPTIONS /v1/question/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/question/] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:18:24.464 [http-nio-5000-exec-7] "GET /v1/question/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/question/] from: 127.0.0.1 costs: 98ms
+2021-05-11 06:18:25.167 [http-nio-5000-exec-8] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:18:25.168 [http-nio-5000-exec-9] "OPTIONS /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:18:25.308 [http-nio-5000-exec-10] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 126ms
+2021-05-11 06:18:25.333 [http-nio-5000-exec-2] "OPTIONS /v1/class/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/class/all] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:18:25.351 [http-nio-5000-exec-1] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 168ms
+2021-05-11 06:18:25.448 [http-nio-5000-exec-3] "GET /v1/class/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/all] from: 127.0.0.1 costs: 55ms
+2021-05-11 06:18:31.802 [http-nio-5000-exec-6] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 714ms
+2021-05-11 06:18:32.109 [http-nio-5000-exec-7] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 198ms
+2021-05-11 06:18:39.392 [http-nio-5000-exec-9] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 52ms
+2021-05-11 06:18:42.735 [http-nio-5000-exec-10] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 57ms
+2021-05-11 06:18:50.767 [http-nio-5000-exec-2] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 48ms
+2021-05-11 06:18:57.837 [http-nio-5000-exec-3] "OPTIONS /v1/college HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:18:58.246 [http-nio-5000-exec-4] "POST /v1/college HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/college] from: 127.0.0.1 costs: 211ms
+2021-05-11 06:18:58.420 [http-nio-5000-exec-5] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 54ms
+2021-05-11 06:19:01.591 [http-nio-5000-exec-6] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 50ms
+2021-05-11 06:19:01.730 [http-nio-5000-exec-7] "GET /v1/major/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/page] from: 127.0.0.1 costs: 52ms
+2021-05-11 06:19:03.125 [http-nio-5000-exec-9] "GET /v1/major/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/all] from: 127.0.0.1 costs: 54ms
+2021-05-11 06:19:03.258 [http-nio-5000-exec-10] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 51ms
+2021-05-11 06:19:03.378 [http-nio-5000-exec-2] "GET /v1/class/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/page] from: 127.0.0.1 costs: 53ms
+2021-05-11 06:19:05.427 [http-nio-5000-exec-1] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 56ms
+2021-05-11 06:19:05.612 [http-nio-5000-exec-3] "GET /v1/major/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/page] from: 127.0.0.1 costs: 53ms
+2021-05-11 06:19:13.894 [http-nio-5000-exec-5] "OPTIONS /v1/major HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/major] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:19:14.342 [http-nio-5000-exec-6] "POST /v1/major HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/major] from: 127.0.0.1 costs: 243ms
+2021-05-11 06:19:14.565 [http-nio-5000-exec-7] "GET /v1/major/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/page] from: 127.0.0.1 costs: 130ms
+2021-05-11 06:19:15.989 [http-nio-5000-exec-8] "GET /v1/major/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/all] from: 127.0.0.1 costs: 52ms
+2021-05-11 06:19:16.121 [http-nio-5000-exec-9] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 51ms
+2021-05-11 06:19:16.253 [http-nio-5000-exec-10] "GET /v1/class/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/page] from: 127.0.0.1 costs: 56ms
+2021-05-11 06:19:26.695 [http-nio-5000-exec-2] "OPTIONS /v1/class HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/class] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:19:27.117 [http-nio-5000-exec-1] "POST /v1/class HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/class] from: 127.0.0.1 costs: 220ms
+2021-05-11 06:19:27.401 [http-nio-5000-exec-3] "GET /v1/class/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/page] from: 127.0.0.1 costs: 125ms
+2021-05-11 06:19:29.274 [http-nio-5000-exec-4] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 51ms
+2021-05-11 06:19:29.503 [http-nio-5000-exec-5] "GET /v1/major/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/page] from: 127.0.0.1 costs: 102ms
+2021-05-11 06:19:30.038 [http-nio-5000-exec-6] "GET /v1/major/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/all] from: 127.0.0.1 costs: 53ms
+2021-05-11 06:19:30.172 [http-nio-5000-exec-7] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 51ms
+2021-05-11 06:19:30.344 [http-nio-5000-exec-8] "GET /v1/class/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/page] from: 127.0.0.1 costs: 102ms
+2021-05-11 06:19:34.791 [http-nio-5000-exec-9] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 54ms
+2021-05-11 06:19:39.017 [http-nio-5000-exec-2] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 99ms
+2021-05-11 06:19:41.483 [http-nio-5000-exec-1] "GET /v1/question/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/question/page] from: 127.0.0.1 costs: 98ms
+2021-05-11 06:19:42.767 [http-nio-5000-exec-3] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 102ms
+2021-05-11 06:19:45.003 [http-nio-5000-exec-4] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 73ms
+2021-05-11 06:19:45.229 [http-nio-5000-exec-5] "GET /v1/major/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/page] from: 127.0.0.1 costs: 102ms
+2021-05-11 06:19:45.961 [http-nio-5000-exec-6] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 50ms
+2021-05-11 06:19:57.867 [http-nio-5000-exec-8] "GET /v1/class/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/all] from: 127.0.0.1 costs: 51ms
+2021-05-11 06:20:14.729 [http-nio-5000-exec-9] "OPTIONS /v1/student HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/student] from: 127.0.0.1 costs: 1ms
+2021-05-11 06:20:15.660 [http-nio-5000-exec-10] "POST /v1/student HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/student] from: 127.0.0.1 costs: 729ms
+2021-05-11 06:20:23.162 [http-nio-5000-exec-2] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 50ms
+2021-05-11 06:20:24.706 [http-nio-5000-exec-1] "GET /v1/major/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/all] from: 127.0.0.1 costs: 50ms
+2021-05-11 06:20:24.871 [http-nio-5000-exec-3] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 50ms
+2021-05-11 06:20:25.031 [http-nio-5000-exec-4] "GET /v1/class/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/page] from: 127.0.0.1 costs: 98ms
+2021-05-11 06:20:26.120 [http-nio-5000-exec-5] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 49ms
+2021-05-11 06:20:26.297 [http-nio-5000-exec-6] "GET /v1/major/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/page] from: 127.0.0.1 costs: 101ms
+2021-05-11 06:20:28.091 [http-nio-5000-exec-7] "OPTIONS /v1/student/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/student/page] from: 127.0.0.1 costs: 0ms
+2021-05-11 06:20:28.201 [http-nio-5000-exec-8] "GET /v1/student/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/student/page] from: 127.0.0.1 costs: 102ms
+2021-05-11 06:20:29.207 [http-nio-5000-exec-9] "GET /v1/class/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/all] from: 127.0.0.1 costs: 51ms
+2021-05-11 11:20:25.118 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-11 11:20:25.159 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on LifeOverflow with PID 7884 (C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\target\classes started by sunhu in C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend)
+2021-05-11 11:20:25.161 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: prod
+2021-05-11 11:20:27.620 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-11 11:20:28.139 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-05-11 11:20:28.152 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-05-11 11:20:28.153 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-11 11:20:28.154 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-11 11:20:28.156 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-05-11 11:20:28.156 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-11 11:20:28.156 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-11 11:20:28.170 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-05-11 11:20:28.371 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-11 11:20:28.371 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3128 ms
+2021-05-11 11:20:28.916 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 11:20:29.684 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-11 11:20:32.367 [main] "  " INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-11 11:20:32.586 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 11:20:33.568 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-05-11 11:20:33.656 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-05-11 11:20:33.659 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-11 11:20:33.721 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-11 11:20:34.051 [main] "  " INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-11 11:20:34.402 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-05-11 11:20:34.407 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+2021-05-11 11:20:34.462 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_2
+2021-05-11 11:20:34.468 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_2
+2021-05-11 11:20:34.475 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_1
+2021-05-11 11:20:34.490 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2021-05-11 11:20:34.495 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-05-11 11:20:34.505 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_3
+2021-05-11 11:20:34.509 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_3
+2021-05-11 11:20:34.518 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_2
+2021-05-11 11:20:34.535 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_2
+2021-05-11 11:20:34.538 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchMajorByNameUsingGET_1
+2021-05-11 11:20:34.543 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-05-11 11:20:34.573 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_4
+2021-05-11 11:20:34.577 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_4
+2021-05-11 11:20:34.585 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_3
+2021-05-11 11:20:34.608 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_3
+2021-05-11 11:20:34.615 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_3
+2021-05-11 11:20:34.643 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_5
+2021-05-11 11:20:34.673 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_4
+2021-05-11 11:20:34.735 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_4
+2021-05-11 11:20:34.737 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_4
+2021-05-11 11:20:34.753 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_5
+2021-05-11 11:20:34.756 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_6
+2021-05-11 11:20:34.769 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_5
+2021-05-11 11:20:34.781 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_5
+2021-05-11 11:20:34.783 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_5
+2021-05-11 11:20:34.794 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_6
+2021-05-11 11:20:34.799 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_7
+2021-05-11 11:20:34.808 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_6
+2021-05-11 11:20:34.823 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_6
+2021-05-11 11:20:34.827 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_6
+2021-05-11 11:20:34.840 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_7
+2021-05-11 11:20:34.844 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_8
+2021-05-11 11:20:34.854 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_7
+2021-05-11 11:20:34.867 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_7
+2021-05-11 11:20:34.870 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_7
+2021-05-11 11:20:34.887 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_8
+2021-05-11 11:20:34.889 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_9
+2021-05-11 11:20:34.900 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_8
+2021-05-11 11:20:34.933 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_8
+2021-05-11 11:20:34.937 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_8
+2021-05-11 11:20:39.959 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Started LatticyApplication in 16.248 seconds (JVM running for 18.304)
+2021-05-11 11:21:52.499 [http-nio-5000-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 11:21:52.500 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-11 11:21:52.516 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2021-05-11 11:21:52.590 [http-nio-5000-exec-1] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 19ms
+2021-05-11 11:21:52.590 [http-nio-5000-exec-2] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 19ms
+2021-05-11 11:21:52.795 [http-nio-5000-exec-5] "OPTIONS /cms/user/refresh HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/refresh] from: 127.0.0.1 costs: 1ms
+2021-05-11 11:21:52.931 [http-nio-5000-exec-6] "GET /cms/user/refresh HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/refresh] from: 127.0.0.1 costs: 24ms
+2021-05-11 11:21:52.972 [http-nio-5000-exec-4] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 340ms
+2021-05-11 11:21:53.056 [http-nio-5000-exec-7] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 67ms
+2021-05-11 11:21:54.231 [http-nio-5000-exec-8] "OPTIONS /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log/users] from: 127.0.0.1 costs: 0ms
+2021-05-11 11:21:54.557 [http-nio-5000-exec-9] "GET /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 127.0.0.1 costs: 109ms
+2021-05-11 11:21:54.605 [http-nio-5000-exec-10] "OPTIONS /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log] from: 127.0.0.1 costs: 1ms
+2021-05-11 11:21:54.858 [http-nio-5000-exec-1] "GET /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 127.0.0.1 costs: 72ms
+2021-05-11 11:21:57.330 [http-nio-5000-exec-2] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 1ms
+2021-05-11 11:21:57.676 [http-nio-5000-exec-3] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 225ms
+2021-05-11 11:22:00.981 [http-nio-5000-exec-6] "OPTIONS /cms/admin/group/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 2ms
+2021-05-11 11:22:01.400 [http-nio-5000-exec-4] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 127.0.0.1 costs: 189ms
+2021-05-11 11:22:03.994 [http-nio-5000-exec-7] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 54ms
+2021-05-11 11:22:06.170 [http-nio-5000-exec-8] "OPTIONS /v1/topic/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/topic/page] from: 127.0.0.1 costs: 0ms
+2021-05-11 11:22:06.376 [http-nio-5000-exec-9] "GET /v1/topic/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/topic/page] from: 127.0.0.1 costs: 191ms
+2021-05-11 11:22:07.579 [http-nio-5000-exec-1] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 0ms
+2021-05-11 11:22:07.579 [http-nio-5000-exec-2] "OPTIONS /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 0ms
+2021-05-11 11:22:07.723 [http-nio-5000-exec-5] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 122ms
+2021-05-11 11:22:07.778 [http-nio-5000-exec-6] "OPTIONS /v1/class/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/class/all] from: 127.0.0.1 costs: 0ms
+2021-05-11 11:22:07.834 [http-nio-5000-exec-3] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 233ms
+2021-05-11 11:22:07.927 [http-nio-5000-exec-4] "GET /v1/class/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/all] from: 127.0.0.1 costs: 86ms
+2021-05-11 11:22:08.666 [http-nio-5000-exec-7] "OPTIONS /v1/card/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/card/] from: 127.0.0.1 costs: 1ms
+2021-05-11 11:22:10.321 [http-nio-5000-exec-8] "GET /v1/card/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/card/] from: 127.0.0.1 costs: 1642ms
+2021-05-11 11:22:10.374 [http-nio-5000-exec-9] "OPTIONS /v1/question/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/question/] from: 127.0.0.1 costs: 1ms
+2021-05-11 11:22:10.487 [http-nio-5000-exec-10] "GET /v1/question/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/question/] from: 127.0.0.1 costs: 94ms
+2021-05-11 12:14:45.630 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-11 12:14:45.645 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on LifeOverflow with PID 4224 (C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\target\classes started by sunhu in C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend)
+2021-05-11 12:14:45.645 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: prod
+2021-05-11 12:14:48.606 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-11 12:14:48.953 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-05-11 12:14:48.965 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-05-11 12:14:48.965 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-11 12:14:48.966 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-11 12:14:48.967 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-05-11 12:14:48.967 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-11 12:14:48.967 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-11 12:14:48.982 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-05-11 12:14:49.109 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-11 12:14:49.109 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3384 ms
+2021-05-11 12:14:49.400 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 12:14:50.041 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-11 12:14:52.944 [main] "  " INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-11 12:14:53.156 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 12:14:53.805 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-05-11 12:14:53.843 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-05-11 12:14:53.845 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-11 12:14:53.874 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-11 12:14:53.924 [http-nio-5000-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 12:14:53.924 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-11 12:14:53.937 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2021-05-11 12:14:53.967 [main] "  " INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-11 12:14:53.977 [http-nio-5000-exec-1] "OPTIONS /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/login] from: 0:0:0:0:0:0:0:1 costs: 12ms
+2021-05-11 12:14:54.120 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-05-11 12:14:54.123 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+2021-05-11 12:14:54.146 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_2
+2021-05-11 12:14:54.148 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_2
+2021-05-11 12:14:54.151 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_1
+2021-05-11 12:14:54.161 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2021-05-11 12:14:54.163 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-05-11 12:14:54.166 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_3
+2021-05-11 12:14:54.169 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_3
+2021-05-11 12:14:54.172 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_2
+2021-05-11 12:14:54.180 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_2
+2021-05-11 12:14:54.182 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchMajorByNameUsingGET_1
+2021-05-11 12:14:54.184 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-05-11 12:14:54.198 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_4
+2021-05-11 12:14:54.199 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_4
+2021-05-11 12:14:54.202 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_3
+2021-05-11 12:14:54.212 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_3
+2021-05-11 12:14:54.214 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_3
+2021-05-11 12:14:54.227 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_5
+2021-05-11 12:14:54.236 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_4
+2021-05-11 12:14:54.260 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_4
+2021-05-11 12:14:54.262 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_4
+2021-05-11 12:14:54.266 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_5
+2021-05-11 12:14:54.268 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_6
+2021-05-11 12:14:54.272 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_5
+2021-05-11 12:14:54.277 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_5
+2021-05-11 12:14:54.278 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_5
+2021-05-11 12:14:54.282 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_6
+2021-05-11 12:14:54.283 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_7
+2021-05-11 12:14:54.286 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_6
+2021-05-11 12:14:54.292 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_6
+2021-05-11 12:14:54.293 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_6
+2021-05-11 12:14:54.297 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_7
+2021-05-11 12:14:54.298 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_8
+2021-05-11 12:14:54.301 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_7
+2021-05-11 12:14:54.308 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_7
+2021-05-11 12:14:54.310 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_7
+2021-05-11 12:14:54.314 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_8
+2021-05-11 12:14:54.315 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_9
+2021-05-11 12:14:54.317 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_8
+2021-05-11 12:14:54.330 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_8
+2021-05-11 12:14:54.331 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_8
+2021-05-11 12:14:54.764 [http-nio-5000-exec-2] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 0:0:0:0:0:0:0:1 costs: 766ms
+2021-05-11 12:14:54.772 [http-nio-5000-exec-3] "OPTIONS /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/permissions] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 12:14:55.048 [http-nio-5000-exec-4] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 0:0:0:0:0:0:0:1 costs: 205ms
+2021-05-11 12:14:55.251 [http-nio-5000-exec-5] "GET /assets/2021/05/11/522b91156bc3427db42252752c0e4cf3.jpg HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2021/05/11/522b91156bc3427db42252752c0e4cf3.jpg] from: 0:0:0:0:0:0:0:1 costs: 5ms
+2021-05-11 12:14:55.271 [http-nio-5000-exec-5] "  " INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/error] from: 0:0:0:0:0:0:0:1 costs: 16ms
+2021-05-11 12:14:56.655 [http-nio-5000-exec-7] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 12:14:56.858 [http-nio-5000-exec-8] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 0:0:0:0:0:0:0:1 costs: 91ms
+2021-05-11 12:14:58.680 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Started LatticyApplication in 14.817 seconds (JVM running for 16.632)
+2021-05-11 12:14:58.910 [http-nio-5000-exec-9] "OPTIONS /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log/users] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 12:14:59.298 [http-nio-5000-exec-10] "GET /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 0:0:0:0:0:0:0:1 costs: 181ms
+2021-05-11 12:14:59.326 [http-nio-5000-exec-1] "OPTIONS /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 12:14:59.527 [http-nio-5000-exec-2] "GET /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 0:0:0:0:0:0:0:1 costs: 53ms
+2021-05-11 12:15:05.123 [http-nio-5000-exec-3] "OPTIONS /cms/admin/group/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/admin/group/all] from: 0:0:0:0:0:0:0:1 costs: 1ms
+2021-05-11 12:15:05.432 [http-nio-5000-exec-4] "GET /cms/admin/group/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/admin/group/all] from: 0:0:0:0:0:0:0:1 costs: 123ms
+2021-05-11 12:15:08.094 [http-nio-5000-exec-5] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 0:0:0:0:0:0:0:1 costs: 1ms
+2021-05-11 12:15:08.246 [http-nio-5000-exec-6] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 0:0:0:0:0:0:0:1 costs: 56ms
+2021-05-11 12:15:08.265 [http-nio-5000-exec-7] "OPTIONS /v1/major/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/major/page] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 12:15:08.426 [http-nio-5000-exec-8] "GET /v1/major/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/page] from: 0:0:0:0:0:0:0:1 costs: 111ms
+2021-05-11 12:15:14.428 [http-nio-5000-exec-10] "OPTIONS /cms/file HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/file] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 12:15:14.605 [http-nio-5000-exec-1] "POST /cms/file HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/file] from: 0:0:0:0:0:0:0:1 costs: 61ms
+2021-05-11 12:15:14.614 [http-nio-5000-exec-2] "OPTIONS /cms/user HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 12:15:14.926 [http-nio-5000-exec-3] "PUT /cms/user HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [PUT] -> [/cms/user] from: 0:0:0:0:0:0:0:1 costs: 260ms
+2021-05-11 12:15:15.040 [http-nio-5000-exec-4] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 0:0:0:0:0:0:0:1 costs: 46ms
+2021-05-11 12:15:17.873 [http-nio-5000-exec-5] "OPTIONS /v1/major/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/major/all] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 12:15:18.026 [http-nio-5000-exec-6] "GET /v1/major/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/all] from: 0:0:0:0:0:0:0:1 costs: 47ms
+2021-05-11 12:15:18.148 [http-nio-5000-exec-7] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 0:0:0:0:0:0:0:1 costs: 49ms
+2021-05-11 12:15:18.161 [http-nio-5000-exec-8] "OPTIONS /v1/class/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/class/page] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 12:15:18.318 [http-nio-5000-exec-9] "GET /v1/class/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/page] from: 0:0:0:0:0:0:0:1 costs: 105ms
+2021-05-11 12:15:19.070 [http-nio-5000-exec-10] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 0:0:0:0:0:0:0:1 costs: 52ms
+2021-05-11 12:15:37.589 [http-nio-5000-exec-2] "OPTIONS /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/login] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 12:15:37.936 [http-nio-5000-exec-3] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 0:0:0:0:0:0:0:1 costs: 339ms
+2021-05-11 12:15:37.947 [http-nio-5000-exec-4] "OPTIONS /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/permissions] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 12:15:38.192 [http-nio-5000-exec-5] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 0:0:0:0:0:0:0:1 costs: 196ms
+2021-05-11 14:32:11.798 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-11 14:32:11.845 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on LifeOverflow with PID 3456 (C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\target\classes started by sunhu in C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend)
+2021-05-11 14:32:11.847 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: prod
+2021-05-11 14:32:14.422 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-11 14:32:14.931 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-05-11 14:32:14.946 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-05-11 14:32:14.947 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-11 14:32:14.947 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-11 14:32:14.949 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-05-11 14:32:14.950 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-11 14:32:14.950 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-11 14:32:14.966 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-05-11 14:32:15.156 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-11 14:32:15.156 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3216 ms
+2021-05-11 14:32:15.548 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 14:32:16.215 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-11 14:32:22.219 [main] "  " INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-11 14:32:22.504 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 14:32:23.553 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-05-11 14:32:23.625 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-05-11 14:32:23.628 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-11 14:32:23.692 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-11 14:32:23.985 [main] "  " INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-11 14:32:24.603 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-05-11 14:32:24.606 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+2021-05-11 14:32:24.649 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_2
+2021-05-11 14:32:24.652 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_2
+2021-05-11 14:32:24.657 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_1
+2021-05-11 14:32:24.687 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2021-05-11 14:32:24.691 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-05-11 14:32:24.719 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_3
+2021-05-11 14:32:24.722 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_3
+2021-05-11 14:32:24.751 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_2
+2021-05-11 14:32:24.785 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_2
+2021-05-11 14:32:24.789 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchMajorByNameUsingGET_1
+2021-05-11 14:32:24.792 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-05-11 14:32:24.824 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_4
+2021-05-11 14:32:24.828 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_4
+2021-05-11 14:32:24.833 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_3
+2021-05-11 14:32:24.854 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_3
+2021-05-11 14:32:24.868 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_3
+2021-05-11 14:32:24.902 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_5
+2021-05-11 14:32:24.935 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_4
+2021-05-11 14:32:25.005 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_4
+2021-05-11 14:32:25.019 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_4
+2021-05-11 14:32:25.048 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_5
+2021-05-11 14:32:25.052 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_6
+2021-05-11 14:32:25.095 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_5
+2021-05-11 14:32:25.103 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_5
+2021-05-11 14:32:25.106 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_5
+2021-05-11 14:32:25.114 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_6
+2021-05-11 14:32:25.116 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_7
+2021-05-11 14:32:25.130 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_6
+2021-05-11 14:32:25.138 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_6
+2021-05-11 14:32:25.143 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_6
+2021-05-11 14:32:25.243 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_7
+2021-05-11 14:32:25.245 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_8
+2021-05-11 14:32:25.297 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_7
+2021-05-11 14:32:25.325 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_7
+2021-05-11 14:32:25.334 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_7
+2021-05-11 14:32:25.363 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_8
+2021-05-11 14:32:25.369 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_9
+2021-05-11 14:32:25.379 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_8
+2021-05-11 14:32:25.417 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_8
+2021-05-11 14:32:25.421 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_8
+2021-05-11 14:32:30.279 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Started LatticyApplication in 19.729 seconds (JVM running for 21.752)
+2021-05-11 14:56:54.747 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-11 14:56:54.778 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on LifeOverflow with PID 12596 (C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\target\classes started by sunhu in C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend)
+2021-05-11 14:56:54.780 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: prod
+2021-05-11 14:56:57.373 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-11 14:56:57.699 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-05-11 14:56:57.706 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-05-11 14:56:57.707 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-11 14:56:57.707 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-11 14:56:57.709 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-05-11 14:56:57.709 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-11 14:56:57.709 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-11 14:56:57.712 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-05-11 14:56:57.812 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-11 14:56:57.812 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2965 ms
+2021-05-11 14:56:58.006 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 14:56:58.592 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-11 14:57:00.732 [main] "  " INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-11 14:57:00.795 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 14:57:01.044 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-05-11 14:57:01.066 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-05-11 14:57:01.067 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-11 14:57:01.081 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-11 14:57:01.151 [main] "  " INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-11 14:57:01.273 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-05-11 14:57:01.275 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+2021-05-11 14:57:01.292 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_2
+2021-05-11 14:57:01.294 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_2
+2021-05-11 14:57:01.297 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_1
+2021-05-11 14:57:01.302 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2021-05-11 14:57:01.304 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-05-11 14:57:01.306 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_3
+2021-05-11 14:57:01.308 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_3
+2021-05-11 14:57:01.310 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_2
+2021-05-11 14:57:01.316 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_2
+2021-05-11 14:57:01.317 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchMajorByNameUsingGET_1
+2021-05-11 14:57:01.318 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-05-11 14:57:01.327 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_4
+2021-05-11 14:57:01.329 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_4
+2021-05-11 14:57:01.332 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_3
+2021-05-11 14:57:01.338 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_3
+2021-05-11 14:57:01.339 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_3
+2021-05-11 14:57:01.352 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_5
+2021-05-11 14:57:01.360 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_4
+2021-05-11 14:57:01.386 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_4
+2021-05-11 14:57:01.387 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_4
+2021-05-11 14:57:01.391 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_5
+2021-05-11 14:57:01.392 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_6
+2021-05-11 14:57:01.397 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_5
+2021-05-11 14:57:01.400 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_5
+2021-05-11 14:57:01.401 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_5
+2021-05-11 14:57:01.404 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_6
+2021-05-11 14:57:01.405 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_7
+2021-05-11 14:57:01.407 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_6
+2021-05-11 14:57:01.413 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_6
+2021-05-11 14:57:01.414 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_6
+2021-05-11 14:57:01.418 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_7
+2021-05-11 14:57:01.419 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_8
+2021-05-11 14:57:01.421 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_7
+2021-05-11 14:57:01.426 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_7
+2021-05-11 14:57:01.427 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_7
+2021-05-11 14:57:01.432 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_8
+2021-05-11 14:57:01.433 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_9
+2021-05-11 14:57:01.435 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_8
+2021-05-11 14:57:01.445 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_8
+2021-05-11 14:57:01.446 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_8
+2021-05-11 14:57:03.638 [http-nio-5000-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 14:57:03.638 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-11 14:57:03.661 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+2021-05-11 14:57:03.685 [http-nio-5000-exec-1] "OPTIONS /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/login] from: 0:0:0:0:0:0:0:1 costs: 8ms
+2021-05-11 14:57:04.244 [http-nio-5000-exec-3] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 0:0:0:0:0:0:0:1 costs: 533ms
+2021-05-11 14:57:04.253 [http-nio-5000-exec-5] "OPTIONS /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/permissions] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 14:57:04.538 [http-nio-5000-exec-6] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 0:0:0:0:0:0:0:1 costs: 216ms
+2021-05-11 14:57:06.014 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Started LatticyApplication in 12.047 seconds (JVM running for 13.255)
+2021-05-11 14:57:08.429 [http-nio-5000-exec-7] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 0:0:0:0:0:0:0:1 costs: 1ms
+2021-05-11 14:57:08.429 [http-nio-5000-exec-4] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 0:0:0:0:0:0:0:1 costs: 1ms
+2021-05-11 14:57:08.591 [http-nio-5000-exec-8] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 0:0:0:0:0:0:0:1 costs: 63ms
+2021-05-11 14:57:08.638 [http-nio-5000-exec-10] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 0:0:0:0:0:0:0:1 costs: 203ms
+2021-05-11 14:57:09.411 [http-nio-5000-exec-9] "OPTIONS /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log/users] from: 0:0:0:0:0:0:0:1 costs: 1ms
+2021-05-11 14:57:09.680 [http-nio-5000-exec-2] "GET /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 0:0:0:0:0:0:0:1 costs: 73ms
+2021-05-11 14:57:09.695 [http-nio-5000-exec-1] "OPTIONS /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 14:57:09.935 [http-nio-5000-exec-3] "GET /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 0:0:0:0:0:0:0:1 costs: 48ms
+2021-05-11 14:57:11.219 [http-nio-5000-exec-5] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 0:0:0:0:0:0:0:1 costs: 140ms
+2021-05-11 14:57:12.281 [http-nio-5000-exec-6] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 14:57:12.282 [http-nio-5000-exec-7] "OPTIONS /v1/team/7 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/7] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 14:57:12.393 [http-nio-5000-exec-8] "GET /v1/team/7 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/7] from: 0:0:0:0:0:0:0:1 costs: 93ms
+2021-05-11 14:57:12.394 [http-nio-5000-exec-4] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 0:0:0:0:0:0:0:1 costs: 104ms
+2021-05-11 14:57:12.417 [http-nio-5000-exec-10] "OPTIONS /v1/team/students HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/students] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 14:57:12.488 [http-nio-5000-exec-9] "GET /v1/team/students HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/students] from: 0:0:0:0:0:0:0:1 costs: 66ms
+2021-05-11 14:57:19.719 [http-nio-5000-exec-2] "OPTIONS /v1/team/7 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/7] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 14:57:20.051 [http-nio-5000-exec-1] "PUT /v1/team/7 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [PUT] -> [/v1/team/7] from: 0:0:0:0:0:0:0:1 costs: 137ms
+2021-05-11 14:57:22.136 [http-nio-5000-exec-3] "GET /v1/team/7 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/7] from: 0:0:0:0:0:0:0:1 costs: 96ms
+2021-05-11 14:57:22.259 [http-nio-5000-exec-5] "GET /v1/team/students HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/students] from: 0:0:0:0:0:0:0:1 costs: 94ms
+2021-05-11 14:57:24.918 [http-nio-5000-exec-6] "PUT /v1/team/7 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [PUT] -> [/v1/team/7] from: 0:0:0:0:0:0:0:1 costs: 95ms
+2021-05-11 14:57:26.082 [http-nio-5000-exec-7] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 0:0:0:0:0:0:0:1 costs: 144ms
+2021-05-11 14:57:29.973 [http-nio-5000-exec-8] "GET /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 0:0:0:0:0:0:0:1 costs: 51ms
+2021-05-11 14:57:30.224 [http-nio-5000-exec-4] "GET /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 0:0:0:0:0:0:0:1 costs: 49ms
+2021-05-11 14:57:31.133 [http-nio-5000-exec-10] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 14:57:31.325 [http-nio-5000-exec-9] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 0:0:0:0:0:0:0:1 costs: 94ms
+2021-05-11 15:16:35.111 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-11 15:16:35.165 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on LifeOverflow with PID 9012 (C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\target\classes started by sunhu in C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend)
+2021-05-11 15:16:35.168 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: prod
+2021-05-11 15:16:37.789 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-11 15:16:38.310 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-05-11 15:16:38.325 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-05-11 15:16:38.326 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-11 15:16:38.326 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-11 15:16:38.329 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-05-11 15:16:38.329 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-11 15:16:38.329 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-11 15:16:38.343 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-05-11 15:16:38.472 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-11 15:16:38.472 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3200 ms
+2021-05-11 15:16:38.755 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 15:16:39.371 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-11 15:16:41.994 [main] "  " INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-11 15:16:42.063 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 15:16:42.342 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-05-11 15:16:42.384 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-05-11 15:16:42.387 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-11 15:16:42.414 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-11 15:16:42.507 [main] "  " INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-11 15:16:42.645 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-05-11 15:16:42.646 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+2021-05-11 15:16:42.668 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_2
+2021-05-11 15:16:42.670 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_2
+2021-05-11 15:16:42.673 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_1
+2021-05-11 15:16:42.683 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2021-05-11 15:16:42.685 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-05-11 15:16:42.688 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_3
+2021-05-11 15:16:42.690 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_3
+2021-05-11 15:16:42.692 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_2
+2021-05-11 15:16:42.697 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_2
+2021-05-11 15:16:42.699 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchMajorByNameUsingGET_1
+2021-05-11 15:16:42.701 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-05-11 15:16:42.710 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_4
+2021-05-11 15:16:42.712 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_4
+2021-05-11 15:16:42.715 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_3
+2021-05-11 15:16:42.725 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_3
+2021-05-11 15:16:42.727 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_3
+2021-05-11 15:16:42.741 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_5
+2021-05-11 15:16:42.750 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_4
+2021-05-11 15:16:42.773 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_4
+2021-05-11 15:16:42.774 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_4
+2021-05-11 15:16:42.779 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_5
+2021-05-11 15:16:42.781 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_6
+2021-05-11 15:16:42.784 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_5
+2021-05-11 15:16:42.788 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_5
+2021-05-11 15:16:42.789 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_5
+2021-05-11 15:16:42.794 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_6
+2021-05-11 15:16:42.795 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_7
+2021-05-11 15:16:42.800 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_6
+2021-05-11 15:16:42.805 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_6
+2021-05-11 15:16:42.807 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_6
+2021-05-11 15:16:42.816 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_7
+2021-05-11 15:16:42.818 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_8
+2021-05-11 15:16:42.825 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_7
+2021-05-11 15:16:42.834 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_7
+2021-05-11 15:16:42.836 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_7
+2021-05-11 15:16:42.840 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_8
+2021-05-11 15:16:42.842 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_9
+2021-05-11 15:16:42.845 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_8
+2021-05-11 15:16:42.856 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_8
+2021-05-11 15:16:42.857 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_8
+2021-05-11 15:16:47.238 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Started LatticyApplication in 13.011 seconds (JVM running for 14.371)
+2021-05-11 15:16:56.088 [http-nio-5000-exec-2] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 15:16:56.088 [http-nio-5000-exec-2] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-11 15:16:56.104 [http-nio-5000-exec-2] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2021-05-11 15:16:56.355 [http-nio-5000-exec-1] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 0:0:0:0:0:0:0:1 costs: 212ms
+2021-05-11 15:16:56.422 [http-nio-5000-exec-2] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 0:0:0:0:0:0:0:1 costs: 279ms
+2021-05-11 15:16:56.561 [http-nio-5000-exec-3] "GET /v1/class/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/all] from: 0:0:0:0:0:0:0:1 costs: 58ms
+2021-05-11 15:17:05.321 [http-nio-5000-exec-6] "OPTIONS /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 1ms
+2021-05-11 15:17:05.486 [http-nio-5000-exec-7] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 143ms
+2021-05-11 15:17:48.902 [http-nio-5000-exec-9] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 157ms
+2021-05-11 15:17:53.250 [http-nio-5000-exec-10] "GET //v1/scorecard/download/45/sup HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/download/45/sup] from: 127.0.0.1 costs: 3132ms
+2021-05-11 15:20:48.945 [http-nio-5000-exec-3] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 0:0:0:0:0:0:0:1 costs: 393ms
+2021-05-11 15:20:49.216 [http-nio-5000-exec-5] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 0:0:0:0:0:0:0:1 costs: 215ms
+2021-05-11 15:20:55.732 [http-nio-5000-exec-4] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 0:0:0:0:0:0:0:1 costs: 360ms
+2021-05-11 15:20:55.975 [http-nio-5000-exec-6] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 0:0:0:0:0:0:0:1 costs: 190ms
+2021-05-11 15:20:59.107 [http-nio-5000-exec-7] "OPTIONS /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log/users] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 15:20:59.367 [http-nio-5000-exec-8] "GET /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 0:0:0:0:0:0:0:1 costs: 69ms
+2021-05-11 15:20:59.377 [http-nio-5000-exec-9] "OPTIONS /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 15:20:59.568 [http-nio-5000-exec-1] "GET /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 0:0:0:0:0:0:0:1 costs: 48ms
+2021-05-11 15:20:59.857 [http-nio-5000-exec-10] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 15:20:59.857 [http-nio-5000-exec-2] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 15:20:59.969 [http-nio-5000-exec-3] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 0:0:0:0:0:0:0:1 costs: 57ms
+2021-05-11 15:21:00.019 [http-nio-5000-exec-5] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 0:0:0:0:0:0:0:1 costs: 154ms
+2021-05-11 15:21:07.723 [http-nio-5000-exec-4] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 0:0:0:0:0:0:0:1 costs: 0ms
+2021-05-11 15:21:07.913 [http-nio-5000-exec-6] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 0:0:0:0:0:0:0:1 costs: 92ms
+2021-05-11 15:21:09.272 [http-nio-5000-exec-7] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 0:0:0:0:0:0:0:1 costs: 137ms
+2021-05-11 15:21:11.436 [http-nio-5000-exec-8] "GET //v1/scorecard/download/45/sup HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/download/45/sup] from: 0:0:0:0:0:0:0:1 costs: 1053ms
+2021-05-11 20:38:34.358 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-11 20:38:34.376 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on LifeOverflow with PID 1088 (C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\target\classes started by sunhu in C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend)
+2021-05-11 20:38:34.376 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: prod
+2021-05-11 20:38:36.614 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-11 20:38:36.942 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-05-11 20:38:36.953 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:38:36.954 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-11 20:38:36.954 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-11 20:38:36.956 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-05-11 20:38:36.956 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-11 20:38:36.956 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-11 20:38:36.971 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-05-11 20:38:37.162 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-11 20:38:37.162 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2667 ms
+2021-05-11 20:38:37.663 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 20:41:17.860 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-11 20:41:18.178 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on LifeOverflow with PID 4216 (C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\target\classes started by sunhu in C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend)
+2021-05-11 20:41:18.181 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: dev
+2021-05-11 20:41:22.924 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-11 20:41:23.682 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-05-11 20:41:23.711 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:41:23.713 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-11 20:41:23.713 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-11 20:41:23.718 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-05-11 20:41:23.718 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-11 20:41:23.719 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-11 20:41:23.746 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-05-11 20:41:24.127 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-11 20:41:24.128 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5585 ms
+2021-05-11 20:41:24.883 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 20:41:32.462 [main] "  " INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-11 20:41:32.544 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 20:41:32.912 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:41:32.940 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-05-11 20:41:32.941 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-11 20:41:32.963 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-11 20:41:33.045 [main] "  " INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-11 20:41:33.246 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-05-11 20:41:33.248 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+2021-05-11 20:41:33.271 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_2
+2021-05-11 20:41:33.273 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_2
+2021-05-11 20:41:33.276 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_1
+2021-05-11 20:41:33.281 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2021-05-11 20:41:33.284 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-05-11 20:41:33.287 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_3
+2021-05-11 20:41:33.289 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_3
+2021-05-11 20:41:33.292 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_2
+2021-05-11 20:41:33.297 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_2
+2021-05-11 20:41:33.299 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchMajorByNameUsingGET_1
+2021-05-11 20:41:33.300 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-05-11 20:41:33.309 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_4
+2021-05-11 20:41:33.310 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_4
+2021-05-11 20:41:33.313 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_3
+2021-05-11 20:41:33.320 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_3
+2021-05-11 20:41:33.321 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_3
+2021-05-11 20:41:33.336 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_5
+2021-05-11 20:41:33.353 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_4
+2021-05-11 20:41:33.385 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_4
+2021-05-11 20:41:33.387 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_4
+2021-05-11 20:41:33.394 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_5
+2021-05-11 20:41:33.397 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_6
+2021-05-11 20:41:33.401 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_5
+2021-05-11 20:41:33.406 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_5
+2021-05-11 20:41:33.419 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_5
+2021-05-11 20:41:33.425 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_6
+2021-05-11 20:41:33.428 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_7
+2021-05-11 20:41:33.433 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_6
+2021-05-11 20:41:33.439 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_6
+2021-05-11 20:41:33.441 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_6
+2021-05-11 20:41:33.445 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_7
+2021-05-11 20:41:33.446 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_8
+2021-05-11 20:41:33.451 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_7
+2021-05-11 20:41:33.458 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_7
+2021-05-11 20:41:33.459 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_7
+2021-05-11 20:41:33.466 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_8
+2021-05-11 20:41:33.470 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_9
+2021-05-11 20:41:33.475 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_8
+2021-05-11 20:41:33.494 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_8
+2021-05-11 20:41:33.496 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_8
+2021-05-11 20:41:33.615 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 20:41:36.698 [http-nio-5000-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 20:41:36.698 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-11 20:41:36.711 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2021-05-11 20:41:36.743 [http-nio-5000-exec-1] "OPTIONS /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/login] from: 127.0.0.1 costs: 13ms
+2021-05-11 20:41:38.015 [http-nio-5000-exec-2] "POST /cms/user/login HTTP/1.1" INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 20:41:38.028 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:41:38.199 [main] "  " INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-11 20:41:38.202 [main] "  " INFO  org.apache.catalina.core.StandardWrapper - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2021-05-11 20:41:39.299 [main] "  " INFO  org.apache.catalina.core.StandardWrapper - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2021-05-11 20:41:40.391 [main] "  " INFO  org.apache.catalina.core.StandardWrapper - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2021-05-11 20:41:40.500 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-05-11 20:41:40.529 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:41:40.984 [http-nio-5000-exec-2] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [null] -> [null] from: null costs: 4222ms
+2021-05-11 20:41:41.009 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:41:41.023 [main] "  " INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-11 20:41:41.071 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 20:42:37.577 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-11 20:42:37.613 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on LifeOverflow with PID 2664 (C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\target\classes started by sunhu in C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend)
+2021-05-11 20:42:37.614 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: dev
+2021-05-11 20:42:38.993 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-11 20:42:39.301 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-05-11 20:42:39.310 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:42:39.311 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-11 20:42:39.311 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-11 20:42:39.312 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-05-11 20:42:39.313 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-11 20:42:39.314 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-11 20:42:39.317 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-05-11 20:42:39.405 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-11 20:42:39.406 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1703 ms
+2021-05-11 20:42:39.836 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 20:42:40.509 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-11 20:42:43.586 [main] "  " INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-11 20:42:43.752 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 20:42:44.389 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:42:44.424 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-05-11 20:42:44.427 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-11 20:42:44.448 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-11 20:42:44.528 [main] "  " INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-11 20:42:44.839 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-05-11 20:42:44.842 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+2021-05-11 20:42:44.880 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_2
+2021-05-11 20:42:44.883 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_2
+2021-05-11 20:42:44.888 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_1
+2021-05-11 20:42:44.906 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2021-05-11 20:42:44.911 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-05-11 20:42:44.919 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_3
+2021-05-11 20:42:44.923 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_3
+2021-05-11 20:42:44.928 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_2
+2021-05-11 20:42:44.940 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_2
+2021-05-11 20:42:44.942 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchMajorByNameUsingGET_1
+2021-05-11 20:42:44.945 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-05-11 20:42:44.960 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_4
+2021-05-11 20:42:44.962 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_4
+2021-05-11 20:42:44.966 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_3
+2021-05-11 20:42:44.976 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_3
+2021-05-11 20:42:44.978 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_3
+2021-05-11 20:42:44.990 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_5
+2021-05-11 20:42:44.999 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_4
+2021-05-11 20:42:45.033 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_4
+2021-05-11 20:42:45.035 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_4
+2021-05-11 20:42:45.046 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_5
+2021-05-11 20:42:45.049 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_6
+2021-05-11 20:42:45.062 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_5
+2021-05-11 20:42:45.074 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_5
+2021-05-11 20:42:45.077 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_5
+2021-05-11 20:42:45.091 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_6
+2021-05-11 20:42:45.095 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_7
+2021-05-11 20:42:45.105 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_6
+2021-05-11 20:42:45.119 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_6
+2021-05-11 20:42:45.122 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_6
+2021-05-11 20:42:45.136 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_7
+2021-05-11 20:42:45.139 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_8
+2021-05-11 20:42:45.150 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_7
+2021-05-11 20:42:45.163 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_7
+2021-05-11 20:42:45.167 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_7
+2021-05-11 20:42:45.176 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_8
+2021-05-11 20:42:45.180 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_9
+2021-05-11 20:42:45.190 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_8
+2021-05-11 20:42:45.220 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_8
+2021-05-11 20:42:45.223 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_8
+2021-05-11 20:42:45.733 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:42:46.063 [main] "  " INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-11 20:42:46.069 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:42:46.076 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:42:46.083 [main] "  " INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-11 20:42:46.118 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 20:42:46.128 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-05-11 20:42:46.149 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-05-11 20:45:43.619 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-11 20:45:43.650 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on LifeOverflow with PID 3456 (C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\target\classes started by sunhu in C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend)
+2021-05-11 20:45:43.651 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: dev
+2021-05-11 20:45:44.948 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-11 20:45:45.199 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-05-11 20:45:45.208 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:45:45.209 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-11 20:45:45.209 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-11 20:45:45.211 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-05-11 20:45:45.211 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-11 20:45:45.211 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-11 20:45:45.215 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-05-11 20:45:45.309 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-11 20:45:45.309 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1578 ms
+2021-05-11 20:45:45.636 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 20:45:46.282 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-11 20:45:50.750 [main] "  " INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-11 20:45:50.826 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 20:45:51.183 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:45:51.210 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-05-11 20:45:51.211 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-11 20:45:51.229 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-11 20:45:51.345 [main] "  " INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-11 20:45:51.692 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-05-11 20:45:51.720 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+2021-05-11 20:45:51.809 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_2
+2021-05-11 20:45:51.813 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_2
+2021-05-11 20:45:51.820 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_1
+2021-05-11 20:45:51.832 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2021-05-11 20:45:51.837 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-05-11 20:45:51.845 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_3
+2021-05-11 20:45:51.848 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_3
+2021-05-11 20:45:51.854 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_2
+2021-05-11 20:45:51.870 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_2
+2021-05-11 20:45:51.876 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchMajorByNameUsingGET_1
+2021-05-11 20:45:51.880 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-05-11 20:45:51.911 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_4
+2021-05-11 20:45:51.915 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_4
+2021-05-11 20:45:51.920 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_3
+2021-05-11 20:45:51.939 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_3
+2021-05-11 20:45:51.944 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_3
+2021-05-11 20:45:51.966 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_5
+2021-05-11 20:45:51.991 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_4
+2021-05-11 20:45:52.040 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_4
+2021-05-11 20:45:52.042 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_4
+2021-05-11 20:45:52.051 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_5
+2021-05-11 20:45:52.053 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_6
+2021-05-11 20:45:52.061 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_5
+2021-05-11 20:45:52.069 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_5
+2021-05-11 20:45:52.072 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_5
+2021-05-11 20:45:52.079 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_6
+2021-05-11 20:45:52.081 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_7
+2021-05-11 20:45:52.090 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_6
+2021-05-11 20:45:52.098 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_6
+2021-05-11 20:45:52.101 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_6
+2021-05-11 20:45:52.110 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_7
+2021-05-11 20:45:52.112 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_8
+2021-05-11 20:45:52.118 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_7
+2021-05-11 20:45:52.127 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_7
+2021-05-11 20:45:52.130 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_7
+2021-05-11 20:45:52.140 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_8
+2021-05-11 20:45:52.142 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_9
+2021-05-11 20:45:52.152 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_8
+2021-05-11 20:45:52.173 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_8
+2021-05-11 20:45:52.176 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_8
+2021-05-11 20:45:52.485 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:45:52.693 [main] "  " INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-11 20:45:52.696 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:45:52.701 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:45:52.705 [main] "  " INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-11 20:45:52.724 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-11 20:45:52.727 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-05-11 20:45:52.737 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-05-11 20:46:34.713 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-05-11 20:46:34.746 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on LifeOverflow with PID 8004 (C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\target\classes started by sunhu in C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend)
+2021-05-11 20:46:34.747 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: dev
+2021-05-11 20:46:36.595 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-11 20:46:37.333 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+2021-05-11 20:46:37.353 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:46:37.355 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-11 20:46:37.355 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-11 20:46:37.359 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2021-05-11 20:46:37.360 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-11 20:46:37.360 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-11 20:46:37.367 [main] "  " INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2021-05-11 20:46:37.583 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-11 20:46:37.583 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2761 ms
+2021-05-11 20:46:38.513 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-11 20:46:39.267 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-11 20:46:43.990 [main] "  " INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-11 20:46:44.174 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-11 20:46:44.863 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-5000"]
+2021-05-11 20:46:44.924 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+2021-05-11 20:46:44.927 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-05-11 20:46:44.972 [main] "  " INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-05-11 20:46:45.127 [main] "  " INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-05-11 20:46:45.400 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-05-11 20:46:45.407 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_1
+2021-05-11 20:46:45.455 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_2
+2021-05-11 20:46:45.458 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_2
+2021-05-11 20:46:45.468 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_1
+2021-05-11 20:46:45.483 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_1
+2021-05-11 20:46:45.487 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_1
+2021-05-11 20:46:45.494 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_3
+2021-05-11 20:46:45.497 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_3
+2021-05-11 20:46:45.504 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_2
+2021-05-11 20:46:45.518 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_2
+2021-05-11 20:46:45.522 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: searchMajorByNameUsingGET_1
+2021-05-11 20:46:45.526 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_2
+2021-05-11 20:46:45.546 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_4
+2021-05-11 20:46:45.550 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_4
+2021-05-11 20:46:45.556 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_3
+2021-05-11 20:46:45.571 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_3
+2021-05-11 20:46:45.575 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_3
+2021-05-11 20:46:45.599 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_5
+2021-05-11 20:46:45.620 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_4
+2021-05-11 20:46:45.703 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_4
+2021-05-11 20:46:45.708 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_4
+2021-05-11 20:46:45.723 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_5
+2021-05-11 20:46:45.725 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_6
+2021-05-11 20:46:45.739 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_5
+2021-05-11 20:46:45.752 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_5
+2021-05-11 20:46:45.755 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_5
+2021-05-11 20:46:45.769 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_6
+2021-05-11 20:46:45.773 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_7
+2021-05-11 20:46:45.788 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_6
+2021-05-11 20:46:45.799 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_6
+2021-05-11 20:46:45.804 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_6
+2021-05-11 20:46:45.825 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_7
+2021-05-11 20:46:45.830 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_8
+2021-05-11 20:46:45.847 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_7
+2021-05-11 20:46:45.858 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_7
+2021-05-11 20:46:45.862 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_7
+2021-05-11 20:46:45.875 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_8
+2021-05-11 20:46:45.878 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingDELETE_9
+2021-05-11 20:46:45.886 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getUsingGET_8
+2021-05-11 20:46:45.920 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: pageUsingGET_8
+2021-05-11 20:46:45.924 [main] "  " INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: updateUsingPUT_8
+2021-05-11 20:46:50.734 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Started LatticyApplication in 16.607 seconds (JVM running for 17.5)
+2021-05-11 20:46:57.836 [http-nio-5000-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-11 20:46:57.836 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-11 20:46:57.855 [http-nio-5000-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2021-05-11 20:46:58.571 [http-nio-5000-exec-1] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 679ms
+2021-05-11 20:46:58.588 [http-nio-5000-exec-2] "OPTIONS /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/permissions] from: 127.0.0.1 costs: 1ms
+2021-05-11 20:46:58.900 [http-nio-5000-exec-3] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 232ms
+2021-05-11 20:47:01.008 [http-nio-5000-exec-6] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:47:01.008 [http-nio-5000-exec-5] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:47:01.194 [http-nio-5000-exec-8] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 77ms
+2021-05-11 20:47:01.289 [http-nio-5000-exec-7] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 264ms
+2021-05-11 20:47:10.757 [http-nio-5000-exec-1] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-05-11 20:47:10.759 [http-nio-5000-exec-2] "OPTIONS /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 1ms
+2021-05-11 20:47:10.898 [http-nio-5000-exec-3] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 132ms
+2021-05-11 20:47:10.997 [http-nio-5000-exec-5] "OPTIONS /v1/class/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/class/all] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:47:11.010 [http-nio-5000-exec-4] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 243ms
+2021-05-11 20:47:11.116 [http-nio-5000-exec-6] "GET /v1/class/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/all] from: 127.0.0.1 costs: 64ms
+2021-05-11 20:47:16.916 [http-nio-5000-exec-8] "GET //v1/scorecard/download/45/sup HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/download/45/sup] from: 127.0.0.1 costs: 3680ms
+2021-05-11 20:47:28.277 [http-nio-5000-exec-1] "GET //v1/scorecard/download/45 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/download/45] from: 127.0.0.1 costs: 1270ms
+2021-05-11 20:48:47.099 [http-nio-5000-exec-3] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 138ms
+2021-05-11 20:49:13.246 [http-nio-5000-exec-4] "GET /assets/2021/01/04/b61f08e7165a49028567f34ead11e19f.jpg HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2021/01/04/b61f08e7165a49028567f34ead11e19f.jpg] from: 0:0:0:0:0:0:0:1 costs: 11ms
+2021-05-11 20:49:13.253 [http-nio-5000-exec-6] "OPTIONS /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:49:13.400 [http-nio-5000-exec-8] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 139ms
+2021-05-11 20:49:27.849 [http-nio-5000-exec-10] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 430ms
+2021-05-11 20:49:28.114 [http-nio-5000-exec-1] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 202ms
+2021-05-11 20:49:30.533 [http-nio-5000-exec-3] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 143ms
+2021-05-11 20:49:32.006 [http-nio-5000-exec-5] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:49:32.350 [http-nio-5000-exec-4] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 239ms
+2021-05-11 20:49:32.361 [http-nio-5000-exec-6] "OPTIONS /v1/card/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/card/] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:49:33.401 [http-nio-5000-exec-9] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 53ms
+2021-05-11 20:49:33.897 [http-nio-5000-exec-8] "GET /v1/card/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/card/] from: 127.0.0.1 costs: 1527ms
+2021-05-11 20:49:33.940 [http-nio-5000-exec-10] "OPTIONS /v1/topic/by/year HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/topic/by/year] from: 127.0.0.1 costs: 1ms
+2021-05-11 20:49:34.103 [http-nio-5000-exec-1] "GET /v1/topic/by/year HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/topic/by/year] from: 127.0.0.1 costs: 134ms
+2021-05-11 20:49:34.120 [http-nio-5000-exec-2] "OPTIONS /v1/scorecard/all/guide/complete HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/all/guide/complete] from: 127.0.0.1 costs: 1ms
+2021-05-11 20:49:34.190 [http-nio-5000-exec-3] "GET /v1/scorecard/all/guide/complete HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/all/guide/complete] from: 127.0.0.1 costs: 58ms
+2021-05-11 20:49:34.220 [http-nio-5000-exec-5] "OPTIONS /v1/scorecard/all/complete HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/all/complete] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:49:34.306 [http-nio-5000-exec-4] "GET /v1/scorecard/all/complete HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/all/complete] from: 127.0.0.1 costs: 67ms
+2021-05-11 20:49:34.952 [http-nio-5000-exec-6] "OPTIONS /v1/topic/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/topic/page] from: 127.0.0.1 costs: 1ms
+2021-05-11 20:49:35.166 [http-nio-5000-exec-9] "GET /v1/topic/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/topic/page] from: 127.0.0.1 costs: 187ms
+2021-05-11 20:49:35.405 [http-nio-5000-exec-7] "GET /v1/card/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/card/] from: 127.0.0.1 costs: 1497ms
+2021-05-11 20:49:35.497 [http-nio-5000-exec-8] "OPTIONS /v1/topic/sup/by/year HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/topic/sup/by/year] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:49:35.620 [http-nio-5000-exec-10] "GET /v1/topic/sup/by/year HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/topic/sup/by/year] from: 127.0.0.1 costs: 106ms
+2021-05-11 20:49:36.290 [http-nio-5000-exec-1] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 48ms
+2021-05-11 20:49:36.366 [http-nio-5000-exec-2] "GET /v1/topic/by/year HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/topic/by/year] from: 127.0.0.1 costs: 53ms
+2021-05-11 20:49:36.435 [http-nio-5000-exec-3] "GET /v1/scorecard/all/guide/complete HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/all/guide/complete] from: 127.0.0.1 costs: 54ms
+2021-05-11 20:49:36.499 [http-nio-5000-exec-5] "GET /v1/scorecard/all/complete HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/all/complete] from: 127.0.0.1 costs: 49ms
+2021-05-11 20:49:47.194 [http-nio-5000-exec-4] "OPTIONS /v1/scorecard/by/topic/16 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/by/topic/16] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:49:47.314 [http-nio-5000-exec-6] "GET /v1/scorecard/by/topic/16 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/by/topic/16] from: 127.0.0.1 costs: 100ms
+2021-05-11 20:49:47.331 [http-nio-5000-exec-9] "OPTIONS /v1/scorecard/46 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/46] from: 127.0.0.1 costs: 1ms
+2021-05-11 20:49:47.839 [http-nio-5000-exec-7] "PUT /v1/scorecard/46 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [PUT] -> [/v1/scorecard/46] from: 127.0.0.1 costs: 216ms
+2021-05-11 20:49:47.987 [http-nio-5000-exec-8] "GET /v1/topic/by/year HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/topic/by/year] from: 127.0.0.1 costs: 94ms
+2021-05-11 20:49:48.055 [http-nio-5000-exec-10] "GET /v1/scorecard/all/guide/complete HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/all/guide/complete] from: 127.0.0.1 costs: 50ms
+2021-05-11 20:49:48.121 [http-nio-5000-exec-1] "GET /v1/scorecard/all/complete HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/all/complete] from: 127.0.0.1 costs: 48ms
+2021-05-11 20:49:49.893 [http-nio-5000-exec-2] "GET /v1/scorecard/by/topic/16 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/by/topic/16] from: 127.0.0.1 costs: 98ms
+2021-05-11 20:49:49.928 [http-nio-5000-exec-3] "OPTIONS /v1/scorecard/46/judge/comment HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/46/judge/comment] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:49:50.390 [http-nio-5000-exec-5] "PUT /v1/scorecard/46/judge/comment HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [PUT] -> [/v1/scorecard/46/judge/comment] from: 127.0.0.1 costs: 196ms
+2021-05-11 20:49:50.479 [http-nio-5000-exec-4] "GET /v1/topic/by/year HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/topic/by/year] from: 127.0.0.1 costs: 53ms
+2021-05-11 20:49:50.561 [http-nio-5000-exec-6] "GET /v1/scorecard/all/guide/complete HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/all/guide/complete] from: 127.0.0.1 costs: 54ms
+2021-05-11 20:49:50.649 [http-nio-5000-exec-9] "GET /v1/scorecard/all/complete HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/all/complete] from: 127.0.0.1 costs: 57ms
+2021-05-11 20:49:52.422 [http-nio-5000-exec-7] "GET /v1/topic/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/topic/page] from: 127.0.0.1 costs: 165ms
+2021-05-11 20:49:53.327 [http-nio-5000-exec-8] "GET /v1/scorecard/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/page] from: 127.0.0.1 costs: 144ms
+2021-05-11 20:49:58.339 [http-nio-5000-exec-10] "GET //v1/scorecard/download/46 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/download/46] from: 127.0.0.1 costs: 1174ms
+2021-05-11 20:50:41.891 [http-nio-5000-exec-2] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 414ms
+2021-05-11 20:50:42.143 [http-nio-5000-exec-3] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 196ms
+2021-05-11 20:50:42.395 [http-nio-5000-exec-5] "GET /assets/2021/01/04/bcff9c3b10734a14ab490a9c5f746e6a.jpg HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2021/01/04/bcff9c3b10734a14ab490a9c5f746e6a.jpg] from: 0:0:0:0:0:0:0:1 costs: 5ms
+2021-05-11 20:50:44.051 [http-nio-5000-exec-4] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 53ms
+2021-05-11 20:50:45.831 [http-nio-5000-exec-6] "GET /v1/topic/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/topic/page] from: 127.0.0.1 costs: 148ms
+2021-05-11 20:50:46.612 [http-nio-5000-exec-9] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 53ms
+2021-05-11 20:50:47.099 [http-nio-5000-exec-7] "OPTIONS /v1/scorecard/by/student/1902411124 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/by/student/1902411124] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:50:47.259 [http-nio-5000-exec-8] "GET /v1/scorecard/by/student/1902411124 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/by/student/1902411124] from: 127.0.0.1 costs: 151ms
+2021-05-11 20:50:48.135 [http-nio-5000-exec-10] "GET /v1/scorecard/by/student/1902411124 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/by/student/1902411124] from: 127.0.0.1 costs: 142ms
+2021-05-11 20:50:49.250 [http-nio-5000-exec-1] "GET /v1/scorecard/by/student/1902411124 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/by/student/1902411124] from: 127.0.0.1 costs: 144ms
+2021-05-11 20:50:53.726 [http-nio-5000-exec-2] "OPTIONS /v1/scorecard/by/student/1902411124 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/by/student/1902411124] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:50:53.876 [http-nio-5000-exec-3] "GET /v1/scorecard/by/student/1902411124 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/by/student/1902411124] from: 127.0.0.1 costs: 140ms
+2021-05-11 20:53:41.642 [http-nio-5000-exec-9] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:53:41.794 [http-nio-5000-exec-7] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 49ms
+2021-05-11 20:53:46.251 [http-nio-5000-exec-10] "GET /assets/2021/01/04/bcff9c3b10734a14ab490a9c5f746e6a.jpg HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2021/01/04/bcff9c3b10734a14ab490a9c5f746e6a.jpg] from: 0:0:0:0:0:0:0:1 costs: 4ms
+2021-05-11 20:53:46.257 [http-nio-5000-exec-1] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 0ms
+2021-05-11 20:53:46.408 [http-nio-5000-exec-2] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 46ms
+2021-05-11 20:54:55.975 [http-nio-5000-exec-4] "GET /assets/2021/01/04/bcff9c3b10734a14ab490a9c5f746e6a.jpg HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/assets/2021/01/04/bcff9c3b10734a14ab490a9c5f746e6a.jpg] from: 0:0:0:0:0:0:0:1 costs: 2ms
+2021-05-11 20:54:55.982 [http-nio-5000-exec-6] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 1ms
+2021-05-11 20:54:56.126 [http-nio-5000-exec-9] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 46ms
+2021-05-11 20:54:58.842 [http-nio-5000-exec-7] "OPTIONS /v1/scorecard/by/student/1902411124 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/scorecard/by/student/1902411124] from: 127.0.0.1 costs: 1ms
+2021-05-11 20:54:58.995 [http-nio-5000-exec-8] "GET /v1/scorecard/by/student/1902411124 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/by/student/1902411124] from: 127.0.0.1 costs: 143ms
+2021-05-11 20:55:00.244 [http-nio-5000-exec-10] "GET //v1/scorecard/download/45 HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/scorecard/download/45] from: 127.0.0.1 costs: 1161ms

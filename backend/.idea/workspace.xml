@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="900a67be-78ef-40b2-a494-b725a9f556ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/util/HammingUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/util/ShortStringException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/util/SimHashUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/util/TxtIOUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/PaperCheckController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/PaperCheckService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/PaperCheckServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/PathVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/access/2021-05/2021-05-11.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/access/2021-05/2021-05-11.0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/debug/2021-05/2021-05-11.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/debug/2021-05/2021-05-11.0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error/2021-05/2021-05-11.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error/2021-05/2021-05-11.0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/info/2021-05/2021-05-11.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info/2021-05/2021-05-11.0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/warn/2021-05/2021-05-11.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/warn/2021-05/2021-05-11.0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/LatticyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/LatticyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/bo/FileBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/bo/FileBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/bo/GroupPermissionBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/bo/GroupPermissionBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/bo/ScoreTableBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/bo/ScoreTableBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/LocalUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/LocalUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/aop/ResultAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/aop/ResultAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/configuration/CodeMessageConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/configuration/CodeMessageConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/configuration/CommonConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/configuration/CommonConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/configuration/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/configuration/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/constant/IdentityConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/constant/IdentityConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/enumeration/GroupLevelEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/enumeration/GroupLevelEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/exception/RestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/exception/RestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/factory/YamlPropertySourceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/factory/YamlPropertySourceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/interceptor/AuthorizeVerifyResolverImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/interceptor/AuthorizeVerifyResolverImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/interceptor/LoggerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/interceptor/LoggerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/interceptor/RequestLogInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/interceptor/RequestLogInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/listener/PermissionHandleListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/listener/PermissionHandleListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/mybatis/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/mybatis/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/util/AsposeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/util/AsposeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/util/GenericAndJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/util/GenericAndJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/util/PageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/util/PageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/util/ResponseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/util/ResponseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/cms/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/cms/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/cms/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/cms/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/cms/LogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/cms/LogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/cms/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/cms/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/AnnounceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/AnnounceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/CardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/ClassController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/CollegeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/CollegeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/GraduateInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/GraduateInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/MajorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/MajorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/OptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/OptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/ScorecardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/ScorecardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/TopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/TopicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/CardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/CardDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/ClassDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/ClassDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/CollegeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/CollegeDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/GraduateInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/GraduateInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/MajorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/MajorDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/OptionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/OptionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/QuestionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/QuestionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/ScorecardDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/ScorecardDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/StudentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/TeacherDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/TeacherDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/TeamDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/TeamDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/TopicDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/TopicDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/TopicPureDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/TopicPureDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/DispatchPermissionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/DispatchPermissionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/DispatchPermissionsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/DispatchPermissionsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/NewGroupDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/NewGroupDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/RemovePermissionsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/RemovePermissionsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/ResetPasswordDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/ResetPasswordDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/UpdateGroupDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/UpdateGroupDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/UpdateUserInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/admin/UpdateUserInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/book/CreateOrUpdateBookDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/book/CreateOrUpdateBookDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/user/ChangePasswordDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/user/ChangePasswordDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/user/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/user/LoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/user/RegisterDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/user/RegisterDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/user/UpdateInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/user/UpdateInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/validators/StudentIdsPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/validators/StudentIdsPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/validators/StudentIdsPatternValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/dto/validators/StudentIdsPatternValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/enumeration/ScoreLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/enumeration/ScoreLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/enumeration/SexEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/enumeration/SexEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/enumeration/TopicStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/enumeration/TopicStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/enumeration/TopicTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/enumeration/TopicTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/extension/file/LocalUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/extension/file/LocalUploader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/extension/file/QiniuUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/extension/file/QiniuUploader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/extension/file/UploaderConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/extension/file/UploaderConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/extension/file/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/extension/file/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/AnnounceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/AnnounceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/BookMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/CardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/CardMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/ClassMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/ClassMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/CollegeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/CollegeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/FileMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/FileMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/GraduateInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/GraduateInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/GroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/GroupMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/GroupPermissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/GroupPermissionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/LogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/LogMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/MajorMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/MajorMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/OptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/OptionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/PermissionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/PermissionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/QuestionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/QuestionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/ScorecardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/ScorecardMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/TeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/TeacherMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/TeamMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/TeamMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/TopicMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/TopicMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/UserGroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/UserGroupMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/UserIdentityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/UserIdentityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/AnnounceDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/AnnounceDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/BaseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/BaseModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/BookDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/BookDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/CardDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/CardDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/ClassDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/ClassDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/CollegeDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/CollegeDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/FileDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/FileDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/GraduateInfoDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/GraduateInfoDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/GroupDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/GroupDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/GroupPermissionDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/GroupPermissionDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/LogDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/LogDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/MajorDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/MajorDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/OptionDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/OptionDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/PermissionDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/PermissionDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/QuestionDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/QuestionDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/ScorecardDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/ScorecardDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/StudentDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/StudentDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/TeacherDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/TeacherDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/TeamDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/TeamDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/TopicDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/TopicDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/UserDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/UserGroupDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/UserGroupDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/UserIdentityDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/UserIdentityDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/AbstractUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/AbstractUploader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/FileConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/FileConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/FileProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/FileProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/PreHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/PreHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/Uploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/file/Uploader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/log/MDCAccessConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/log/MDCAccessConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/log/MDCAccessServletFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/log/MDCAccessServletFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/message/MessageConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/message/MessageConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/message/MessageWebSocketHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/message/MessageWebSocketHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/message/WebSocketInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/message/WebSocketInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/message/WebsocketConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/message/WebsocketConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/message/WsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/message/WsHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/message/WsHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/module/message/WsHandlerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/query/ScorecardQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/query/ScorecardQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/AnnounceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/AnnounceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/CardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/ClassService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/ClassService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/CollegeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/CollegeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/GraduateInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/GraduateInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/GroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/GroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/LogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/MajorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/MajorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/OptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/OptionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/PermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/ScorecardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/ScorecardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/TeacherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/TeamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/TopicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/UserIdentityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/UserIdentityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/AnnounceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/AnnounceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/CardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/CardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/ClassServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/ClassServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/CollegeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/CollegeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/GraduateInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/GraduateInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/GroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/GroupServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/LogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/LogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/MajorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/MajorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/OptionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/OptionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/QuestionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/ScorecardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/ScorecardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/TeamServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/TeamServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/TopicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/TopicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/UserIdentityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/UserIdentityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/CardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/CardVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/CreatedVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/CreatedVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/DeletedVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/DeletedVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/PageResponseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/PageResponseVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/QuestionPureVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/QuestionPureVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/QuestionVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/QuestionVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/StudentPureVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/StudentPureVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/StudentVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/StudentVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/TopicPureVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/TopicPureVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/TopicVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/TopicVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/UnifyResponseVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/UnifyResponseVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/UpdatedVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/UpdatedVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/UserInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/UserInfoVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/UserPermissionVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/vo/UserPermissionVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ValidationMessages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ValidationMessages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/code-message.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/code-message.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AnnounceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AnnounceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BookMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ClassMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ClassMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CollegeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CollegeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/FileMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FileMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GraduateInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GraduateInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GroupMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GroupPermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GroupPermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/LogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/MajorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/MajorMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/OptionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/OptionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/QuestionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/QuestionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ScorecardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ScorecardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TeamMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TeamMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TopicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TopicMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserGroupMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserIdentityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserIdentityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AsposeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AsposeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ChoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChoreTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CrackAspose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CrackAspose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Jackson2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Jackson2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/LatticyApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/LatticyApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/LocalDateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/LocalDateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/controller/cms/AdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/controller/cms/AdminControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/controller/cms/LogControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/controller/cms/LogControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/controller/cms/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/controller/cms/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/controller/v1/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/controller/v1/BookControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/dto/StudentIdsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/dto/StudentIdsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/mapper/BookMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/mapper/BookMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/mapper/FileMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/mapper/FileMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/mapper/GroupMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/mapper/GroupMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/mapper/LogMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/mapper/LogMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/mapper/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/mapper/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/AdminServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/AdminServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/BookServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/BookServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/GroupServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/GroupServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/LogServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/LogServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/PermissionServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/PermissionServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/UserIdentityServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/UserIdentityServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/h2-test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/h2-test.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/mpg/templates/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/mpg/templates/controller.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/mpg/templates/entity.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/mpg/templates/entity.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/mpg/templates/mapper.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/mpg/templates/mapper.xml.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ValidationMessages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ValidationMessages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-test.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/code-message.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/code-message.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/common/listener/PermissionHandleListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/common/listener/PermissionHandleListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/common/util/AsposeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/common/util/AsposeUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/config/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/config/SwaggerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/controller/cms/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/controller/cms/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/controller/v1/TeamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/controller/v1/TeamController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/extension/file/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/extension/file/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/mapper/StudentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/mapper/StudentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/AnnounceDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/AnnounceDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/BaseModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/BaseModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/CardDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/CardDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/ClassDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/ClassDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/CollegeDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/CollegeDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/GraduateInfoDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/GraduateInfoDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/GroupPermissionDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/GroupPermissionDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/LogDO$LogDOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/LogDO$LogDOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/LogDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/LogDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/MajorDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/MajorDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/PermissionDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/PermissionDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/QuestionDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/QuestionDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/ScorecardDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/ScorecardDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/StudentDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/StudentDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/TeacherDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/TeacherDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/TeamDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/TeamDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/TopicDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/TopicDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/UserGroupDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/UserGroupDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/UserIdentityDO$UserIdentityDOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/UserIdentityDO$UserIdentityDOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/UserIdentityDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/model/UserIdentityDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/service/StudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/service/impl/StudentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/service/impl/UserIdentityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/service/impl/UserIdentityServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/vo/StudentVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/xmchxup/latticy/vo/StudentVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/AnnounceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/AnnounceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/BookMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ClassMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ClassMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CollegeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CollegeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/FileMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/FileMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/GraduateInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/GraduateInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/GroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/GroupMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/GroupPermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/GroupPermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/LogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/LogMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/MajorMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/MajorMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/OptionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/OptionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/PermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/QuestionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/QuestionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ScorecardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ScorecardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/TeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TeamMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/TeamMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TopicMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/TopicMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserGroupMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserIdentityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserIdentityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/latticy-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/latticy-0.1.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/h2-test.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/h2-test.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mpg/templates/controller.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mpg/templates/controller.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mpg/templates/entity.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mpg/templates/entity.java.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mpg/templates/mapper.xml.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mpg/templates/mapper.xml.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.docx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/BaseModel.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/mapper/PermissionMapper.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/common/listener/PermissionHandleListener.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/service/impl/PermissionServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/model/PermissionDO.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/mapper/PermissionMapper.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/LatticyApplication.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/io/github/xmchxup/latticy/service/impl/PermissionServiceImplTest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/Library/apache-maven-3.8.1" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="JDK1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="1kuXTevlQrgNbrHeLvhFmpFVnrj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/config/SwaggerConfig.java" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.36206895" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.github.xmchxup.latticy.service" />
+      <recent name="io.github.xmchxup.latticy.service.impl" />
+      <recent name="io.github.xmchxup.latticy.vo" />
+      <recent name="io.github.xmchxup.latticy.dto" />
+      <recent name="io.github.talelin.latticy.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\libs\aspose-words-20.4-jdk17.jar!\com\aspose\words" />
+      <recent name="C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\src\main\java\io\github\xmchxup\latticy\common\util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sunhu\Desktop\tmp\full-stack\school-manager\backend\libs" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="io.github.xmchxup.latticy.dto" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.github.xmchxup.latticy.dto" />
+      <recent name="io.github.xmchxup.latticy.vo" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+      <command value="mvn clean install -Dmaven.test.skip=true" />
+      <command value="mvn clean package -Dmaven.test.skip=true" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.LatticyApplication (1)">
+    <configuration name="AsposeTest.table" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="latticy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AsposeTest" />
+      <option name="METHOD_NAME" value="table" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChoreTest.SbTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="latticy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ChoreTest" />
+      <option name="METHOD_NAME" value="SbTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrackAspose.crackAsposeWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="latticy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CrackAspose" />
+      <option name="METHOD_NAME" value="crackAsposeWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.xmchxup.latticy.controller.cms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.github.xmchxup.latticy.controller.cms" />
+      <option name="MAIN_CLASS_NAME" value="io.github.xmchxup.latticy.controller.cms.UserControllerTest" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LatticyApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.xmchxup.latticy.LatticyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LatticyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="latticy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.latticy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.xmchxup.latticy.LatticyApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserControllerTest.login" />
+        <item itemvalue="Spring Boot.LatticyApplication" />
+        <item itemvalue="JUnit.AsposeTest.table" />
+        <item itemvalue="JUnit.CrackAspose.crackAsposeWords" />
+        <item itemvalue="JUnit.ChoreTest.SbTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="900a67be-78ef-40b2-a494-b725a9f556ed" name="Default Changelist" comment="" />
+      <created>1606551464152</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606551464152</updated>
+      <workItem from="1606551466043" duration="1638000" />
+      <workItem from="1606553118678" duration="150000" />
+      <workItem from="1608178706735" duration="6000" />
+      <workItem from="1609633837687" duration="7579000" />
+      <workItem from="1609655052153" duration="1263000" />
+      <workItem from="1609656351757" duration="3262000" />
+      <workItem from="1609661626318" duration="363000" />
+      <workItem from="1609662065071" duration="5000" />
+      <workItem from="1609662102431" duration="71000" />
+      <workItem from="1609662245432" duration="1062000" />
+      <workItem from="1609663478498" duration="2279000" />
+      <workItem from="1609669534577" duration="2076000" />
+      <workItem from="1609671794461" duration="115000" />
+      <workItem from="1609750895854" duration="7459000" />
+      <workItem from="1609831741568" duration="2000" />
+      <workItem from="1610102926530" duration="14000" />
+      <workItem from="1610431461314" duration="56000" />
+      <workItem from="1610622363309" duration="2110000" />
+      <workItem from="1610629218233" duration="1311000" />
+      <workItem from="1610668262029" duration="2272000" />
+      <workItem from="1610671421920" duration="6008000" />
+      <workItem from="1610677981594" duration="52000" />
+      <workItem from="1610678046626" duration="60000" />
+      <workItem from="1610678121619" duration="213000" />
+      <workItem from="1610678366429" duration="590000" />
+      <workItem from="1610679856486" duration="2000" />
+      <workItem from="1610711179789" duration="1084000" />
+      <workItem from="1610712308904" duration="2718000" />
+      <workItem from="1610715195007" duration="137000" />
+      <workItem from="1610756032571" duration="233000" />
+      <workItem from="1610760892006" duration="785000" />
+      <workItem from="1610761767171" duration="2236000" />
+      <workItem from="1610842231415" duration="7081000" />
+      <workItem from="1611043956778" duration="60000" />
+      <workItem from="1611310585117" duration="5770000" />
+      <workItem from="1611358477698" duration="24000" />
+      <workItem from="1611359614508" duration="2979000" />
+      <workItem from="1611362660294" duration="50000" />
+      <workItem from="1611362754224" duration="2572000" />
+      <workItem from="1611365384564" duration="2241000" />
+      <workItem from="1611479098141" duration="5980000" />
+      <workItem from="1611724898709" duration="6855000" />
+      <workItem from="1611734159306" duration="68000" />
+      <workItem from="1611795638316" duration="570000" />
+      <workItem from="1611796319596" duration="7000" />
+      <workItem from="1611796342275" duration="141000" />
+      <workItem from="1611796504734" duration="49000" />
+      <workItem from="1611796578152" duration="88000" />
+      <workItem from="1611796689493" duration="494000" />
+      <workItem from="1611797248174" duration="2480000" />
+      <workItem from="1611808563313" duration="58000" />
+      <workItem from="1611882395370" duration="3946000" />
+      <workItem from="1612075910513" duration="13000" />
+      <workItem from="1612145373104" duration="1193000" />
+      <workItem from="1612149133080" duration="829000" />
+      <workItem from="1612150015028" duration="3374000" />
+      <workItem from="1612315109536" duration="5364000" />
+      <workItem from="1612325987939" duration="191000" />
+      <workItem from="1612326287874" duration="19000" />
+      <workItem from="1612326347685" duration="1677000" />
+      <workItem from="1612420199958" duration="4467000" />
+      <workItem from="1612859724194" duration="495000" />
+      <workItem from="1612865589181" duration="2880000" />
+      <workItem from="1612869387582" duration="727000" />
+      <workItem from="1612870312777" duration="1158000" />
+      <workItem from="1612917621254" duration="9134000" />
+      <workItem from="1613526438635" duration="5001000" />
+      <workItem from="1613531486475" duration="1308000" />
+      <workItem from="1613540333938" duration="3042000" />
+      <workItem from="1614337502638" duration="2687000" />
+      <workItem from="1614387709736" duration="4974000" />
+      <workItem from="1617355471036" duration="103000" />
+      <workItem from="1618360181691" duration="2785000" />
+      <workItem from="1618366303754" duration="8038000" />
+      <workItem from="1618474462395" duration="8456000" />
+      <workItem from="1618532225612" duration="5776000" />
+      <workItem from="1618539654443" duration="3000" />
+      <workItem from="1618539688441" duration="110000" />
+      <workItem from="1618539888198" duration="4084000" />
+      <workItem from="1618616852301" duration="4187000" />
+      <workItem from="1618638547911" duration="3625000" />
+      <workItem from="1618646892998" duration="4647000" />
+      <workItem from="1618811185101" duration="7285000" />
+      <workItem from="1618833245868" duration="9000" />
+      <workItem from="1618878239192" duration="7479000" />
+      <workItem from="1618895509180" duration="1497000" />
+      <workItem from="1618897328473" duration="274000" />
+      <workItem from="1618897644875" duration="5394000" />
+      <workItem from="1618918317504" duration="170000" />
+      <workItem from="1618919679106" duration="1521000" />
+      <workItem from="1618923393577" duration="44000" />
+      <workItem from="1619158014637" duration="251000" />
+      <workItem from="1619158276208" duration="2316000" />
+      <workItem from="1619160883869" duration="10757000" />
+      <workItem from="1619258865505" duration="3774000" />
+      <workItem from="1619264965783" duration="305000" />
+      <workItem from="1619265305769" duration="3983000" />
+      <workItem from="1619342392199" duration="886000" />
+      <workItem from="1619343379958" duration="904000" />
+      <workItem from="1619346215303" duration="7387000" />
+      <workItem from="1619476168901" duration="8567000" />
+      <workItem from="1619489284998" duration="1596000" />
+      <workItem from="1619779377504" duration="1576000" />
+      <workItem from="1619954074483" duration="6507000" />
+      <workItem from="1620039226204" duration="4586000" />
+      <workItem from="1620430301281" duration="4946000" />
+      <workItem from="1620472904371" duration="3796000" />
+      <workItem from="1620476750994" duration="608000" />
+      <workItem from="1620479838191" duration="15000" />
+      <workItem from="1620525989797" duration="2742000" />
+      <workItem from="1620536982332" duration="801000" />
+      <workItem from="1620537806147" duration="8480000" />
+      <workItem from="1620547169108" duration="427000" />
+      <workItem from="1620547625325" duration="236000" />
+      <workItem from="1620547911267" duration="217000" />
+      <workItem from="1620548284092" duration="465000" />
+      <workItem from="1620548781441" duration="3474000" />
+      <workItem from="1620591861709" duration="4309000" />
+      <workItem from="1620596248302" duration="11821000" />
+      <workItem from="1620611309264" duration="4265000" />
+      <workItem from="1620617148341" duration="5673000" />
+      <workItem from="1620635777906" duration="158000" />
+      <workItem from="1620638937526" duration="694000" />
+      <workItem from="1620640043846" duration="416000" />
+      <workItem from="1620640470607" duration="780000" />
+      <workItem from="1620641272457" duration="375000" />
+      <workItem from="1620641676943" duration="79000" />
+      <workItem from="1620641761824" duration="1160000" />
+      <workItem from="1620643951659" duration="868000" />
+      <workItem from="1620644928655" duration="244000" />
+      <workItem from="1620645181779" duration="1015000" />
+      <workItem from="1620646611312" duration="184000" />
+      <workItem from="1620646807086" duration="937000" />
+      <workItem from="1620647764436" duration="670000" />
+      <workItem from="1620648553006" duration="355000" />
+      <workItem from="1620649652857" duration="867000" />
+      <workItem from="1620651807618" duration="491000" />
+      <workItem from="1620652351958" duration="1575000" />
+      <workItem from="1620684669120" duration="569000" />
+      <workItem from="1620685249376" duration="6767000" />
+      <workItem from="1620702213570" duration="2119000" />
+      <workItem from="1620704937391" duration="109000" />
+      <workItem from="1620706431371" duration="806000" />
+      <workItem from="1620707250087" duration="456000" />
+      <workItem from="1620707970828" duration="482000" />
+      <workItem from="1620714671343" duration="2801000" />
+      <workItem from="1620719401988" duration="1126000" />
+      <workItem from="1620724694957" duration="363000" />
+      <workItem from="1620726049159" duration="184000" />
+      <workItem from="1620726239261" duration="125000" />
+      <workItem from="1620726370901" duration="214000" />
+      <workItem from="1620726792458" duration="756000" />
+      <workItem from="1620736363863" duration="1559000" />
+      <workItem from="1620738381968" duration="27000" />
+      <workItem from="1620789414667" duration="267000" />
+      <workItem from="1620789791777" duration="6000" />
+      <workItem from="1620790180614" duration="2563000" />
+      <workItem from="1620792861064" duration="440000" />
+      <workItem from="1620793336995" duration="158000" />
+      <workItem from="1620795459082" duration="623000" />
+      <workItem from="1620796447988" duration="113000" />
+      <workItem from="1620796581822" duration="60000" />
+      <workItem from="1620803977159" duration="313000" />
+      <workItem from="1620865285271" duration="11000" />
+      <workItem from="1620866088991" duration="3646000" />
+      <workItem from="1621809235893" duration="1000" />
+      <workItem from="1621932154609" duration="572000" />
+      <workItem from="1622776286905" duration="1034000" />
+      <workItem from="1635777280063" duration="1609000" />
+      <workItem from="1635781321436" duration="728000" />
+      <workItem from="1635863023805" duration="2977000" />
+      <workItem from="1635941453140" duration="3516000" />
+      <workItem from="1636712196040" duration="1239000" />
+      <workItem from="1636976597728" duration="3684000" />
+      <workItem from="1637466499347" duration="12181000" />
+      <workItem from="1637985686170" duration="4025000" />
+      <workItem from="1638396245237" duration="5326000" />
+      <workItem from="1638484233158" duration="3852000" />
+      <workItem from="1638489273322" duration="4991000" />
+      <workItem from="1638529930022" duration="1233000" />
+      <workItem from="1638579928307" duration="11933000" />
+      <workItem from="1638882729566" duration="2818000" />
+      <workItem from="1638972804720" duration="4152000" />
+      <workItem from="1639802461473" duration="189000" />
+      <workItem from="1639802679226" duration="37000" />
+      <workItem from="1639802831197" duration="2939000" />
+      <workItem from="1639838933915" duration="7521000" />
+      <workItem from="1639868207545" duration="12582000" />
+      <workItem from="1640201508950" duration="16574000" />
+      <workItem from="1640522335849" duration="4054000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="org.springframework.beans.factory.UnsatisfiedDependencyException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="101" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/github/xmchxup/latticy/controller/v1/CardController.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="value" />
+        <PinnedItemInfo parentTag="io.github.xmchxup.latticy.dto.QuestionDTO" memberName="optionIds" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/latticy$LatticyApplication.ic" NAME="LatticyApplication Coverage Results" MODIFIED="1620600044675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.github.latticy.*</FILTER>
+    </SUITE>
+  </component>
+</project>

@@ -1,0 +1,44 @@
+#开发环境配置
+
+server:
+  # 服务端口
+  port: 8081
+
+
+spring:
+  # 数据源配置，请修改为你项目的实际配置
+  datasource:
+    username: "root"
+    password: "Admin123"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/graduate_manage?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8&allowPublicKeyRetrieval=true
+    hikari:
+      connection-timeout: 28740000
+      max-lifetime: 28740000
+    druid:
+      test-on-borrow: true
+      test-while-idle: true
+
+# 开启权限拦截
+auth:
+  enabled: true
+
+
+# 开启http请求日志记录
+request-log:
+  enabled: true
+
+
+logging:
+  level:
+    # web信息日志记录
+    web: debug
+    # SQL日志记录
+    io.github.talelin.latticy.mapper: debug
+
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+

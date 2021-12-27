@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.github.xmchxup.latticy.mapper.ScorecardMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="io.github.xmchxup.latticy.model.ScorecardDO">
+        <id column="id" property="id"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="delete_time" property="deleteTime"/>
+        <result column="title" property="title"/>
+        <result column="comment" property="comment"/>
+        <result column="level" property="level"/>
+        <result column="score" property="score"/>
+        <result column="guide_score" property="guideScore"/>
+        <result column="guide_advise" property="guideAdvise"/>
+        <result column="judge_score" property="judgeScore"/>
+        <result column="judge_advise" property="judgeAdvise"/>
+        <result column="guide_card_id" property="guideCardId"/>
+        <result column="judge_card_id" property="judgeCardId"/>
+        <result column="guide_answers" property="guideAnswers"/>
+        <result column="judge_answers" property="judgeAnswers"/>
+        <result column="topic_id" property="topicId"/>
+        <result column="supplement" property="supplement"/>
+    </resultMap>
+
+    <select id="getBySid" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT *
+        FROM scorecard
+                 LEFT JOIN topic ON topic.id = scorecard.topic_id
+        WHERE topic.student_id = #{sid}
+          AND scorecard.delete_time IS NULL
+    </select>
+
+    <select id="customSelectPage" resultType="io.github.xmchxup.latticy.model.ScorecardDO"
+            parameterType="io.github.xmchxup.latticy.query.ScorecardQuery">
+        SELECT s.* FROM `scorecard` as s
+        left join topic as t on s.topic_id = t.id
+        left join student as stu on stu.sid = t.student_id
+        left join `class` as c on stu.class_id = c.id
+        where s.delete_time is NULL
+
+        <if test="keywords.teacherId != null">
+            and t.teacher_id = #{keywords.teacherId}
+        </if>
+        <if test="keywords.classId != null">
+            and c.id = #{keywords.classId}
+        </if>
+        <if test="keywords.year != null">
+            and t.publish_year = #{keywords.year}
+        </if>
+
+    </select>
+</mapper>

@@ -1,0 +1,222 @@
+2021-12-22 15:13:48.365 [http-nio-8081-exec-10] "OPTIONS /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/login] from: 127.0.0.1 costs: 5ms
+2021-12-22 15:13:48.753 [http-nio-8081-exec-3] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 366ms
+2021-12-22 15:13:48.770 [http-nio-8081-exec-2] "OPTIONS /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/permissions] from: 127.0.0.1 costs: 4ms
+2021-12-22 15:13:48.845 [http-nio-8081-exec-4] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 50ms
+2021-12-22 15:13:53.690 [http-nio-8081-exec-5] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 1ms
+2021-12-22 15:13:53.746 [http-nio-8081-exec-8] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 44ms
+2021-12-22 15:14:02.481 [http-nio-8081-exec-7] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 2ms
+2021-12-22 15:14:02.507 [http-nio-8081-exec-6] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 17ms
+2021-12-22 15:15:01.193 [http-nio-8081-exec-9] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 1ms
+2021-12-22 15:15:08.609 [http-nio-8081-exec-10] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 1ms
+2021-12-22 15:15:10.977 [http-nio-8081-exec-3] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 15:15:10.983 [http-nio-8081-exec-1] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 9749ms
+2021-12-22 15:15:31.627 [http-nio-8081-exec-2] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 15:15:31.666 [http-nio-8081-exec-4] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 6ms
+2021-12-22 15:15:32.583 [http-nio-8081-exec-5] "OPTIONS /v1/major/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/major/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 15:15:32.619 [http-nio-8081-exec-8] "GET /v1/major/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/major/all] from: 127.0.0.1 costs: 25ms
+2021-12-22 15:15:32.627 [http-nio-8081-exec-7] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 15:15:32.642 [http-nio-8081-exec-6] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 9ms
+2021-12-22 15:15:32.648 [http-nio-8081-exec-9] "OPTIONS /v1/class/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/class/page] from: 127.0.0.1 costs: 0ms
+2021-12-22 15:15:32.683 [http-nio-8081-exec-10] "GET /v1/class/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/page] from: 127.0.0.1 costs: 26ms
+2021-12-22 15:15:37.481 [http-nio-8081-exec-3] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 0ms
+2021-12-22 15:15:46.048 [http-nio-8081-exec-1] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 8556ms
+2021-12-22 15:15:54.815 [http-nio-8081-exec-2] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 2ms
+2021-12-22 15:15:54.854 [http-nio-8081-exec-4] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 12ms
+2021-12-22 15:15:56.191 [http-nio-8081-exec-5] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 0ms
+2021-12-22 15:15:56.214 [http-nio-8081-exec-8] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 12ms
+2021-12-22 15:16:03.625 [http-nio-8081-exec-7] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 10ms
+2021-12-22 15:16:03.665 [http-nio-8081-exec-6] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 10ms
+2021-12-22 15:16:04.803 [http-nio-8081-exec-9] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 0ms
+2021-12-22 15:16:04.819 [http-nio-8081-exec-10] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 7ms
+2021-12-22 15:22:30.834 [http-nio-8081-exec-2] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 15:22:30.834 [http-nio-8081-exec-1] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 1ms
+2021-12-22 15:22:36.089 [http-nio-8081-exec-8] "OPTIONS /cms/user/refresh HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/refresh] from: 127.0.0.1 costs: 2ms
+2021-12-22 15:22:36.092 [http-nio-8081-exec-5] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 5241ms
+2021-12-22 15:22:36.112 [http-nio-8081-exec-7] "GET /cms/user/refresh HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/refresh] from: 127.0.0.1 costs: 7ms
+2021-12-22 15:22:36.126 [http-nio-8081-exec-6] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 4ms
+2021-12-22 15:22:37.403 [http-nio-8081-exec-9] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 15:22:37.437 [http-nio-8081-exec-10] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 16ms
+2021-12-22 15:22:37.457 [http-nio-8081-exec-3] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 4ms
+2021-12-22 15:23:08.952 [http-nio-8081-exec-2] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 4ms
+2021-12-22 15:23:08.972 [http-nio-8081-exec-1] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 7ms
+2021-12-22 15:23:08.977 [http-nio-8081-exec-4] "OPTIONS /v1/card/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/card/] from: 127.0.0.1 costs: 0ms
+2021-12-22 15:23:08.992 [http-nio-8081-exec-8] "GET /v1/card/ HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/card/] from: 127.0.0.1 costs: 11ms
+2021-12-22 15:51:04.698 [http-nio-8081-exec-7] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 4ms
+2021-12-22 15:51:04.790 [http-nio-8081-exec-7] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 81ms
+2021-12-22 15:51:15.340 [http-nio-8081-exec-6] "OPTIONS /v1/graduate-info HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/graduate-info] from: 127.0.0.1 costs: 1ms
+2021-12-22 15:51:15.429 [http-nio-8081-exec-9] "POST /v1/graduate-info HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/graduate-info] from: 127.0.0.1 costs: 74ms
+2021-12-22 15:51:25.107 [http-nio-8081-exec-10] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 15:51:25.117 [http-nio-8081-exec-3] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 0ms
+2021-12-22 15:51:25.165 [http-nio-8081-exec-3] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 42ms
+2021-12-22 15:51:25.166 [http-nio-8081-exec-2] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 15ms
+2021-12-22 15:51:26.172 [http-nio-8081-exec-4] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 19ms
+2021-12-22 15:51:26.192 [http-nio-8081-exec-8] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 3ms
+2021-12-22 15:52:06.552 [http-nio-8081-exec-6] "OPTIONS /v1/team HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team] from: 127.0.0.1 costs: 0ms
+2021-12-22 15:52:06.614 [http-nio-8081-exec-9] "POST /v1/team HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/v1/team] from: 127.0.0.1 costs: 15ms
+2021-12-22 19:03:20.726 [http-nio-8081-exec-10] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:03:20.726 [http-nio-8081-exec-1] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:03:20.782 [http-nio-8081-exec-4] "OPTIONS /cms/user/refresh HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/refresh] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:03:20.821 [http-nio-8081-exec-3] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 74ms
+2021-12-22 19:03:20.833 [http-nio-8081-exec-8] "GET /cms/user/refresh HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/refresh] from: 127.0.0.1 costs: 18ms
+2021-12-22 19:03:20.873 [http-nio-8081-exec-5] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 14ms
+2021-12-22 19:03:22.562 [http-nio-8081-exec-7] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:03:22.587 [http-nio-8081-exec-6] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 20ms
+2021-12-22 19:03:22.617 [http-nio-8081-exec-9] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 4ms
+2021-12-22 19:20:56.123 [http-nio-8081-exec-2] "OPTIONS /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/login] from: 127.0.0.1 costs: 4ms
+2021-12-22 19:20:56.459 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 323ms
+2021-12-22 19:20:56.469 [http-nio-8081-exec-3] "OPTIONS /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/permissions] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:20:56.526 [http-nio-8081-exec-8] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 43ms
+2021-12-22 19:23:05.432 [http-nio-8081-exec-7] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 5ms
+2021-12-22 19:23:05.432 [http-nio-8081-exec-6] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 5ms
+2021-12-22 19:23:05.632 [http-nio-8081-exec-10] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 162ms
+2021-12-22 19:23:05.632 [http-nio-8081-exec-9] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 45ms
+2021-12-22 19:23:06.942 [http-nio-8081-exec-1] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 4ms
+2021-12-22 19:23:06.977 [http-nio-8081-exec-2] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 28ms
+2021-12-22 19:23:06.993 [http-nio-8081-exec-4] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:23:07.013 [http-nio-8081-exec-3] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 9ms
+2021-12-22 19:24:28.160 [http-nio-8081-exec-7] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 3ms
+2021-12-22 19:24:28.241 [http-nio-8081-exec-6] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 67ms
+2021-12-22 19:24:28.274 [http-nio-8081-exec-10] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:24:28.289 [http-nio-8081-exec-9] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 7ms
+2021-12-22 19:24:28.316 [http-nio-8081-exec-1] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:24:28.346 [http-nio-8081-exec-2] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 7ms
+2021-12-22 19:24:32.989 [http-nio-8081-exec-4] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:24:33.041 [http-nio-8081-exec-3] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 43ms
+2021-12-22 19:24:34.106 [http-nio-8081-exec-8] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:24:34.120 [http-nio-8081-exec-5] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 7ms
+2021-12-22 19:24:34.134 [http-nio-8081-exec-7] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:24:34.151 [http-nio-8081-exec-6] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 6ms
+2021-12-22 19:25:43.893 [http-nio-8081-exec-9] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:25:43.927 [http-nio-8081-exec-1] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 19ms
+2021-12-22 19:25:43.956 [http-nio-8081-exec-2] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:25:43.983 [http-nio-8081-exec-4] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 13ms
+2021-12-22 19:25:47.940 [http-nio-8081-exec-3] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:25:47.959 [http-nio-8081-exec-8] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 12ms
+2021-12-22 19:25:49.258 [http-nio-8081-exec-5] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:25:49.272 [http-nio-8081-exec-7] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 8ms
+2021-12-22 19:25:49.287 [http-nio-8081-exec-6] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:25:49.306 [http-nio-8081-exec-10] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 6ms
+2021-12-22 19:27:01.147 [http-nio-8081-exec-1] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 21ms
+2021-12-22 19:27:01.149 [http-nio-8081-exec-2] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 5ms
+2021-12-22 19:27:02.153 [http-nio-8081-exec-4] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 11ms
+2021-12-22 19:27:02.174 [http-nio-8081-exec-3] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 7ms
+2021-12-22 19:27:02.194 [http-nio-8081-exec-8] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 5ms
+2021-12-22 19:27:15.466 [http-nio-8081-exec-5] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:27:15.497 [http-nio-8081-exec-7] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 18ms
+2021-12-22 19:27:31.921 [http-nio-8081-exec-6] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:27:31.954 [http-nio-8081-exec-10] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 25ms
+2021-12-22 19:27:31.972 [http-nio-8081-exec-9] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:27:31.988 [http-nio-8081-exec-1] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 3ms
+2021-12-22 19:27:35.434 [http-nio-8081-exec-2] "OPTIONS /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log/users] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:27:35.506 [http-nio-8081-exec-4] "GET /cms/log/users HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log/users] from: 127.0.0.1 costs: 28ms
+2021-12-22 19:27:35.513 [http-nio-8081-exec-3] "OPTIONS /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/log] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:27:35.531 [http-nio-8081-exec-8] "GET /cms/log HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/log] from: 127.0.0.1 costs: 5ms
+2021-12-22 19:27:55.723 [SpringContextShutdownHook] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-22 19:27:55.731 [SpringContextShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-12-22 19:27:55.779 [SpringContextShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-12-22 19:33:31.460 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-12-22 19:33:31.570 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on MACBOOKAIR-9514.station with PID 1859 (/Users/shileimao/Documents/小项目/026-论文评分系统/cms/backend/target/classes started by shileimao in /Users/shileimao/Documents/小项目/026-论文评分系统/cms/backend)
+2021-12-22 19:33:31.572 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: dev
+2021-12-22 19:33:35.720 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-22 19:33:36.250 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-12-22 19:33:36.259 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-12-22 19:33:36.260 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-12-22 19:33:36.260 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-12-22 19:33:36.358 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-12-22 19:33:36.358 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4624 ms
+2021-12-22 19:33:37.123 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-12-22 19:33:37.409 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-12-22 19:33:41.846 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-22 19:33:42.954 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-12-22 19:33:43.004 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-12-22 19:33:45.194 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Started LatticyApplication in 15.472 seconds (JVM running for 18.352)
+2021-12-22 19:34:16.747 [SpringContextShutdownHook] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-22 19:34:16.760 [SpringContextShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-12-22 19:34:16.771 [SpringContextShutdownHook] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2021-12-22 19:34:22.589 [background-preinit] "  " INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2021-12-22 19:34:22.632 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Starting LatticyApplication on MACBOOKAIR-9514.station with PID 1999 (/Users/shileimao/Documents/小项目/026-论文评分系统/cms/backend/target/classes started by shileimao in /Users/shileimao/Documents/小项目/026-论文评分系统/cms/backend)
+2021-12-22 19:34:22.633 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - The following profiles are active: dev
+2021-12-22 19:34:26.348 [main] "  " INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'commonConfiguration' of type [io.github.xmchxup.latticy.common.configuration.CommonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-22 19:34:26.866 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2021-12-22 19:34:26.877 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2021-12-22 19:34:26.878 [main] "  " INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-12-22 19:34:26.878 [main] "  " INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-12-22 19:34:26.963 [main] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-12-22 19:34:26.964 [main] "  " INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4071 ms
+2021-12-22 19:34:27.650 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-12-22 19:34:27.815 [main] "  " INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-12-22 19:34:32.236 [main] "  " INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-22 19:34:32.650 [main] "  " INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2021-12-22 19:34:32.679 [main] "  " INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2021-12-22 19:34:34.396 [main] "  " INFO  io.github.xmchxup.latticy.LatticyApplication - Started LatticyApplication in 12.972 seconds (JVM running for 14.772)
+2021-12-22 19:35:04.851 [http-nio-8081-exec-1] "  " INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-22 19:35:04.853 [http-nio-8081-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-12-22 19:35:04.920 [http-nio-8081-exec-1] "  " INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 66 ms
+2021-12-22 19:35:04.980 [http-nio-8081-exec-2] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 19ms
+2021-12-22 19:35:04.980 [http-nio-8081-exec-1] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 19ms
+2021-12-22 19:35:05.341 [http-nio-8081-exec-1] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 106ms
+2021-12-22 19:35:05.358 [http-nio-8081-exec-2] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 338ms
+2021-12-22 19:35:06.674 [http-nio-8081-exec-3] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 4ms
+2021-12-22 19:35:06.746 [http-nio-8081-exec-4] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 62ms
+2021-12-22 19:35:06.768 [http-nio-8081-exec-5] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 5ms
+2021-12-22 19:35:06.794 [http-nio-8081-exec-6] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 5ms
+2021-12-22 19:35:58.173 [http-nio-8081-exec-7] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:35:58.220 [http-nio-8081-exec-8] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 21ms
+2021-12-22 19:36:00.334 [http-nio-8081-exec-9] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 3ms
+2021-12-22 19:36:00.355 [http-nio-8081-exec-10] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 10ms
+2021-12-22 19:36:00.378 [http-nio-8081-exec-1] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 19:36:00.399 [http-nio-8081-exec-2] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 4ms
+2021-12-22 19:37:10.717 [http-nio-8081-exec-5] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 8ms
+2021-12-22 19:37:10.783 [http-nio-8081-exec-6] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 48ms
+2021-12-22 19:37:10.799 [http-nio-8081-exec-7] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:37:10.818 [http-nio-8081-exec-8] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 5ms
+2021-12-22 19:44:41.170 [http-nio-8081-exec-10] "OPTIONS /v1/class/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/class/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:44:41.334 [http-nio-8081-exec-1] "GET /v1/class/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/class/all] from: 127.0.0.1 costs: 134ms
+2021-12-22 19:44:49.795 [http-nio-8081-exec-2] "OPTIONS /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/information] from: 127.0.0.1 costs: 2ms
+2021-12-22 19:44:49.987 [http-nio-8081-exec-3] "GET /cms/user/information HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/information] from: 127.0.0.1 costs: 156ms
+2021-12-22 19:44:52.194 [http-nio-8081-exec-4] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:44:52.223 [http-nio-8081-exec-5] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 21ms
+2021-12-22 19:44:52.977 [http-nio-8081-exec-6] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:44:52.999 [http-nio-8081-exec-7] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 14ms
+2021-12-22 19:44:53.013 [http-nio-8081-exec-8] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 19:44:53.032 [http-nio-8081-exec-9] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 9ms
+2021-12-22 23:03:23.901 [http-nio-8081-exec-1] "OPTIONS /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/login] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:03:24.400 [http-nio-8081-exec-2] "POST /cms/user/login HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [POST] -> [/cms/user/login] from: 127.0.0.1 costs: 479ms
+2021-12-22 23:03:24.416 [http-nio-8081-exec-3] "OPTIONS /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/cms/user/permissions] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:03:24.515 [http-nio-8081-exec-4] "GET /cms/user/permissions HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/cms/user/permissions] from: 127.0.0.1 costs: 84ms
+2021-12-22 23:03:33.804 [http-nio-8081-exec-5] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:03:33.835 [http-nio-8081-exec-6] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 22ms
+2021-12-22 23:03:34.754 [http-nio-8081-exec-7] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:03:34.771 [http-nio-8081-exec-8] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 10ms
+2021-12-22 23:03:34.785 [http-nio-8081-exec-9] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:03:34.805 [http-nio-8081-exec-10] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 7ms
+2021-12-22 23:42:29.820 [http-nio-8081-exec-2] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 3ms
+2021-12-22 23:42:29.875 [http-nio-8081-exec-3] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 38ms
+2021-12-22 23:44:04.435 [http-nio-8081-exec-5] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 2ms
+2021-12-22 23:44:04.571 [http-nio-8081-exec-6] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 127ms
+2021-12-22 23:44:13.659 [http-nio-8081-exec-7] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:44:13.681 [http-nio-8081-exec-8] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 15ms
+2021-12-22 23:44:14.364 [http-nio-8081-exec-9] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:44:14.390 [http-nio-8081-exec-10] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 21ms
+2021-12-22 23:44:14.402 [http-nio-8081-exec-1] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 23:44:14.421 [http-nio-8081-exec-2] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 4ms
+2021-12-22 23:57:11.281 [http-nio-8081-exec-4] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:57:11.309 [http-nio-8081-exec-5] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 18ms
+2021-12-22 23:57:11.322 [http-nio-8081-exec-6] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 23:57:11.346 [http-nio-8081-exec-7] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 13ms
+2021-12-22 23:57:18.083 [http-nio-8081-exec-8] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:57:18.113 [http-nio-8081-exec-9] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 24ms
+2021-12-22 23:57:19.280 [http-nio-8081-exec-10] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 0ms
+2021-12-22 23:57:19.294 [http-nio-8081-exec-1] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 9ms
+2021-12-22 23:57:19.307 [http-nio-8081-exec-2] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:57:19.331 [http-nio-8081-exec-3] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 15ms
+2021-12-22 23:58:49.670 [http-nio-8081-exec-5] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:58:49.700 [http-nio-8081-exec-6] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 20ms
+2021-12-22 23:58:49.712 [http-nio-8081-exec-7] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:58:49.725 [http-nio-8081-exec-8] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 3ms
+2021-12-22 23:59:00.699 [http-nio-8081-exec-9] "OPTIONS /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/team/page] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:59:00.736 [http-nio-8081-exec-10] "GET /v1/team/page HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/team/page] from: 127.0.0.1 costs: 28ms
+2021-12-22 23:59:02.661 [http-nio-8081-exec-1] "OPTIONS /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/teacher/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:59:02.675 [http-nio-8081-exec-2] "GET /v1/teacher/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/teacher/all] from: 127.0.0.1 costs: 9ms
+2021-12-22 23:59:02.689 [http-nio-8081-exec-3] "OPTIONS /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [OPTIONS] -> [/v1/college/all] from: 127.0.0.1 costs: 1ms
+2021-12-22 23:59:02.698 [http-nio-8081-exec-4] "GET /v1/college/all HTTP/1.1" INFO  i.g.x.l.common.interceptor.RequestLogInterceptor - [GET] -> [/v1/college/all] from: 127.0.0.1 costs: 4ms

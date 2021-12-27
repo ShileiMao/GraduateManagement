@@ -1,0 +1,64 @@
+{
+  "groups": [
+    {
+      "name": "",
+      "type": "io.github.xmchxup.latticy.common.configuration.CodeMessageConfiguration",
+      "sourceType": "io.github.xmchxup.latticy.common.configuration.CodeMessageConfiguration"
+    },
+    {
+      "name": "lin.file",
+      "type": "io.github.xmchxup.latticy.module.file.FileProperties",
+      "sourceType": "io.github.xmchxup.latticy.module.file.FileProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "code-message",
+      "type": "java.util.Map<java.lang.Integer,java.lang.String>",
+      "sourceType": "io.github.xmchxup.latticy.common.configuration.CodeMessageConfiguration"
+    },
+    {
+      "name": "lin.file.domain",
+      "type": "java.lang.String",
+      "sourceType": "io.github.xmchxup.latticy.module.file.FileProperties"
+    },
+    {
+      "name": "lin.file.exclude",
+      "type": "java.lang.String[]",
+      "sourceType": "io.github.xmchxup.latticy.module.file.FileProperties",
+      "defaultValue": []
+    },
+    {
+      "name": "lin.file.include",
+      "type": "java.lang.String[]",
+      "sourceType": "io.github.xmchxup.latticy.module.file.FileProperties",
+      "defaultValue": []
+    },
+    {
+      "name": "lin.file.nums",
+      "type": "java.lang.Integer",
+      "sourceType": "io.github.xmchxup.latticy.module.file.FileProperties",
+      "defaultValue": 10
+    },
+    {
+      "name": "lin.file.serve-path",
+      "type": "java.lang.String",
+      "description": "文件存储路径",
+      "sourceType": "io.github.xmchxup.latticy.module.file.FileProperties",
+      "defaultValue": "assets\/**"
+    },
+    {
+      "name": "lin.file.single-limit",
+      "type": "java.lang.String",
+      "sourceType": "io.github.xmchxup.latticy.module.file.FileProperties",
+      "defaultValue": "2MB"
+    },
+    {
+      "name": "lin.file.store-dir",
+      "type": "java.lang.String",
+      "sourceType": "io.github.xmchxup.latticy.module.file.FileProperties",
+      "defaultValue": "\/assets"
+    }
+  ],
+  "hints": []
+}

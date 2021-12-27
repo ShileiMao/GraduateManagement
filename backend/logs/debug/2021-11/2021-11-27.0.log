@@ -1,0 +1,175 @@
+2021-11-27 12:01:38.844 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: mdc-access-servlet-filter urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2021-11-27 12:01:38.844 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2021-11-27 12:01:41.313 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 132 mappings in 'requestMappingHandlerMapping'
+2021-11-27 12:01:41.535 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-27 12:01:41.584 [main] "  " DEBUG o.s.web.servlet.config.annotation.WebMvcConfigurer - Default resource handling disabled
+2021-11-27 12:01:41.601 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/assets/**, /**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2021-11-27 12:01:41.613 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-27 12:03:06.033 [http-nio-8081-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2021-11-27 12:03:06.046 [http-nio-8081-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-11-27 12:03:06.061 [http-nio-8081-exec-1] "OPTIONS /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/user/login", parameters={}
+2021-11-27 12:03:06.066 [http-nio-8081-exec-1] "OPTIONS /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#login(LoginDTO)
+2021-11-27 12:03:06.081 [http-nio-8081-exec-1] "OPTIONS /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2021-11-27 12:03:06.094 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/user/login", parameters={}
+2021-11-27 12:03:06.094 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#login(LoginDTO)
+2021-11-27 12:03:06.191 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=root, password=123456)]
+2021-11-27 12:03:06.720 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 12:03:06.721 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Tokens{accessToken='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eSI6OCwic2NvcGUiOiJsaW4iLCJ0eXB (truncated)...]
+2021-11-27 12:03:06.729 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2021-11-27 12:03:06.733 [http-nio-8081-exec-2] "OPTIONS /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - OPTIONS "/cms/user/permissions", parameters={}
+2021-11-27 12:03:06.734 [http-nio-8081-exec-2] "OPTIONS /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#getPermissions()
+2021-11-27 12:03:06.734 [http-nio-8081-exec-2] "OPTIONS /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2021-11-27 12:03:06.737 [http-nio-8081-exec-3] "GET /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/cms/user/permissions", parameters={}
+2021-11-27 12:03:06.738 [http-nio-8081-exec-3] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#getPermissions()
+2021-11-27 12:03:06.851 [http-nio-8081-exec-3] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler io.github.xmchxup.latticy.common.exception.RestExceptionHandler#processException(Exception, HttpServletRequest, HttpServletResponse)
+2021-11-27 12:03:06.861 [http-nio-8081-exec-3] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 12:03:06.861 [http-nio-8081-exec-3] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=9999, message=服务器未知错误, request=GET /cms/user/permissions)]
+2021-11-27 12:03:06.862 [http-nio-8081-exec-3] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'g.delete_time' in 'where clause'
+### The error may exist in file [/Users/z9/Projects/java_dev/026-论文评分系统/毕设评分系统-归档/项目/backend/target/classes/mapper/GroupMapper.xml]
+### The error may involve io.github.xmchxup.latticy.mapper.GroupMapper.selectUserGroupIds-Inline
+### The error occurred while setting parameters
+### SQL: SELECT g.id         from lin_group AS g         WHERE         g.delete_time IS NULL         AND         g.id IN         (         SELECT ug.group_id         FROM lin_user AS u         LEFT JOIN lin_user_group as ug         ON ug.user_id = u.id         WHERE u.id = ?         AND u.delete_time IS NULL         )
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'g.delete_time' in 'where clause'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'g.delete_time' in 'where clause']
+2021-11-27 12:03:06.862 [http-nio-8081-exec-3] "GET /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2021-11-27 12:16:52.038 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/user/login", parameters={}
+2021-11-27 12:16:52.038 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#login(LoginDTO)
+2021-11-27 12:16:52.040 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=root, password=123456)]
+2021-11-27 12:16:52.234 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 12:16:52.234 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Tokens{accessToken='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eSI6OCwic2NvcGUiOiJsaW4iLCJ0eXB (truncated)...]
+2021-11-27 12:16:52.237 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2021-11-27 12:16:52.241 [http-nio-8081-exec-5] "GET /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/cms/user/permissions", parameters={}
+2021-11-27 12:16:52.242 [http-nio-8081-exec-5] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#getPermissions()
+2021-11-27 12:16:52.246 [http-nio-8081-exec-5] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler io.github.xmchxup.latticy.common.exception.RestExceptionHandler#processException(Exception, HttpServletRequest, HttpServletResponse)
+2021-11-27 12:16:52.248 [http-nio-8081-exec-5] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 12:16:52.248 [http-nio-8081-exec-5] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=9999, message=服务器未知错误, request=GET /cms/user/permissions)]
+2021-11-27 12:16:52.249 [http-nio-8081-exec-5] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list'
+### The error may exist in io/github/xmchxup/latticy/mapper/GroupMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,name,info,`level`,createTime,updateTime,deleteTime  FROM lin_group   WHERE  deleteTime IS NULL  AND (`level` = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list']
+2021-11-27 12:16:52.249 [http-nio-8081-exec-5] "GET /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2021-11-27 12:30:26.492 [http-nio-8081-exec-6] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/user/login", parameters={}
+2021-11-27 12:30:26.492 [http-nio-8081-exec-6] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#login(LoginDTO)
+2021-11-27 12:30:26.494 [http-nio-8081-exec-6] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=root, password=123456)]
+2021-11-27 12:30:26.692 [http-nio-8081-exec-6] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 12:30:26.692 [http-nio-8081-exec-6] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Tokens{accessToken='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eSI6OCwic2NvcGUiOiJsaW4iLCJ0eXB (truncated)...]
+2021-11-27 12:30:26.693 [http-nio-8081-exec-6] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2021-11-27 12:30:26.697 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/cms/user/permissions", parameters={}
+2021-11-27 12:30:26.697 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#getPermissions()
+2021-11-27 12:30:26.702 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler io.github.xmchxup.latticy.common.exception.RestExceptionHandler#processException(Exception, HttpServletRequest, HttpServletResponse)
+2021-11-27 12:30:26.704 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 12:30:26.704 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=9999, message=服务器未知错误, request=GET /cms/user/permissions)]
+2021-11-27 12:30:26.706 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list'
+### The error may exist in io/github/xmchxup/latticy/mapper/GroupMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,name,info,`level`,createTime,updateTime,deleteTime  FROM lin_group   WHERE  deleteTime IS NULL  AND (`level` = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list']
+2021-11-27 12:30:26.707 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2021-11-27 12:32:06.775 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: mdc-access-servlet-filter urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2021-11-27 12:32:06.775 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2021-11-27 12:32:09.243 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 132 mappings in 'requestMappingHandlerMapping'
+2021-11-27 12:32:09.528 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-27 12:32:09.609 [main] "  " DEBUG o.s.web.servlet.config.annotation.WebMvcConfigurer - Default resource handling disabled
+2021-11-27 12:32:09.629 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/assets/**, /**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2021-11-27 12:32:09.641 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-27 12:32:28.368 [http-nio-8081-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2021-11-27 12:32:28.377 [http-nio-8081-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-11-27 12:32:28.388 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/user/login", parameters={}
+2021-11-27 12:32:28.392 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#login(LoginDTO)
+2021-11-27 12:32:28.433 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=root, password=123456)]
+2021-11-27 12:32:28.865 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 12:32:28.866 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Tokens{accessToken='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eSI6OCwic2NvcGUiOiJsaW4iLCJ0eXB (truncated)...]
+2021-11-27 12:32:28.879 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2021-11-27 12:32:28.883 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/cms/user/permissions", parameters={}
+2021-11-27 12:32:28.884 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#getPermissions()
+2021-11-27 12:44:44.645 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler io.github.xmchxup.latticy.common.exception.RestExceptionHandler#processException(Exception, HttpServletRequest, HttpServletResponse)
+2021-11-27 12:44:44.652 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 12:44:44.652 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=9999, message=服务器未知错误, request=GET /cms/user/permissions)]
+2021-11-27 12:44:44.661 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list'
+### The error may exist in io/github/xmchxup/latticy/mapper/GroupMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,name,info,`level`,createTime,updateTime,deleteTime  FROM lin_group   WHERE  deleteTime IS NULL  AND (`level` = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list'
+2021-11-27 12:45:58.018 [http-nio-8081-exec-3] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/user/login", parameters={}
+2021-11-27 12:45:58.020 [http-nio-8081-exec-3] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#login(LoginDTO)
+2021-11-27 12:45:58.022 [http-nio-8081-exec-3] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=root, password=123456)]
+2021-11-27 12:45:58.030 [http-nio-8081-exec-3] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler io.github.xmchxup.latticy.common.exception.RestExceptionHandler#processException(Exception, HttpServletRequest, HttpServletResponse)
+2021-11-27 12:45:58.032 [http-nio-8081-exec-3] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 12:45:58.032 [http-nio-8081-exec-3] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=9999, message=服务器未知错误, request=POST /cms/user/login)]
+2021-11-27 12:45:58.033 [http-nio-8081-exec-3] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-11-27 12:45:58.034 [http-nio-8081-exec-3] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2021-11-27 12:46:00.022 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/user/login", parameters={}
+2021-11-27 12:46:00.023 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#login(LoginDTO)
+2021-11-27 12:46:00.025 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=root, password=123456)]
+2021-11-27 12:46:00.032 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler io.github.xmchxup.latticy.common.exception.RestExceptionHandler#processException(Exception, HttpServletRequest, HttpServletResponse)
+2021-11-27 12:46:00.033 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 12:46:00.034 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=9999, message=服务器未知错误, request=POST /cms/user/login)]
+2021-11-27 12:46:00.034 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-11-27 12:46:00.035 [http-nio-8081-exec-4] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2021-11-27 12:46:21.329 [http-nio-8081-exec-5] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/user/login", parameters={}
+2021-11-27 12:46:21.330 [http-nio-8081-exec-5] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#login(LoginDTO)
+2021-11-27 12:46:21.332 [http-nio-8081-exec-5] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=root, password=123456)]
+2021-11-27 12:46:21.340 [http-nio-8081-exec-5] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler io.github.xmchxup.latticy.common.exception.RestExceptionHandler#processException(Exception, HttpServletRequest, HttpServletResponse)
+2021-11-27 12:46:21.341 [http-nio-8081-exec-5] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 12:46:21.342 [http-nio-8081-exec-5] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=9999, message=服务器未知错误, request=POST /cms/user/login)]
+2021-11-27 12:46:21.342 [http-nio-8081-exec-5] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.NullPointerException]
+2021-11-27 12:46:21.343 [http-nio-8081-exec-5] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
+2021-11-27 12:47:27.321 [http-nio-8081-exec-6] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/user/login", parameters={}
+2021-11-27 12:47:27.323 [http-nio-8081-exec-6] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#login(LoginDTO)
+2021-11-27 12:47:27.325 [http-nio-8081-exec-6] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=root, password=123456)]
+2021-11-27 12:47:27.530 [http-nio-8081-exec-6] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 12:47:27.530 [http-nio-8081-exec-6] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Tokens{accessToken='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eSI6OCwic2NvcGUiOiJsaW4iLCJ0eXB (truncated)...]
+2021-11-27 12:47:27.532 [http-nio-8081-exec-6] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2021-11-27 12:47:27.537 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/cms/user/permissions", parameters={}
+2021-11-27 12:47:27.538 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#getPermissions()
+2021-11-27 13:00:16.533 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler io.github.xmchxup.latticy.common.exception.RestExceptionHandler#processException(Exception, HttpServletRequest, HttpServletResponse)
+2021-11-27 13:00:16.535 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 13:00:16.536 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=9999, message=服务器未知错误, request=GET /cms/user/permissions)]
+2021-11-27 13:00:16.538 [http-nio-8081-exec-7] "GET /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Failed to complete request: org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list'
+### The error may exist in io/github/xmchxup/latticy/mapper/GroupMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,name,info,`level`,createTime,updateTime,deleteTime  FROM lin_group   WHERE  deleteTime IS NULL  AND (`level` = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list'
+2021-11-27 13:02:09.319 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: mdc-access-servlet-filter urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2021-11-27 13:02:09.320 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+2021-11-27 13:02:11.431 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 132 mappings in 'requestMappingHandlerMapping'
+2021-11-27 13:02:11.622 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-11-27 13:02:11.662 [main] "  " DEBUG o.s.web.servlet.config.annotation.WebMvcConfigurer - Default resource handling disabled
+2021-11-27 13:02:11.675 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/assets/**, /**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
+2021-11-27 13:02:11.686 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-11-27 13:02:21.817 [http-nio-8081-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2021-11-27 13:02:21.827 [http-nio-8081-exec-1] "  " DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-11-27 13:02:21.837 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/cms/user/login", parameters={}
+2021-11-27 13:02:21.841 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#login(LoginDTO)
+2021-11-27 13:02:21.883 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO(username=root, password=123456)]
+2021-11-27 13:02:22.311 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 13:02:22.311 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [Tokens{accessToken='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eSI6OCwic2NvcGUiOiJsaW4iLCJ0eXB (truncated)...]
+2021-11-27 13:02:22.323 [http-nio-8081-exec-1] "POST /cms/user/login HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2021-11-27 13:02:22.328 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/cms/user/permissions", parameters={}
+2021-11-27 13:02:22.329 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to io.github.xmchxup.latticy.controller.cms.UserController#getPermissions()
+2021-11-27 13:02:34.056 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler io.github.xmchxup.latticy.common.exception.RestExceptionHandler#processException(Exception, HttpServletRequest, HttpServletResponse)
+2021-11-27 13:02:34.065 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-11-27 13:02:34.065 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [UnifyResponseVO(code=9999, message=服务器未知错误, request=GET /cms/user/permissions)]
+2021-11-27 13:02:34.066 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list'
+### The error may exist in io/github/xmchxup/latticy/mapper/GroupMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,name,info,`level`,createTime,updateTime,deleteTime  FROM lin_group   WHERE  deleteTime IS NULL  AND (`level` = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'createTime' in 'field list']
+2021-11-27 13:02:34.067 [http-nio-8081-exec-2] "GET /cms/user/permissions HTTP/1.1" DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 500 INTERNAL_SERVER_ERROR
