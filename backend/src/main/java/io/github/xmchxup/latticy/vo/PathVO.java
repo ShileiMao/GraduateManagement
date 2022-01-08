@@ -8,8 +8,13 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class PathVO {
+    //论文路径
     private String filePath1;
+
+    // 参考文件路径
     private String filePath2;
+
+    // 结果输出文件, 本地路径
     private String filePath3;
 
     public String getFilePath1() {

@@ -19,6 +19,5 @@ public class PaperCheckController {
         String filePath2 = pathVO.getFilePath2();
         String filePath3 = pathVO.getFilePath3();
         paperCheckService.paperCheck(filePath1, filePath2, filePath3);
-
     }
 }
