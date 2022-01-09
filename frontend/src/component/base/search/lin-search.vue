@@ -38,7 +38,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.lin-search /deep/ .el-input-group__append {
+.lin-search ::v-deep .el-input-group__append {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 0 8px;
@@ -48,7 +48,7 @@ export default {
     font-size: 18px;
   }
 }
-.lin-search /deep/ .el-input__inner {
+.lin-search ::v-deep .el-input__inner {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-right: none;

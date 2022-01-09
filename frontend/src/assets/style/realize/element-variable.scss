@@ -434,11 +434,11 @@ thead tr {
   left: 70px !important;
 }
 
-.el-menu--vertical /deep/ .icon-erjizhibiao {
+.el-menu--vertical ::v-deep .icon-erjizhibiao {
   display: none;
 }
 
-.el-menu--vertical /deep/ .two-folder {
+.el-menu--vertical ::v-deep .two-folder {
   margin-left: 40px;
 }
 

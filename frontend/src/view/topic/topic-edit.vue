@@ -98,7 +98,7 @@
               </el-form-item>
               <el-form-item class="submit">
                 <el-button
-                  v-permission="{ permission: ['创建课题', '更新课题'], type: 'disabled' }"
+                  v-permission="{ permission: ['创建课题', '更新课题'] }"
                   type="primary"
                   @click="submitForm('form')"
                   >保 存</el-button

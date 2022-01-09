@@ -1,7 +1,0 @@
-2021-12-02 22:31:10.660 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping filters: mdc-access-servlet-filter urls=[/*] order=2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-2021-12-02 22:31:10.661 [main] "  " DEBUG o.s.b.web.servlet.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
-2021-12-02 22:31:13.244 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 133 mappings in 'requestMappingHandlerMapping'
-2021-12-02 22:31:13.385 [main] "  " DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2021-12-02 22:31:13.412 [main] "  " DEBUG o.s.web.servlet.config.annotation.WebMvcConfigurer - Default resource handling disabled
-2021-12-02 22:31:13.425 [main] "  " DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/assets/**, /**, /swagger-ui.html, /webjars/**] in 'resourceHandlerMapping'
-2021-12-02 22:31:13.438 [main] "  " DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice

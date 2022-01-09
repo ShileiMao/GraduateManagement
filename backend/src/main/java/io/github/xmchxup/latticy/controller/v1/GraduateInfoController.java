@@ -30,7 +30,7 @@ import java.util.List;
  */
 @Validated
 @RestController
-@RequestMapping("/v1//graduate-info")
+@RequestMapping("/v1/graduate-info")
 public class GraduateInfoController {
 
 	@Autowired

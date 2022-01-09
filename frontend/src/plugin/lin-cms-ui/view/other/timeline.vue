@@ -270,15 +270,15 @@ export default {
   margin-bottom: 20px;
 }
 
-.timeLineCard /deep/ .el-card__body {
+.timeLineCard ::v-deep .el-card__body {
   padding: 20px;
 }
 
-.timeLineCard /deep/ .el-card__body h4 {
+.timeLineCard ::v-deep .el-card__body h4 {
   margin: 20px 0px;
 }
 
-.timeLineCard /deep/ .el-card__body {
+.timeLineCard ::v-deep .el-card__body {
   margin: 14px 0px;
 }
 </style>

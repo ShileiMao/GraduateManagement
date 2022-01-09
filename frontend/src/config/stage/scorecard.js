@@ -35,6 +35,15 @@ const scorecardRouter = {
       icon: 'iconfont icon-tushuguanli',
       permission: ['指导教师'],
     },
+    {
+      title: 'hello world',
+      type: 'view',
+      route: '/score/papercheck',
+      filePath: 'view/score/papercheck.vue',
+      inNav: true,
+      icon: 'iconfont icon-tushuguanli',
+      permission: ['指导教师']
+    }
   ],
 }
 

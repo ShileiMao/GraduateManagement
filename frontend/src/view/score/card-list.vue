@@ -92,6 +92,7 @@ export default {
       this.checkQuestionIdList.map(id => {
         questionIds += `${id },`
       })
+      console.log("questions: " + questionIds)
       this.cardForm.question_ids = questionIds.slice(0, questionIds.length - 1)
       const res = await cardApi.createCard(this.cardForm)
       if (res.code < window.MAX_SUCCESS_CODE) {
@@ -152,6 +153,8 @@ export default {
       } else {
         this.questions = JSON.parse(window.sessionStorage.getItem('questions'))
       }
+
+      console.log("questions: " + JSON.stringify(this.questions))
     },
   },
 }

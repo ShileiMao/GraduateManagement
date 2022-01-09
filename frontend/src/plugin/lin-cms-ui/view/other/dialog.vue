@@ -339,7 +339,7 @@ export default {
   margin-bottom: 20px;
 }
 
-.dialogForm /deep/ .el-select {
+.dialogForm ::v-deep .el-select {
   width: 100%;
 }
 </style>

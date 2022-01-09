@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
 
 /**
  * @author xmchx (sunhuayangak47@gmail.com)
@@ -14,6 +13,6 @@ import javax.validation.constraints.Pattern;
 public class CardDTO {
 	@NotBlank
 	private String title;
-	@Pattern(regexp = "\\d+(,\\d+)+", message = "{card.questionIds}")
+//	@Pattern(regexp = "\\d+(,\\d+)+", message = "{card.questionIds}")
 	private String questionIds;
 }

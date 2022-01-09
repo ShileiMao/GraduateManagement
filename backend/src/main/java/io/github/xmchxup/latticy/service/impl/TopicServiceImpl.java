@@ -57,11 +57,11 @@ public class TopicServiceImpl extends ServiceImpl<TopicMapper, TopicDO> implemen
 		// 获取教师所在团队下的所有学生的Topic
 		final QueryWrapper<TeamDO> teamDOQueryWrapper = new QueryWrapper<>();
 
-		int year = LocalDate.now().getYear();
+//		int year = LocalDate.now().getYear();
 
 		teamDOQueryWrapper.lambda()
-				.eq(TeamDO::getTeacherId, teacherId)
-				.eq(TeamDO::getYears, Integer.toString(year));
+				.eq(TeamDO::getTeacherId, teacherId);
+//				.eq(TeamDO::getYears, Integer.toString(year));
 		final TeamDO teamDO = this.teamService.getOne(teamDOQueryWrapper);
 
 		String studentIds = teamDO.getStudentIds();
@@ -72,7 +72,7 @@ public class TopicServiceImpl extends ServiceImpl<TopicMapper, TopicDO> implemen
 		// 要团队年份和主题年份一样
 		QueryWrapper<TopicDO> topicDOQueryWrapper = new QueryWrapper<>();
 		topicDOQueryWrapper.lambda()
-				.eq(TopicDO::getPublishYear, Integer.toString(year))
+//				.eq(TopicDO::getPublishYear, Integer.toString(year))
 				.inSql(TopicDO::getStudentId, studentIds);
 
 		List<TopicDO> topicDOS = this.baseMapper.selectList(topicDOQueryWrapper);
