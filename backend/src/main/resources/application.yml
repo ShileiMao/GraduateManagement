@@ -9,6 +9,7 @@ spring:
   mvc:
     # 404 交给异常处理器处理
     throw-exception-if-no-handler-found: true
+#    static-path-pattern: /assets/essay/checkOutput/*
   resources:
     # 关闭静态资源的映射
     add-mappings: false

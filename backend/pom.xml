@@ -110,7 +110,7 @@
             <version>${mybatis-plus.version}</version>
             <scope>test</scope>
         </dependency>
-    
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
@@ -161,6 +161,12 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>com.xincheck</groupId>
+            <artifactId>duplicate-check</artifactId>
+            <version>0.5.5</version>
+        </dependency>
+
 
     </dependencies>
 
@@ -209,4 +215,11 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>XINCHECK</id>
+            <name>XINCHECK Public Repository</name>
+            <url>https://maven.xincheck.com/repository/maven-releases/</url>
+        </repository>
+    </repositories>
 </project>

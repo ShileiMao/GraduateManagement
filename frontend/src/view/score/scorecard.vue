@@ -15,25 +15,10 @@
           <el-option v-for="item in teachers" :key="item.id" :label="item.name" :value="item.id"> </el-option>
         </el-select>
 
-        <el-select
-          @change="handleChange"
-          size="medium"
-          clearable
-          v-model="query.classId"
-          style="margin-left:20px"
-          placeholder="请选择班级"
-        >
-          <el-option v-for="item in classes" :key="item.id" :label="item.name" :value="item.id"> </el-option>
-        </el-select>
-        <el-date-picker
-          @change="handleChange"
-          style="margin-left:20px"
-          v-model="query.year"
-          type="year"
-          value-format="yyyy"
-          placeholder="选择届数"
-        >
-        </el-date-picker>
+       <el-select class="toolbox-left" size="medium" v-model="query.graduateInfoId" placeholder="选择年份">
+        <el-option v-for="item in graduateYears" :key="item.id" :label="item.title" :value="item.id"> </el-option>
+      </el-select>
+        
       </div>
     </div>
 
@@ -100,13 +85,21 @@
 </template>
 
 <script>
-import scorecardApi from '@/model/scorecard'
 import teacherApi from '@/model/teacher'
 import classApi from '@/model/class'
+import user from '@/lin/model/user'
+import scorecardApi from '@/model/scorecard'
+import graduateInfo from '@/model/graduateinfo'
+import student from '@/model/student'
+import teacher from '@/model/teacher'
 
 export default {
   data() {
     return {
+      graduateInfoId: 0,
+      graduateYears: [],
+      loginUsername: '',
+      loginUserType: '',
       tableData: [],
       loading: false,
       // 分页相关
@@ -127,11 +120,20 @@ export default {
       },
     }
   },
-  created() {
+  async created() {
+    const res = await graduateInfo.getGraduateInfoAll()
+      console.log("graduate info list: " + JSON.stringify(res))
+  
+    this.graduateYears = res
+
+    this.graduateInfoId = res[0].id
+    this.query.graduateInfoId = res[0].id
+
+
     this.initData()
-    this.loading = true
-    this._getTableData((this.currentPage - 1) * this.pageCount, this.pageCount)
     this.loading = false
+    await this.checkLoginUser()
+    await this._getTableData((this.currentPage - 1) * this.pageCount, this.pageCount)
   },
   methods: {
     async _getTableData() {
@@ -210,6 +212,37 @@ export default {
       }
     },
 
+    async checkLoginUser() {
+      const result = await user.getInformation()
+      this.loginUsername = result.username
+      let re = new RegExp('\\d{10}')
+      if (re.test(result.username)) {
+        // Student
+        this.loginUserType = 'student'
+        const studentInfo = await student.getStudentByLoginName(result.username)
+        this.studentId = studentInfo.id
+
+        return
+      }
+      re = new RegExp('\\d{4}')
+      if (re.test(result.username)) {
+        // teacher
+        this.loginUserType = 'teacher'
+
+        const teacherInfo = await teacher.getTeacherByLognName(result.username)
+        console.log("teacher info: " + JSON.stringify(teacherInfo))
+
+        this.teacherId = teacherInfo.id
+
+        return
+      }
+      re = new RegExp('答辩组账号')
+      if (re.test(result.username)) {
+        this.loginUserType = 'judgeTeam'
+        return
+      }
+      this.$message.info('该界面root用户不给予展示!')
+    },
     // 下拉框选择
     async handleChange() {
       this.currentPage = 1

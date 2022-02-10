@@ -3,11 +3,20 @@
     <div class="header">
       <p class="title">课题评分</p>
     </div>
+
+    <div class="toolbox">
+      <el-select class="toolbox-left" size="medium" v-model="graduateInfoId" placeholder="选择年份">
+        <el-option v-for="item in graduateYears" :key="item.id" :label="item.title" :value="item.id"> </el-option>
+      </el-select>
+    </div>
+
     <!-- 表格 -->
     <el-table v-loading="loading" :data="tableData" stripe>
       <el-table-column fixed prop="id" label="id" width="50"></el-table-column>
       <el-table-column prop="name" label="名称" width="200"></el-table-column>
-      <el-table-column prop="publish_year" label="发布年份" width="100"></el-table-column>
+      <el-table-column prop="college_name" label="学院" width="200"></el-table-column>
+      <el-table-column prop="student_name" label="学生" width="200"></el-table-column>
+      <el-table-column prop="graduate_title" label="发布年份" width="100"></el-table-column>
       <el-table-column label="操作" width="400">
         <template slot-scope="scope">
           <el-button @click="handleScore(scope.row)" type="primary" plain size="mini" v-text="btnTextObj.score"
@@ -44,11 +53,11 @@
       <div class="cardTable" v-if="cardTable" v-show="currentStep == 1">
         <ol>
           <template v-for="question in cardTable.questions">
-            <li style="float:left;width:80%;margin-top: 10px;">
+            <li style="float:left;width:80%;margin-top: 10px;" :key="question.id">
               {{ question.title }}<el-link type="danger">{{ '(共计' + question.max_score + '分)' }}</el-link>
               <ol>
                 <template v-for="option in question.options">
-                  <li style="margin-top: 5px;">
+                  <li style="margin-top: 5px;" :key="option.id">
                     {{ option.content + '' }}<el-link type="info">{{ '(' + option.score + '分)' }}</el-link>
                   </li>
                 </template>
@@ -56,6 +65,7 @@
             </li>
 
             <el-input-number
+              :key="question.title"
               v-model="scoresObj[question.id]"
               :min="0"
               :max="question.max_score"
@@ -87,15 +97,21 @@ import topic from '@/model/topic'
 import user from '@/lin/model/user'
 import cardApi from '@/model/card'
 import scorecardApi from '@/model/scorecard'
+import teacher from '@/model/teacher'
+import graduateInfo from '@/model/graduateinfo'
+import student from '@/model/student'
 
 export default {
   data() {
     return {
+      graduateInfoId: 0,
+      teacherId: 0,
+      graduateYears: [],
       loginUsername: '',
       loginUserType: '',
       tableData: [],
       loading: false,
-      topicId: null,
+      assignId: null,
       showScoreCard: false,
       showAdviseCard: false,
       cardId: null,
@@ -113,6 +129,13 @@ export default {
     }
   },
   async created() {
+    const res = await graduateInfo.getGraduateInfoAll()
+      console.log("graduate info list: " + JSON.stringify(res))
+  
+    this.graduateYears = res
+
+    this.graduateInfoId = res[0].id
+
     await this.checkLoginUser()
     await this.initData()
     this._getTableData()
@@ -122,10 +145,11 @@ export default {
       let _topics = null
       let textObj = null
       if (this.loginUserType == 'teacher') {
-        _topics = await topic.getTopicsByTeacherId(this.loginUsername)
+        _topics = await topic.getAssignByTeacherId(this.graduateInfoId, this.teacherId)
         const guideAdviseCompleteTopicIds = await scorecardApi.getAllGuideAdviseComplete()
         // 过滤掉指导老师留言完成的
         _topics = _topics.filter(topic => !guideAdviseCompleteTopicIds.includes(topic.id))
+
         textObj = {
           score: '指导教师评分',
           advice: '指导教师留言',
@@ -145,6 +169,7 @@ export default {
       if (_topics == null) {
         return
       }
+      console.log("topics: " + JSON.stringify(_topics))
       const completeTopicIds = await scorecardApi.getAllComplete()
       if (completeTopicIds.length > 0) {
         _topics = _topics.filter(topic => !completeTopicIds.includes(topic.id))
@@ -162,7 +187,7 @@ export default {
       if (this.currentStep === 1) {
         // 完成
         const formData = {
-          topic_id: this.topicId,
+          assign_id: this.assignId,
           scores: this.scoresObj,
           card_id: this.cardId,
           is_supplement: false,
@@ -170,10 +195,11 @@ export default {
         let res = null
         if (this.loginUserType == 'teacher') {
           // 指导教师评分
+          console.log("sending score data: " + JSON.stringify(formData))
           res = await scorecardApi.createByTeacher(formData)
         } else if (this.loginUserType == 'judgeTeam') {
           // 答辩组评分
-          const { id } = await scorecardApi.getScorecardByTopicId(this.topicId)
+          const { id } = await scorecardApi.getScorecardByTopicId(this.assignId)
           res = await scorecardApi.updateScorecard(id, formData)
         }
 
@@ -190,6 +216,8 @@ export default {
         this.cards.map(card => {
           if (card.id == this.cardId) {
             this.cardTable = card
+
+            console.log("Card table: " + JSON.stringify(card))
           }
         })
       }
@@ -205,12 +233,12 @@ export default {
 
     async handleScore(data) {
       this.restData()
-      this.topicId = data.id
+      this.assignId = data.id
       this.showScoreCard = true
     },
 
     handleAdvice(data, flag) {
-      this.topicId = data.id
+      this.assignId = data.id
       if (flag) this.showAdviseCard = true
       else {
         this.submitComment()
@@ -218,7 +246,7 @@ export default {
     },
 
     async submitComment() {
-      const scorecard = await scorecardApi.getScorecardByTopicId(this.topicId)
+      const scorecard = await scorecardApi.getScorecardByTopicId(this.assignId)
       if (Object.keys(scorecard).length == 0) {
         return
       }
@@ -261,6 +289,12 @@ export default {
       if (re.test(result.username)) {
         // teacher
         this.loginUserType = 'teacher'
+
+        const teacherInfo = await teacher.getTeacherByLognName(result.username)
+        console.log("teacher info: " + JSON.stringify(teacherInfo))
+
+        this.teacherId = teacherInfo.id
+
         return
       }
       re = new RegExp('答辩组账号')

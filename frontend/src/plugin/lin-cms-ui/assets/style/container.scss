@@ -23,3 +23,17 @@
 .lin-wrap-ui {
   padding: 30px 40px;
 }
+
+.row {
+  width: 80%;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  line-height: 50px;
+}
+.TitleLabel {
+  width: 150px;
+}
+.ValueLabel {
+  flex-grow: 1;
+}

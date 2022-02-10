@@ -11,7 +11,7 @@ const teamRouter = {
     {
       title: '课题任务',
       type: 'view',
-      route: '/topic/task',
+      route: '/topic/topic-task',
       filePath: 'view/topic/topic-task.vue',
       inNav: true,
       icon: 'iconfont icon-tushuguanli',
@@ -35,14 +35,22 @@ const teamRouter = {
       permission: ['指导教师', '答辩小组'],
     },
     {
-      title: '课题补分',
+      title: '查看评分',
       type: 'view',
-      route: '/topic/score-sup',
-      filePath: 'view/topic/score-sup.vue',
+      route: '/topic/score-result',
+      filePath: 'view/topic/score-student.vue',
       inNav: true,
       icon: 'iconfont icon-tushuguanli',
-      permission: ['指导教师', '答辩小组'],
     },
+    // {
+    //   title: '课题补分',
+    //   type: 'view',
+    //   route: '/topic/score-sup',
+    //   filePath: 'view/topic/score-sup.vue',
+    //   inNav: true,
+    //   icon: 'iconfont icon-tushuguanli',
+    //   permission: ['指导教师', '答辩小组'],
+    // },
   ],
 }
 

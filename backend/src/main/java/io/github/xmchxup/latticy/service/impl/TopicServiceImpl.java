@@ -6,14 +6,15 @@ import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapp
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import io.github.talelin.autoconfigure.exception.MethodNotAllowedException;
 import io.github.xmchxup.latticy.enumeration.TopicStatusEnum;
+import io.github.xmchxup.latticy.mapper.TopicAssignMapper;
 import io.github.xmchxup.latticy.mapper.TopicMapper;
 import io.github.xmchxup.latticy.model.TeamDO;
 import io.github.xmchxup.latticy.model.TopicDO;
 import io.github.xmchxup.latticy.service.ScorecardService;
 import io.github.xmchxup.latticy.service.TeamService;
 import io.github.xmchxup.latticy.service.TopicService;
+import io.github.xmchxup.latticy.vo.TopicAssignVO;
 import io.github.xmchxup.latticy.vo.TopicPureVO;
-import io.github.xmchxup.latticy.vo.TopicVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,9 +40,13 @@ public class TopicServiceImpl extends ServiceImpl<TopicMapper, TopicDO> implemen
 	@Autowired
 	private ScorecardService scorecardService;
 
+	@Autowired
+	private TopicAssignMapper topicAssignMapper;
+
 	@Override
-	public IPage<TopicVO> selectPageVO(IPage<TopicVO> pager, String name) {
-		return this.baseMapper.selectPageVO(pager, name);
+	public IPage<TopicAssignVO> selectPageVO(IPage<TopicAssignVO> pager, String name) {
+		return this.topicAssignMapper.selectPageVO(pager, name);
+//				selectPageVO(pager, name);
 	}
 
 	@Override
@@ -129,7 +134,7 @@ public class TopicServiceImpl extends ServiceImpl<TopicMapper, TopicDO> implemen
 	 */
 	private List<TopicDO> handleSupplementTopic(List<TopicDO> topicDOS) {
 		// 过滤分数超过60的
-		List<Integer> topicIds = this.scorecardService.getAllSupTopicId();
+		List<Integer> topicIds = this.scorecardService.getAllSupAssignId();
 		return topicDOS.stream()
 				.filter(topicDO -> topicIds.contains(topicDO.getId()))
 				.collect(Collectors.toList());

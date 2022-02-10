@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.github.xmchxup.latticy.mapper.TopicAssignMapper">
+    <resultMap id="BaseResultMap" type="io.github.xmchxup.latticy.vo.TopicAssignVO">
+<!--        <id column="id" property="id"/>-->
+        <result column="id" property="id"/>
+        <result column="student_id" property="studentId"/>
+        <result column="topic_id" property="topicId"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="delete_time" property="deleteTime"/>
+        <result column="status" property="status"/>
+
+        <result column="student_name" property="studentName"/>
+        <result column="name" property="name"/>
+        <result column="college_id" property="collegeId"/>
+        <result column="college_name" property="collegeName"/>
+        <result column="graduate_id" property="graduateId"/>
+
+        <result column="description" property="description"/>
+
+
+        <result column="graduate_title" property="graduateTitle"/>
+
+        <result column="topic_type_name" property="topicTypeName"/>
+        <result column="topic_type_desc" property="topicTypeDesc"/>
+        <result column="teacher_name" property="teacherName"/>
+        <result column="description" property="description"/>
+        <result column="topic_type" property="topicType"/>
+        <result column="teacher_id" property="teacherId"/>
+        <result column="graduate_info_id" property="graduateInfoId"/>
+
+
+    </resultMap>
+
+    <select id="allAssigns" resultMap="BaseResultMap">
+        select topic_assign.id,
+            topic_assign.topic_id,
+            topic_assign.student_id,
+            topic_assign.status,
+            student.name as student_name,
+            topic_select_table.name,
+            college.id as college_id,
+            college.name as college_name,
+            graduate_info.id as graduate_id,
+            graduate_info.title as graduate_title,
+            topic_type.name as topic_type_name,
+            topic_type.description as topic_type_desc,
+            teacher.name as teacher_name,
+            topic_select_table.description,
+            topic_select_table.topic_type,
+            topic_select_table.teacher_id,
+            topic_select_table.graduate_info_id
+
+            from topic_assign join student on topic_assign.student_id = student.id
+            join topic_select_table on topic_assign.topic_id = topic_select_table.id
+            join topic_type on topic_select_table.topic_type = topic_type.id
+            join graduate_info on graduate_info.id = topic_select_table.graduate_info_id
+            join class on student.class_id = class.id
+            join college on class.college_id = college.id
+            join teacher on topic_select_table.teacher_id = teacher.id
+
+        where graduate_info.id = #{graduateId}
+        <if test="teacherId != null">
+            AND topic_select_table.teacher_id = #{teacherId}
+        </if>
+        <if test="collegeId != null">
+            AND topic_select_table.college_id = #{collegeId}
+        </if>
+        <if test="studentId != null">
+            AND topic_assign.student_id = #{studentId}
+        </if>
+        <if test="topicId != null">
+            AND topic_assign.id = #{topicId}
+        </if>
+        order by topic_select_table.topic_type
+    </select>
+
+    <select id="getAssignes" resultMap="BaseResultMap">
+        select topic_assign.id,
+               topic_assign.topic_id,
+               topic_assign.student_id,
+               topic_assign.status,
+               student.name as student_name,
+               topic_select_table.name,
+               college.id as college_id,
+               college.name as college_name,
+               graduate_info.id as graduate_id,
+               graduate_info.title as graduate_title,
+               topic_type.name as topic_type_name,
+               topic_type.description as topic_type_desc,
+               teacher.name as teacher_name,
+               topic_select_table.description,
+               topic_select_table.topic_type,
+               topic_select_table.teacher_id,
+               topic_select_table.graduate_info_id
+
+        from topic_assign join student on topic_assign.student_id = student.id
+                          join topic_select_table on topic_assign.topic_id = topic_select_table.id
+                          join topic_type on topic_select_table.topic_type = topic_type.id
+                          join graduate_info on graduate_info.id = topic_select_table.graduate_info_id
+                          join class on student.class_id = class.id
+                          join college on class.college_id = college.id
+                          join teacher on topic_select_table.teacher_id = teacher.id
+        where topic_assign.topic_id = #{topicId}
+    </select>
+
+    <select id="getAssigneById" resultMap="BaseResultMap">
+        select topic_assign.id,
+            topic_assign.topic_id,
+            topic_assign.student_id,
+            topic_assign.status,
+            student.name as student_name,
+            topic_select_table.name,
+            college.id as college_id,
+            college.name as college_name,
+            graduate_info.id as graduate_id,
+            graduate_info.title as graduate_title,
+            topic_type.name as topic_type_name,
+            topic_type.description as topic_type_desc,
+            teacher.name as teacher_name,
+            topic_select_table.description,
+            topic_select_table.topic_type,
+            topic_select_table.teacher_id,
+            topic_select_table.graduate_info_id
+
+            from topic_assign join student on topic_assign.student_id = student.id
+            join topic_select_table on topic_assign.topic_id = topic_select_table.id
+            join topic_type on topic_select_table.topic_type = topic_type.id
+            join graduate_info on graduate_info.id = topic_select_table.graduate_info_id
+            join class on student.class_id = class.id
+            join college on class.college_id = college.id
+            join teacher on topic_select_table.teacher_id = teacher.id
+
+        <if test="assignId != null">
+            where topic_assign.id = #{assignId}
+        </if>
+
+    </select>
+
+    <select id="getAssignByStudent" resultMap="BaseResultMap">
+        select topic_assign.id,
+               topic_assign.topic_id,
+               topic_assign.student_id,
+               topic_assign.status,
+               student.name as student_name,
+               topic_select_table.name,
+               college.id as college_id,
+               college.name as college_name,
+               graduate_info.id as graduate_id,
+               graduate_info.title as graduate_title,
+               topic_type.name as topic_type_name,
+               topic_type.description as topic_type_desc,
+               teacher.name as teacher_name,
+               topic_select_table.description,
+               topic_select_table.topic_type,
+               topic_select_table.teacher_id,
+               topic_select_table.graduate_info_id
+
+        from topic_assign join topic_select_table on topic_assign.topic_id = topic_select_table.id
+                          join topic_type on topic_select_table.topic_type = topic_type.id
+                          join student on topic_assign.student_id = student.id
+                          join graduate_info on graduate_info.id = topic_select_table.graduate_info_id
+             join college on topic_select_table.college_id = college.id
+             join teacher on topic_select_table.teacher_id = teacher.id
+
+        where topic_assign.student_id = #{stuId}
+    </select>
+
+    <delete id="deleteAssignById">
+        delete from topic_assign where id = #{assignId}
+    </delete>
+
+
+    <select id="selectPageVO" parameterType="string"
+            resultMap="BaseResultMap">
+        select topic_assign.id,
+               topic_assign.topic_id,
+               topic_assign.student_id,
+               topic_assign.status,
+               student.name as student_name,
+               topic_select_table.name,
+               college.id as college_id,
+               college.name as college_name,
+               graduate_info.id as graduate_id,
+               graduate_info.title as graduate_title,
+               topic_type.name as topic_type_name,
+               topic_type.description as topic_type_desc,
+               teacher.name as teacher_name,
+               topic_select_table.description,
+               topic_select_table.topic_type,
+               topic_select_table.teacher_id,
+               topic_select_table.graduate_info_id
+
+        from topic_assign join topic_select_table on topic_assign.topic_id = topic_select_table.id
+                          join topic_type on topic_select_table.topic_type = topic_type.id
+                          join student on topic_assign.student_id = student.id
+                          join graduate_info on graduate_info.id = topic_select_table.graduate_info_id
+                          join college on topic_select_table.college_id = college.id
+                          join teacher on topic_select_table.teacher_id = teacher.id
+
+        <if test="name != null">
+            where topic_select_table.name like "%"#{name}"%" OR topic_select_table.description like "%"#{name}"%"
+        </if>
+
+    </select>
+
+
+    <update id="updateTopicStatus">
+        update topic_assign set topic_assign.status = #{status} where id = #{id}
+    </update>
+</mapper>

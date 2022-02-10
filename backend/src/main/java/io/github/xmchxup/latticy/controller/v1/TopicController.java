@@ -40,7 +40,7 @@ import java.util.List;
 @Validated
 @PermissionModule(value = "课题")
 @RestController
-@RequestMapping("/v1//topic")
+@RequestMapping("/v1/topic")
 public class TopicController {
 
 	@Autowired
@@ -157,7 +157,7 @@ public class TopicController {
 
 	@GetMapping("/page")
 	@ApiOperation(value = "获取课题分页列表", notes = "获取课题分页列表")
-	public PageResponseVO<TopicVO> page(
+	public PageResponseVO<TopicAssignVO> page(
 			@RequestParam(name = "keyword", required = false)
 					String name,
 			@RequestParam(name = "count", required = false, defaultValue = "10")
@@ -166,13 +166,13 @@ public class TopicController {
 			@RequestParam(name = "page", required = false, defaultValue = "0")
 			@Min(value = 0, message = "{page.number.min}") Integer page
 	) {
-		Page<TopicVO> pager = new Page<>(page, count);
+		Page<TopicAssignVO> pager = new Page<>(page, count);
 
 		final QueryWrapper<TopicDO> wrapper = new QueryWrapper<>();
 		if (!StringUtils.isEmpty(name))
 			wrapper.lambda().like(TopicDO::getName, name);
 
-		IPage<TopicVO> paging = this.topicService.selectPageVO(pager, name);
+		IPage<TopicAssignVO> paging = this.topicService.selectPageVO(pager, name);
 		return PageUtil.build(paging);
 	}
 

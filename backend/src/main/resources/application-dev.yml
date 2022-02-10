@@ -36,6 +36,7 @@ logging:
     # SQL日志记录
     io.github.talelin.latticy.mapper: debug
 
+serverDomain: http://127.0.0.1:8081
 #mybatis-plus:
 #  configuration:
 #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

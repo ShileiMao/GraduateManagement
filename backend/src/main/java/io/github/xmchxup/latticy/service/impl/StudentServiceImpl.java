@@ -133,4 +133,14 @@ public class StudentServiceImpl extends ServiceImpl<StudentMapper, StudentDO> im
 	public List<StudentVO>getStudentsInCollege(Integer collegeId) {
 		return this.studentMapper.allStudentsInCollege(collegeId);
 	}
+
+	@Override
+	public StudentDO getStudentByLoginName(String loginName) {
+		QueryWrapper<StudentDO> queryWrapper = new QueryWrapper<>();
+		queryWrapper.lambda().eq(StudentDO::getSid, loginName);
+
+		StudentDO studentDO = this.studentMapper.selectOne(queryWrapper);
+
+		return studentDO;
+	}
 }

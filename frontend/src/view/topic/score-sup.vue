@@ -3,6 +3,13 @@
     <div class="header">
       <p class="title">课题补分</p>
     </div>
+
+    <div class="toolbox">
+      <el-select class="toolbox-left" size="medium" v-model="graduateInfoId" placeholder="选择年份">
+        <el-option v-for="item in graduateYears" :key="item.id" :label="item.title" :value="item.id"> </el-option>
+      </el-select>
+    </div>
+
     <!-- 表格 -->
     <el-table v-loading="loading" :data="tableData" stripe>
       <el-table-column fixed prop="id" label="id" width="50"></el-table-column>
@@ -87,10 +94,16 @@ import topic from '@/model/topic'
 import user from '@/lin/model/user'
 import cardApi from '@/model/card'
 import scorecardApi from '@/model/scorecard'
+import teacher from '@/model/teacher'
+import graduateInfo from '@/model/graduateinfo'
+import student from '@/model/student'
 
 export default {
   data() {
     return {
+      graduateInfoId: 0,
+      teacherId: 0,
+
       loginUsername: '',
       loginUserType: '',
       tableData: [],
@@ -113,6 +126,13 @@ export default {
     }
   },
   async created() {
+    const res = await graduateInfo.getGraduateInfoAll()
+      console.log("graduate info list: " + JSON.stringify(res))
+  
+    this.graduateYears = res
+
+    this.graduateInfoId = res[0].id
+
     await this.checkLoginUser()
     await this.initData()
     this._getTableData()
@@ -249,6 +269,11 @@ export default {
       if (re.test(result.username)) {
         // teacher
         this.loginUserType = 'teacher'
+
+        const teacherInfo = await teacher.getTeacherByLognName(result.username)
+        console.log("teacher info: " + JSON.stringify(teacherInfo))
+
+        this.teacherId = teacherInfo.id
         return
       }
       re = new RegExp('答辩组账号')

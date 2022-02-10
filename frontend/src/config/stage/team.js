@@ -1,5 +1,5 @@
 const teamRouter = {
-  title: '团队管理',
+  title: '答辩小组',
   type: 'view',
   name: null,
   route: '/team',

@@ -271,6 +271,10 @@ INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (35, '创�
 INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (36, '更新学生', '学生', 0);
 INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (37, '删除课题', '课题', 0);
 INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (38, '创建学生', '学生', 0);
+
+INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (39, '发布选题', '论文', 1);
+INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (40, '论文选题', '论文', 1);
+INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (41, '论文上传下载', '论文', 1);
 COMMIT;
 -- ----------------------------
 -- Table structure for lin_user
@@ -410,7 +414,7 @@ CREATE TABLE `scorecard`
     `guide_score`   double                                                        NULL     DEFAULT NULL COMMENT '指导老师评分',
     `judge_card_id` int(0)                                                        NULL     DEFAULT NULL COMMENT '答辩小组评分表模板id',
     `supplement`    longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci     NULL,
-    `topic_id`      int(0)                                                        NULL     DEFAULT NULL,
+    `assign_id`      int(0)                                                        NULL     DEFAULT NULL,
     `create_time`   datetime(3)                                                   NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
     `update_time`   datetime(3)                                                   NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `delete_time`   datetime(3)                                                   NULL     DEFAULT NULL,
@@ -488,6 +492,108 @@ CREATE TABLE `team`
     PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB
   AUTO_INCREMENT = 15
+  CHARACTER SET = utf8mb4
+  COLLATE = utf8mb4_general_ci
+  ROW_FORMAT = DYNAMIC;
+
+
+-- ----------------------------
+-- Table structure for topic_select_table
+-- ----------------------------
+DROP TABLE IF EXISTS `topic_select_table`;
+CREATE TABLE `topic_select_table`
+(
+    `id`               int(0)                                                        NOT NULL AUTO_INCREMENT,
+    `name`             varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '名称',
+    `description`      varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL     DEFAULT NULL COMMENT '描述',
+    `topic_type`       int(0)                                                        NULL     DEFAULT NULL COMMENT '课题类型',
+    `teacher_id`       int(0)                                                        NULL     DEFAULT NULL COMMENT '老师id',
+    `college_id`       int(0)                                                        NULL     DEFAULT NULL COMMENT '所属学院',
+    `graduate_info_id` int(0)                                                        NULL     DEFAULT NULL,
+    `status`           int(0)                                                        NULL     DEFAULT 0 COMMENT '课题状态',
+    `create_time`      datetime(3)                                                   NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+    `update_time`      datetime(3)                                                   NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `delete_time`      datetime(3)                                                   NULL     DEFAULT NULL,
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  AUTO_INCREMENT = 28
+  CHARACTER SET = utf8mb4
+  COLLATE = utf8mb4_general_ci
+  ROW_FORMAT = DYNAMIC;
+  
+  
+  -- ----------------------------
+-- Table structure for topic_type
+-- ----------------------------
+DROP TABLE IF EXISTS `topic_type`;
+CREATE TABLE `topic_type`
+(
+    `id`               int(0)                                                        NOT NULL AUTO_INCREMENT,
+    `name`             varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '名称',
+    `description`      varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL     DEFAULT NULL COMMENT '描述',
+    `status`           int(0)                                                        NULL     DEFAULT 0 COMMENT '课题状态',
+    `create_time`      datetime(3)                                                   NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+    `update_time`      datetime(3)                                                   NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `delete_time`      datetime(3)                                                   NULL     DEFAULT NULL,
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  AUTO_INCREMENT = 28
+  CHARACTER SET = utf8mb4
+  COLLATE = utf8mb4_general_ci
+  ROW_FORMAT = DYNAMIC;
+
+-- --
+-- records of topic_type
+-- ---
+insert into topic_type(name, description, status) values('计算机科学', '计算机科学', 1);
+  insert into topic_type(name, description, status) values('通信专业', '通信专业', 1);
+  insert into topic_type(name, description, status) values('市场与管理', '市场与管理', 1);
+  insert into topic_type(name, description, status) values('人文社科', '人文社科', 1);
+  insert into topic_type(name, description, status) values('自然地理', '自然地理', 1);
+  insert into topic_type(name, description, status) values('历史', '历史', 1);
+  insert into topic_type(name, description, status) values('语言文学', '语言文学', 1);
+
+ 
+-- ----------------------------
+-- Table structure for topic_assign
+-- ----------------------------
+DROP TABLE IF EXISTS `topic_assign`;
+CREATE TABLE `topic_assign`
+(
+    `id`               int(0)                                                        NOT NULL AUTO_INCREMENT,
+    `student_id`       int(0)															NOT NULL,
+    `topic_id`    	   int(0) NOT NULL,
+    `create_time`      datetime(3)                                                   NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+    `update_time`      datetime(3)                                                   NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `delete_time`      datetime(3)                                                   NULL     DEFAULT NULL,
+    `status`           int(0)                                                        NULL     DEFAULT 0 COMMENT '课题状态',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  AUTO_INCREMENT = 28
+  CHARACTER SET = utf8mb4
+  COLLATE = utf8mb4_general_ci
+  ROW_FORMAT = DYNAMIC;
+
+
+-- ----------------------------
+-- Table structure for topic_essay
+-- ----------------------------
+DROP TABLE IF EXISTS `topic_essay`;
+CREATE TABLE `topic_essay`
+(
+    `id`               int(0)                                                        NOT NULL AUTO_INCREMENT,
+    `topic_assign_id`       int(0)															NOT NULL,
+    `essay_title`      varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci   NULL     DEFAULT NULL COMMENT '论文标题',
+    `student_note` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci   NULL     DEFAULT NULL COMMENT '学生留言',
+    `teacher_note` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci   NULL     DEFAULT NULL COMMENT '学生留言',
+    `file_path` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci   NULL     DEFAULT NULL COMMENT '文件路径',
+    `create_time`      datetime(3)                                                   NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+    `update_time`      datetime(3)                                                   NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+    `delete_time`      datetime(3)                                                   NULL     DEFAULT NULL,
+    `status`           int(0)                                                        NULL     DEFAULT 0 COMMENT '论文状态',
+    PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB
+  AUTO_INCREMENT = 28
   CHARACTER SET = utf8mb4
   COLLATE = utf8mb4_general_ci
   ROW_FORMAT = DYNAMIC;

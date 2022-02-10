@@ -1,6 +1,7 @@
 package io.github.xmchxup.latticy.controller.v1;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import io.github.talelin.autoconfigure.exception.ParameterException;
 import io.github.xmchxup.latticy.common.mybatis.Page;
@@ -63,7 +64,9 @@ public class GraduateInfoController {
 
 	@GetMapping("/all")
 	public List<GraduateInfoDO> getAll() {
-		return this.graduateInfoService.list();
+		QueryWrapper<GraduateInfoDO> queryWrapper = new QueryWrapper<>();
+		queryWrapper.lambda().orderByDesc(GraduateInfoDO::getYear);
+		return this.graduateInfoService.list(queryWrapper);
 	}
 
 	@GetMapping("/{id}/guide/teachers")

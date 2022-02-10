@@ -1,4 +1,5 @@
 import { get, post, put, _delete } from '@/lin/plugin/axios'
+import College from './college'
 
 class Teacher {
   static async createTeacher(data) {
@@ -34,6 +35,23 @@ class Teacher {
       res = await get('v1/teacher/page', { page, count })
     }
     return res
+  }
+
+
+  static async getTeacherByLognName(loginName) {
+    const url = `v1/teacher/tid/${loginName}`
+    const res = await get(url)
+    console.log("teacher info: " + JSON.stringify(res))
+    return res
+  }
+
+  static async getCollegeByTeacherId(teacherId) {
+    const res = await get(`v1/teacher/${teacherId}`)
+    if(res != null) {
+      const collegeInfo = await College.getCollege(res.college_id)
+      return collegeInfo
+    }
+    return null
   }
 }
 

@@ -22,7 +22,7 @@ public class ScorecardDTO {
 	private Integer cardId;
 	@Positive
 	@NotNull
-	private Integer topicId;
+	private Integer assignId;
 //	isXXX 有坑
 	@NotNull
 	@JsonProperty("is_supplement")

@@ -1,5 +1,6 @@
 package io.github.xmchxup.latticy.vo;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,22 +9,15 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 public class PaperCmpVO {
-    private String paperText;
-    private String refText;
+    /**
+     * 文档名称
+     */
+    @JsonProperty("fileName")
+    private String fileName;
 
-//    public String getPaperText() {
-//        return paperText;
-//    }
-//
-//    public String getRefText() {
-//        return refText;
-//    }
-//
-//    public void setPaperText(String paperText) {
-//        this.paperText = paperText;
-//    }
-//
-//    public void setRefText(String refText) {
-//        this.refText = refText;
-//    }
+    /**
+     * 文档内容 （base64 编码）
+    * */
+    @JsonProperty("fileContent")
+    private String fileContent;
 }

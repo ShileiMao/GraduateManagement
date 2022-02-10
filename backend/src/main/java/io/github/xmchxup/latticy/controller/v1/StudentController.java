@@ -98,4 +98,9 @@ public class StudentController {
 		return PageUtil.build(paging);
 	}
 
+	@GetMapping("/getStudentByLoginName")
+	public StudentDO getStudentInfo(@RequestParam String loginName) {
+		return this.studentService.getStudentByLoginName(loginName);
+	}
+
 }

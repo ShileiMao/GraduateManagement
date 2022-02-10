@@ -12,12 +12,8 @@ import io.github.xmchxup.latticy.common.util.PageUtil;
 import io.github.xmchxup.latticy.dto.ScorecardDTO;
 import io.github.xmchxup.latticy.dto.validators.StudentIdsPattern;
 import io.github.xmchxup.latticy.model.ScorecardDO;
-import io.github.xmchxup.latticy.query.ScorecardQuery;
 import io.github.xmchxup.latticy.service.ScorecardService;
-import io.github.xmchxup.latticy.vo.CreatedVO;
-import io.github.xmchxup.latticy.vo.DeletedVO;
-import io.github.xmchxup.latticy.vo.PageResponseVO;
-import io.github.xmchxup.latticy.vo.UpdatedVO;
+import io.github.xmchxup.latticy.vo.*;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +36,7 @@ import java.util.stream.Collectors;
 @Validated
 @PermissionModule(value = "评分表")
 @RestController
-@RequestMapping("/v1//scorecard")
+@RequestMapping("/v1/scorecard")
 public class ScorecardController {
 	@Autowired
 	private ScorecardService scorecardService;
@@ -101,19 +97,44 @@ public class ScorecardController {
 		return this.scorecardService.getById(id);
 	}
 
+	@GetMapping("/getScoreCard")
+	public List<ScoreCardVO> getScoreCard(@RequestParam(required = true, name = "graduate_info_id") Integer graduateInfoId,
+									@RequestParam(required = false, name = "card_id") Integer cardId,
+									@RequestParam(required = false, name = "teacher_id")Integer teacherId,
+									@RequestParam(required = false, name = "student_id")Integer studentId) {
+		List<ScoreCardVO> scoreCardVO = this.scorecardService.getBy(graduateInfoId, cardId, teacherId, studentId);
+		return scoreCardVO;
+	}
+
+	@GetMapping("/page")
+	@ApiOperation(value = "分页带搜索", notes = "分页带搜索")
+	public PageResponseVO<ScorecardDO> page(
+			@RequestParam Integer graduateInfoId,
+			@RequestParam(required = false) Integer teacherId,
+			@RequestParam(name = "count", required = false, defaultValue = "10")
+			@Min(value = 1, message = "{page.count.min}")
+			@Max(value = 30, message = "{page.count.max}") Integer count,
+			@RequestParam(name = "page", required = false, defaultValue = "0")
+			@Min(value = 0, message = "{page.number.min}") Integer page
+	) {
+		Page<ScorecardDO> pager = new Page<>(page, count);
+		IPage<ScorecardDO> paging = this.scorecardService.selectPage(pager, graduateInfoId, teacherId);
+		return PageUtil.build(paging);
+	}
+
 	@GetMapping("/by/topic/{id}")
 	@ApiOperation(value = "通过课题ID获取评分表", notes = "通过课题ID获取评分表")
 	public ScorecardDO getByTopicId(
 			@PathVariable(value = "id") @Positive(message = "{id.positive}") Integer id) {
 		return new LambdaQueryChainWrapper<>(this.scorecardService.getBaseMapper())
-				.eq(ScorecardDO::getTopicId, id)
+				.eq(ScorecardDO::getAssignId, id)
 				.one();
 	}
 
 	@GetMapping("/exists/by/topic/{id}")
 	public void existsByTopicId(@PathVariable(value = "id") @Positive(message = "{id.positive}") Integer id) {
 		Integer count = new LambdaQueryChainWrapper<>(this.scorecardService.getBaseMapper())
-				.eq(ScorecardDO::getTopicId, id)
+				.eq(ScorecardDO::getAssignId, id)
 				.count();
 		if (count > 0) {
 			throw new MethodNotAllowedException(2453);
@@ -126,7 +147,7 @@ public class ScorecardController {
 		return new LambdaQueryChainWrapper<>(this.scorecardService.getBaseMapper())
 				.isNotNull(ScorecardDO::getGuideCardId)
 				.list().stream()
-				.map(ScorecardDO::getTopicId)
+				.map(ScorecardDO::getAssignId)
 				.collect(Collectors.toList());
 	}
 
@@ -137,7 +158,7 @@ public class ScorecardController {
 				.isNotNull(ScorecardDO::getGuideAdvise)
 				.isNull(ScorecardDO::getJudgeAdvise)
 				.list().stream()
-				.map(ScorecardDO::getTopicId)
+				.map(ScorecardDO::getAssignId)
 				.collect(Collectors.toList());
 	}
 
@@ -150,7 +171,7 @@ public class ScorecardController {
 				.isNotNull(ScorecardDO::getGuideCardId)
 				.isNotNull(ScorecardDO::getGuideAdvise)
 				.list().stream()
-				.map(ScorecardDO::getTopicId)
+				.map(ScorecardDO::getAssignId)
 				.collect(Collectors.toList());
 	}
 
@@ -188,19 +209,5 @@ public class ScorecardController {
 		return new UpdatedVO();
 	}
 
-	@GetMapping("/page")
-	@ApiOperation(value = "分页带搜索", notes = "分页带搜索")
-	public PageResponseVO<ScorecardDO> page(
-			ScorecardQuery query,
-			@RequestParam(name = "count", required = false, defaultValue = "10")
-			@Min(value = 1, message = "{page.count.min}")
-			@Max(value = 30, message = "{page.count.max}") Integer count,
-			@RequestParam(name = "page", required = false, defaultValue = "0")
-			@Min(value = 0, message = "{page.number.min}") Integer page
-	) {
-		Page<ScorecardDO> pager = new Page<>(page, count);
-		IPage<ScorecardDO> paging = this.scorecardService.selectPage(pager, query);
-		return PageUtil.build(paging);
-	}
 
 }

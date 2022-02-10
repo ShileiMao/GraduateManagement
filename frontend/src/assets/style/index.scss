@@ -21,3 +21,26 @@
     padding: 20px;
   }
 }
+
+.toolbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dae1ed;
+  padding-bottom: 10px;
+
+  .toolbox-left {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toolbox-right {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

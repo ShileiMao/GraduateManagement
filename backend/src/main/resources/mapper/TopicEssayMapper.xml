@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.github.xmchxup.latticy.mapper.TopicEssayMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="io.github.xmchxup.latticy.vo.TopicEssayVO">
+        <id column="id" property="id" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="delete_time" property="deleteTime" />
+        <result column="topic_assign_id" property="topicAssignId" />
+        <result column="essay_title" property="essayTitle" />
+        <result column="teacher_name" property="teacherName"/>
+        <result column="student_note" property="studentNote" />
+        <result column="teacher_note" property="teacherNote" />
+        <result column="file_path" property="filePath" />
+        <result column="status" property="status" />
+        <result column="topic_name" property="topicName"/>
+        <result column="student_name" property="studentName"/>
+        <result column="student_sid" property="studentSID"/>
+        <result column="topic_desc" property="topicDesc"/>
+    </resultMap>
+
+    <select id="listOfEssayByPeopleId" resultMap="BaseResultMap">
+        select topic_essay.*,
+               topic_select_table.name as topic_name,
+               topic_select_table.description as topic_desc,
+               teacher.name as teacher_name,
+               student.name as student_name,
+               student.sid as student_sid
+
+        from topic_essay join topic_assign on topic_essay.topic_assign_id = topic_assign.id
+                         join topic_select_table on topic_assign.topic_id = topic_select_table.id
+                         join teacher on topic_select_table.teacher_id = teacher.id
+                         join student on topic_assign.student_id = student.id
+        where topic_select_table.graduate_info_id = #{graduateInfoId}
+        <if test="studentId != null">
+            and topic_assign.student_id = #{studentId}
+        </if>
+
+        <if test="teacherId != null">
+            and topic_select_table.teacher_id = #{teacherId}
+        </if>
+
+    </select>
+
+
+    <select id="getEssayById" resultMap="BaseResultMap">
+        select topic_essay.*,
+        topic_select_table.name as topic_name,
+        topic_select_table.description as topic_desc,
+        teacher.name as teacher_name,
+        student.name as student_name,
+        student.sid as student_sid
+
+        from topic_essay join topic_assign on topic_essay.topic_assign_id = topic_assign.id
+        join topic_select_table on topic_assign.topic_id = topic_select_table.id
+        join teacher on topic_select_table.teacher_id = teacher.id
+        join student on topic_assign.student_id = student.id
+        where topic_essay.id = #{essayId}
+
+    </select>
+
+</mapper>
+

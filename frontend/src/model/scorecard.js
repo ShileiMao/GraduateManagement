@@ -13,6 +13,12 @@ class Scorecard {
 
   static async getScorecard(id) {
     const res = await get(`v1/scorecard/${id}`)
+    console.log("score card: " + JSON.stringify(res))
+    return res
+  }
+
+  static async getScroecardByParams(data) {
+    const res = await get(`v1/scorecard/getScoreCard`, data)
     return res
   }
 
@@ -27,8 +33,8 @@ class Scorecard {
   }
 
   static async getScorecardByPage(page = 0, count = 10, query) {
-    const { teacherId, classId, year } = query
-    const res = await get('v1/scorecard/page', { page, count, teacherId, classId, year })
+    const { teacherId, graduateInfoId } = query
+    const res = await get('v1/scorecard/page', { page, count, teacherId, graduateInfoId })
     return res
   }
 

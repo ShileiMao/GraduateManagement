@@ -1,5 +1,6 @@
 import adminConfig from './admin'
 // import bookConfig from './book' // 引入图书管理路由文件
+import taskConfig from './task'
 import papercheck from './papercheck'
 import systemConfig from './system-data'
 import teamConfig from './team'
@@ -80,6 +81,7 @@ let homeRouter = [
     inNav: false,
     icon: 'iconfont icon-rizhiguanli',
   },
+  taskConfig,
   // bookConfig,
   papercheck,
   adminConfig,

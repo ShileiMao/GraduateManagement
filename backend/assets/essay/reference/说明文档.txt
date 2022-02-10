@@ -1,0 +1,17 @@
+
+详细说明及技术文档（重要）：
+https://help.crmeb.net/crmeb_30/1248068
+
+thinkphp6文档：
+https://www.kancloud.cn/manual/thinkphp6_0/1037479
+
+微信小程序开发者文档：
+https://developers.weixin.qq.com/miniprogram/dev/framework/
+微信开发者工具：
+https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
+微信公众平台：
+https://mp.weixin.qq.com/
+
+php编辑器vscode,可安装sftp同步插件远程代码同步
+
+提示：本地可用小皮phpstudy/宝塔面板搭建

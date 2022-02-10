@@ -2,12 +2,12 @@
   <div>
     <div v-if="!showEdit" class="container">
       <div class="header">
-        <p class="title">团队列表</p>
+        <p class="title">小组列表</p>
       </div>
       <div class="toolbox">
         <div class="toolbox-left">
           <el-button style="margin-left:30px;" @click.prevent="addTeam" type="primary" plain size="medium"
-            >添加团队</el-button
+            >添加小组</el-button
           >
         </div>
         <div class="toolbox-right">

@@ -49,8 +49,8 @@ public class ScorecardDO extends BaseModel {
 	@TableField("judge_card_id")
 	private Integer judgeCardId;
 
-	@TableField("topic_id")
-	private Integer topicId;
+	@TableField("assign_id")
+	private Integer assignId;
 
 
 	/**

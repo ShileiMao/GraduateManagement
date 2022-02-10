@@ -21,8 +21,19 @@
         <result column="judge_card_id" property="judgeCardId"/>
         <result column="guide_answers" property="guideAnswers"/>
         <result column="judge_answers" property="judgeAnswers"/>
-        <result column="topic_id" property="topicId"/>
+        <result column="assign_id" property="assignId"/>
         <result column="supplement" property="supplement"/>
+    </resultMap>
+
+    <resultMap id="ScoreCardVO" type="io.github.xmchxup.latticy.vo.ScoreCardVO" extends="BaseResultMap">
+        <result column="student_id" property="studentId"/>
+        <result column="topic_id" property="topicId"/>
+        <result column="topic_name" property="topicName"/>
+        <result column="topic_desc" property="topicDesc"/>
+        <result column="teacher_name" property="teacherName"/>
+        <result column="student_name" property="studentName"/>
+        <result column="graduate_info_id" property="graduateInfoId"/>
+        <result column="graduate_title" property="graduateTitle"/>
     </resultMap>
 
     <select id="getBySid" parameterType="java.lang.String" resultMap="BaseResultMap">
@@ -35,21 +46,50 @@
 
     <select id="customSelectPage" resultType="io.github.xmchxup.latticy.model.ScorecardDO"
             parameterType="io.github.xmchxup.latticy.query.ScorecardQuery">
-        SELECT s.* FROM `scorecard` as s
-        left join topic as t on s.topic_id = t.id
-        left join student as stu on stu.sid = t.student_id
-        left join `class` as c on stu.class_id = c.id
-        where s.delete_time is NULL
 
-        <if test="keywords.teacherId != null">
-            and t.teacher_id = #{keywords.teacherId}
+        select scorecard.*,
+            topic_assign.student_id, topic_assign.topic_id,
+            topic_select_table.name as topic_name, topic_select_table.description as topic_desc,
+            teacher.name as teacher_name,
+            student.name as student_name,
+            graduate_info.id as graduate_info_id,
+            graduate_info.title as graduate_title
+
+            from scorecard join topic_assign on scorecard.assign_id = topic_assign.id
+            join topic_select_table on topic_assign.topic_id = topic_select_table.id
+            join teacher on topic_select_table.teacher_id = teacher.id
+            join student on topic_assign.student_id = student.id
+            join graduate_info on graduate_info.id = topic_select_table.graduate_info_id
+
+            where graduate_info.id = #{graduateInfoId}
+                and scorecard.delete_time is NULL
+
+        <if test="teacherId != null">
+            and teacher.id = #{teacherId}
         </if>
-        <if test="keywords.classId != null">
-            and c.id = #{keywords.classId}
-        </if>
-        <if test="keywords.year != null">
-            and t.publish_year = #{keywords.year}
-        </if>
+
+
+    </select>
+
+    <select id="selectScoreCardById" resultMap="ScoreCardVO">
+        select scorecard.*,
+               topic_assign.student_id, topic_assign.topic_id,
+               topic_select_table.name as topic_name, topic_select_table.description as topic_desc,
+               teacher.name as teacher_name,
+               student.name as student_name,
+               graduate_info.id as graduate_info_id,
+               graduate_info.title as graduate_title
+
+        from scorecard join topic_assign on scorecard.assign_id = topic_assign.id
+                       join topic_select_table on topic_assign.topic_id = topic_select_table.id
+                       join teacher on topic_select_table.teacher_id = teacher.id
+                       join student on topic_assign.student_id = student.id
+                       join graduate_info on graduate_info.id = topic_select_table.graduate_info_id
+
+        where graduate_info.id = #{graduateInfoId}
+        <if test="cardId != null">and scorecard.id = #{cardId}</if>
+        <if test="teacherId != null">and teacher.id = #{teacherId}</if>
+        <if test="studentId != null">and student.id = #{studentId}</if>
 
     </select>
 </mapper>

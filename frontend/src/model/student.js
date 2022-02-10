@@ -30,6 +30,12 @@ class Student {
     }
     return res
   }
+
+  static async getStudentByLoginName(loginName) {
+    const url = `v1/student/getStudentByLoginName?loginName=${loginName}`
+    const res = await get(url)
+    return res
+  }
 }
 
 export default Student

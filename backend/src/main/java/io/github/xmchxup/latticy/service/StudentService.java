@@ -35,4 +35,6 @@ public interface StudentService extends IService<StudentDO> {
 	public List<StudentVO>getStudents(String majorId, String classId);
 
 	public List<StudentVO>getStudentsInCollege(Integer collegeId);
+
+	public StudentDO getStudentByLoginName(String loginName);
 }

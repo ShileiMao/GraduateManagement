@@ -89,6 +89,15 @@ public class TeacherController {
 		return this.teacherService.getById(id);
 	}
 
+	@GetMapping("/tid/{tid}")
+	public TeacherDO getTeacher(@PathVariable(value = "tid") String tid) {
+		QueryWrapper<TeacherDO> queryWrapper = new QueryWrapper<>();
+		queryWrapper.lambda().eq(TeacherDO::getTid, tid);
+
+		TeacherDO teacherDO = this.teacherService.getOne(queryWrapper);
+		return teacherDO;
+	}
+
 	@GetMapping("/page")
 	@ApiOperation(value = "教师列表", notes = "教师列表")
 	public PageResponseVO<TeacherDO> page(

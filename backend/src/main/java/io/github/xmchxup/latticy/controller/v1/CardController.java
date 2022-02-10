@@ -28,7 +28,7 @@ import java.util.List;
 @Api(tags = "评分表模板管理")
 @Validated
 @RestController
-@RequestMapping("/v1//card")
+@RequestMapping("/v1/card")
 @PermissionModule(value = "评分表模板")
 public class CardController {
 	@Autowired

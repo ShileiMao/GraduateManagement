@@ -5,14 +5,14 @@
         <el-col :lg="16" :md="20" :sm="24" :xs="24">
           <el-divider></el-divider>
           <div class="title">
-            <span>{{ isCreate ? '创建团队' : '更新团队' }}</span>
+            <span>{{ isCreate ? '创建小组' : '更新小组' }}</span>
             <span class="back" @click="back"> <i class="iconfont icon-fanhui"></i> 返回 </span>
           </div>
           <el-form :model="form" status-icon ref="form" label-width="100px" @submit.native.prevent>
             <el-form-item
               prop="name"
-              :rules="[{ required: true, message: '请输入团队名称', trigger: 'blur' }]"
-              label="团队名称"
+              :rules="[{ required: true, message: '请输入小组名称', trigger: 'blur' }]"
+              label="小组名称"
             >
               <el-input v-model="form.name" autocomplete="off"></el-input>
             </el-form-item>
@@ -46,7 +46,7 @@
             </el-form-item>
             <el-form-item
               prop="student_ids"
-              label="团队成员"
+              label="小组成员"
               :rules="[{ required: true, message: '请输入正确格式(学号 + , 隔开)', trigger: 'blur' }]"
             >
               <el-input v-model="form.student_ids" autocomplete="off"></el-input>

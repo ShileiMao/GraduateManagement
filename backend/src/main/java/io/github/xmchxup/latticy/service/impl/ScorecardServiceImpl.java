@@ -14,13 +14,15 @@ import io.github.xmchxup.latticy.common.util.GenericAndJson;
 import io.github.xmchxup.latticy.dto.ScorecardDTO;
 import io.github.xmchxup.latticy.enumeration.ScoreLevel;
 import io.github.xmchxup.latticy.mapper.ScorecardMapper;
+import io.github.xmchxup.latticy.mapper.TopicAssignMapper;
 import io.github.xmchxup.latticy.model.GraduateInfoDO;
 import io.github.xmchxup.latticy.model.ScorecardDO;
 import io.github.xmchxup.latticy.model.TeacherDO;
 import io.github.xmchxup.latticy.model.TopicDO;
-import io.github.xmchxup.latticy.query.ScorecardQuery;
 import io.github.xmchxup.latticy.service.*;
 import io.github.xmchxup.latticy.vo.CardVO;
+import io.github.xmchxup.latticy.vo.ScoreCardVO;
+import io.github.xmchxup.latticy.vo.TopicAssignVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -48,6 +50,9 @@ public class ScorecardServiceImpl extends ServiceImpl<ScorecardMapper, Scorecard
 	private TopicService topicService;
 
 	@Autowired
+	private TopicAssignMapper topicAssignMapper;
+
+	@Autowired
 	private CardService cardService;
 
 	@Autowired
@@ -67,7 +72,7 @@ public class ScorecardServiceImpl extends ServiceImpl<ScorecardMapper, Scorecard
 	public void createByGuideTeacher(ScorecardDTO dto) {
 		// 指导老师评分
 		if (!dto.isSupplement())
-			checkNullByTopicId(dto.getTopicId());
+			checkNullByAssignId(dto.getAssignId());
 
 		// 计算得分
 		Map<String, Double> scores = dto.getScores();
@@ -75,14 +80,14 @@ public class ScorecardServiceImpl extends ServiceImpl<ScorecardMapper, Scorecard
 
 		ScorecardDO scorecardDO = new ScorecardDO();
 
-		TopicDO topicDO = this.topicService.getById(dto.getTopicId());
+		TopicAssignVO topicAssignVO = this.topicAssignMapper.getAssigneById(dto.getAssignId());
 		StringBuilder sb = new StringBuilder();
-		sb.append(topicDO.getName())
+		sb.append(topicAssignVO.getName())
 				.append("的评分表");
 
 		// 补答辩
 		if (dto.isSupplement()) {
-			scorecardDO = this.getByTopicId(dto.getTopicId());
+			scorecardDO = this.getByAssignId(dto.getAssignId());
 
 			sb.append("-补答辩");
 
@@ -92,9 +97,10 @@ public class ScorecardServiceImpl extends ServiceImpl<ScorecardMapper, Scorecard
 		}
 
 		scorecardDO.setTitle(sb.toString());
-		scorecardDO.setTopicId(dto.getTopicId());
+		scorecardDO.setAssignId(dto.getAssignId());
 		scorecardDO.setGuideCardId(dto.getCardId());
 		scorecardDO.setGuideScore(guideScore);
+		scorecardDO.setScore(guideScore);
 		scorecardDO.setGuideAnswers(createQuestionScoreString(dto.getScores()));
 
 		this.saveOrUpdate(scorecardDO);
@@ -105,7 +111,7 @@ public class ScorecardServiceImpl extends ServiceImpl<ScorecardMapper, Scorecard
 //		答辩组评分
 		// 检验 topicId
 		ScorecardDO scorecardDO = this.getById(scorecardId);
-		if (!scorecardDO.getTopicId().equals(dto.getTopicId())) {
+		if (!scorecardDO.getAssignId().equals(dto.getAssignId())) {
 			throw new ParameterException(2452);
 		}
 
@@ -170,9 +176,9 @@ public class ScorecardServiceImpl extends ServiceImpl<ScorecardMapper, Scorecard
 	}
 
 	@Override
-	public void checkNullByTopicId(Integer topicId) {
+	public void checkNullByAssignId(Integer assignId) {
 		Integer count = new LambdaQueryChainWrapper<>(this.baseMapper)
-				.eq(ScorecardDO::getTopicId, topicId)
+				.eq(ScorecardDO::getAssignId, assignId)
 				.count();
 		if (count != 0) {
 			throw new ParameterException(2453);
@@ -214,7 +220,7 @@ public class ScorecardServiceImpl extends ServiceImpl<ScorecardMapper, Scorecard
 	}
 
 	@Override
-	public List<Integer> getAllSupTopicId() {
+	public List<Integer> getAllSupAssignId() {
 //		数据量可能太大，只需要获取一年的数量，一年一答辩
 		int year = LocalDate.now().getYear();
 		LocalDate beginDate = LocalDate.ofYearDay(year, 1);
@@ -226,20 +232,25 @@ public class ScorecardServiceImpl extends ServiceImpl<ScorecardMapper, Scorecard
 				.lt(ScorecardDO::getScore, 60.0)
 				.between(ScorecardDO::getCreateTime, beginDate, endDate)
 				.list().stream()
-				.map(ScorecardDO::getTopicId)
+				.map(ScorecardDO::getAssignId)
 				.collect(Collectors.toList());
 	}
 
 	@Override
-	public ScorecardDO getByTopicId(Integer topicId) {
+	public ScorecardDO getByAssignId(Integer assignId) {
 		return new LambdaQueryChainWrapper<>(this.baseMapper)
-				.eq(ScorecardDO::getTopicId, topicId)
+				.eq(ScorecardDO::getAssignId, assignId)
 				.one();
 	}
 
 	@Override
-	public IPage<ScorecardDO> selectPage(Page<ScorecardDO> pager, ScorecardQuery query) {
-		return this.baseMapper.customSelectPage(pager, query);
+	public List<ScoreCardVO> getBy(Integer graduateInfoId, Integer cardId, Integer teacherId, Integer studentId) {
+		return this.scorecardMapper.selectScoreCardById(graduateInfoId, cardId, teacherId, studentId);
+	}
+
+	@Override
+	public IPage<ScorecardDO> selectPage(Page<ScorecardDO> pager, Integer graduateInfoId, Integer teacherId) {
+		return this.baseMapper.customSelectPage(pager, graduateInfoId, teacherId);
 	}
 
 	@Override
@@ -276,7 +287,7 @@ public class ScorecardServiceImpl extends ServiceImpl<ScorecardMapper, Scorecard
 		CardVO guideCard = this.cardService.getCardWithOptionsById(guideCardId);
 		CardVO judgeCard = this.cardService.getCardWithOptionsById(judgeCardId);
 
-		TopicDO topicDO = this.topicService.getById(scorecardDO.getTopicId());
+		TopicDO topicDO = this.topicService.getById(scorecardDO.getAssignId());
 		GraduateInfoDO graduateInfoDO = new LambdaQueryChainWrapper<>(this.graduateInfoService.getBaseMapper())
 				.eq(GraduateInfoDO::getYear, topicDO.getPublishYear())
 				.one();

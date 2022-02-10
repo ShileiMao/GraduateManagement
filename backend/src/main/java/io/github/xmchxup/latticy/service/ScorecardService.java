@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import io.github.xmchxup.latticy.common.mybatis.Page;
 import io.github.xmchxup.latticy.dto.ScorecardDTO;
 import io.github.xmchxup.latticy.model.ScorecardDO;
-import io.github.xmchxup.latticy.query.ScorecardQuery;
+import io.github.xmchxup.latticy.vo.ScoreCardVO;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
@@ -32,7 +32,7 @@ public interface ScorecardService extends IService<ScorecardDO> {
 
 	void existsById(Integer id);
 
-	void checkNullByTopicId(Integer topicId);
+	void checkNullByAssignId(Integer topicId);
 
 	ResponseEntity<byte[]> exportScoreTable(Integer id);
 
@@ -40,11 +40,13 @@ public interface ScorecardService extends IService<ScorecardDO> {
 
 	Integer getIdBySid(String sid);
 
-	List<Integer> getAllSupTopicId();
+	List<Integer> getAllSupAssignId();
 
-	ScorecardDO getByTopicId(Integer topicId);
+	ScorecardDO getByAssignId(Integer topicId);
 
-	IPage<ScorecardDO> selectPage(Page<ScorecardDO> pager, ScorecardQuery query);
+	List<ScoreCardVO> getBy(Integer graduateInfoId, Integer cardId, Integer teacherId, Integer studentId);
+
+	IPage<ScorecardDO> selectPage(Page<ScorecardDO> pager, Integer graduateInfoId, Integer teacherId);
 
 	void checkNotUseByCardId(Integer id);
 }
