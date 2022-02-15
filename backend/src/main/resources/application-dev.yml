@@ -11,7 +11,7 @@ spring:
     username: "root"
     password: "Admin123"
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/graduate_manage1?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/graduate_manage?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8&allowPublicKeyRetrieval=true
     hikari:
       connection-timeout: 28740000
       max-lifetime: 28740000

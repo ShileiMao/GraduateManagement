@@ -37,11 +37,12 @@
     </resultMap>
 
     <select id="getBySid" parameterType="java.lang.String" resultMap="BaseResultMap">
-        SELECT *
-        FROM scorecard
-                 LEFT JOIN topic ON topic.id = scorecard.topic_id
-        WHERE topic.student_id = #{sid}
-          AND scorecard.delete_time IS NULL
+        select scorecard.id
+        from scorecard join topic_assign on scorecard.assign_id = topic_assign.id
+                       join topic_select_table on topic_assign.topic_id = topic_select_table.id
+                       join student on topic_assign.student_id = student.id
+
+        WHERE student.sid = #{sid} AND scorecard.delete_time IS NULL
     </select>
 
     <select id="customSelectPage" resultType="io.github.xmchxup.latticy.model.ScorecardDO"

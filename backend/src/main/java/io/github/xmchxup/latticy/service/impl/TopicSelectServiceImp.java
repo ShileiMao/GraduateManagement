@@ -76,7 +76,7 @@ public class TopicSelectServiceImp extends ServiceImpl<TopicSelectTableMapper, T
     }
 
     @Override
-    public TopicAssignVO topicAssign(Integer topicId, Integer studentId) {
+    public TopicAssignVO assignTopicToStudent(Integer topicId, Integer studentId) {
         TopicAssignDO topicAssignDO = new TopicAssignDO();
         topicAssignDO.setStudentId(studentId);
         topicAssignDO.setTopicId(topicId);

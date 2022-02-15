@@ -37,8 +37,8 @@ public class AsposeUtil {
 		builder.insertBreak(BreakType.PAGE_BREAK);
 		generateGuideTable(builder, data);
 		builder.getRowFormat().setHeight(titleRowHeight);
-		builder.insertBreak(BreakType.PAGE_BREAK);
-		generateJudgeTable(builder, data);
+//		builder.insertBreak(BreakType.PAGE_BREAK);
+//		generateJudgeTable(builder, data);
 
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 		HttpHeaders headers = new HttpHeaders();

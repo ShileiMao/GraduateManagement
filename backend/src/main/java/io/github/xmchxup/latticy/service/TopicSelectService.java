@@ -21,7 +21,7 @@ public interface TopicSelectService extends IService<TopicSelectTableDO> {
 
     TopicSelectVO update(TopicSelectTableDO obj);
 
-    TopicAssignVO topicAssign(Integer topicId, Integer studentId);
+    TopicAssignVO assignTopicToStudent(Integer topicId, Integer studentId);
 
     TopicAssignVO getAssignByStudent(Integer studentId);
 

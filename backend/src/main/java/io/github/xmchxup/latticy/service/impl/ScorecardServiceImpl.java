@@ -17,8 +17,6 @@ import io.github.xmchxup.latticy.mapper.ScorecardMapper;
 import io.github.xmchxup.latticy.mapper.TopicAssignMapper;
 import io.github.xmchxup.latticy.model.GraduateInfoDO;
 import io.github.xmchxup.latticy.model.ScorecardDO;
-import io.github.xmchxup.latticy.model.TeacherDO;
-import io.github.xmchxup.latticy.model.TopicDO;
 import io.github.xmchxup.latticy.service.*;
 import io.github.xmchxup.latticy.vo.CardVO;
 import io.github.xmchxup.latticy.vo.ScoreCardVO;
@@ -30,7 +28,10 @@ import org.springframework.stereotype.Service;
 import org.thymeleaf.util.StringUtils;
 
 import java.time.LocalDate;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -46,8 +47,11 @@ public class ScorecardServiceImpl extends ServiceImpl<ScorecardMapper, Scorecard
 	private static final String GUIDE_TEACHER = "guide_teacher";
 	private static final String JUDGE_TEAM = "judge_team";
 
-	@Autowired
-	private TopicService topicService;
+//	@Autowired
+//	private TopicService topicService;
+
+//	@Autowired
+//	private TopicSelectService topicSelectService;
 
 	@Autowired
 	private TopicAssignMapper topicAssignMapper;
@@ -280,40 +284,40 @@ public class ScorecardServiceImpl extends ServiceImpl<ScorecardMapper, Scorecard
 	}
 
 	private ScoreTableBO createScoreTableBO(ScorecardDO scorecardDO) {
-		Integer judgeCardId = scorecardDO.getJudgeCardId();
+//		Integer judgeCardId = scorecardDO.getJudgeCardId();
 		Integer guideCardId = scorecardDO.getGuideCardId();
 
 
 		CardVO guideCard = this.cardService.getCardWithOptionsById(guideCardId);
-		CardVO judgeCard = this.cardService.getCardWithOptionsById(judgeCardId);
+//		CardVO judgeCard = this.cardService.getCardWithOptionsById(judgeCardId);
 
-		TopicDO topicDO = this.topicService.getById(scorecardDO.getAssignId());
+//		TopicDO topicDO = this.topicService.getById(scorecardDO.getAssignId());
+		TopicAssignVO topicAssignVO = this.topicAssignMapper.getAssigneById(scorecardDO.getAssignId());
+
 		GraduateInfoDO graduateInfoDO = new LambdaQueryChainWrapper<>(this.graduateInfoService.getBaseMapper())
-				.eq(GraduateInfoDO::getYear, topicDO.getPublishYear())
+				.eq(GraduateInfoDO::getId, topicAssignVO.getGraduateInfoId())
 				.one();
 		if (graduateInfoDO == null) {
 			throw new ParameterException(2455);
 		}
 
 //		指导老师名称
-		String teacherIds = graduateInfoDO.getTeacherIds();
-		String[] chars = teacherIds.split(",");
-		List<TeacherDO> teacherDOS = this.teacherService.listByIds(Arrays.asList(chars));
+
 		List<String> teacherNames = new ArrayList<>();
-		teacherDOS.forEach(teacherDO -> teacherNames.add(teacherDO.getName()));
+		teacherNames.add(topicAssignVO.getTeacherName());
 
 //		选项得分情况
 		Map<String, String> guideAnswers = createQuestionScoreMap(scorecardDO.getGuideAnswers());
-		Map<String, String> judgeAnswers = createQuestionScoreMap(scorecardDO.getJudgeAnswers());
+//		Map<String, String> judgeAnswers = createQuestionScoreMap(scorecardDO.getJudgeAnswers());
 
 
 		return ScoreTableBO.builder()
 				.scorecardDO(scorecardDO)
 				.guideCard(guideCard)
-				.judgeCard(judgeCard)
+//				.judgeCard(judgeCard)
 				.guideTeacherNames(teacherNames)
 				.guideAnswers(guideAnswers)
-				.judgeAnswers(judgeAnswers)
+//				.judgeAnswers(judgeAnswers)
 				.build();
 	}
 

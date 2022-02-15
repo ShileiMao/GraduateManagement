@@ -133,7 +133,9 @@ export default {
     this.initData()
     this.loading = false
     await this.checkLoginUser()
-    await this._getTableData((this.currentPage - 1) * this.pageCount, this.pageCount)
+    if (this.loginUserType === 'student' || this.loginUserType === 'teacher') {
+      await this._getTableData((this.currentPage - 1) * this.pageCount, this.pageCount)
+    }
   },
   methods: {
     async _getTableData() {

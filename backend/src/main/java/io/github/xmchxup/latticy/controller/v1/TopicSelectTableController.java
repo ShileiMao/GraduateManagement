@@ -87,7 +87,7 @@ public class TopicSelectTableController {
 
     @PostMapping("/assignTopic")
     TopicAssignVO assignTopic(@RequestParam Integer topicId, @RequestParam Integer studentId) {
-        TopicAssignVO topicAssignVO = topicSelectService.topicAssign(topicId, studentId);
+        TopicAssignVO topicAssignVO = topicSelectService.assignTopicToStudent(topicId, studentId);
         return topicAssignVO;
     }
 

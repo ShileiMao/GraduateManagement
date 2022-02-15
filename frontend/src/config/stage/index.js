@@ -32,16 +32,7 @@ let homeRouter = [
     order: 0,
     permission: ['启动论文'],
   },
-  {
-    title: '论文信息',
-    type: 'view',
-    name: Symbol('graduate-info'),
-    route: '/graduate-info',
-    filePath: 'view/graduate-info/index.vue',
-    inNav: true,
-    icon: 'iconfont icon-xinxi-',
-    order: 4,
-  },
+  
   // {
   //   title: '统计信息',
   //   type: 'view',
@@ -52,17 +43,17 @@ let homeRouter = [
   //   icon: 'iconfont icon-statics',
   //   order: 5,
   // },
-  {
-    title: '日志管理',
-    type: 'view',
-    name: Symbol('log'),
-    route: '/log',
-    filePath: 'view/log/log.vue',
-    inNav: true,
-    icon: 'iconfont icon-rizhi',
-    order: 3,
-    permission: ['查询所有日志'],
-  },
+  // {
+  //   title: '日志管理',
+  //   type: 'view',
+  //   name: Symbol('log'),
+  //   route: '/log',
+  //   filePath: 'view/log/log.vue',
+  //   inNav: true,
+  //   icon: 'iconfont icon-rizhi',
+  //   order: 3,
+  //   permission: ['查询所有日志'],
+  // },
   {
     title: '个人中心',
     type: 'view',
@@ -89,6 +80,17 @@ let homeRouter = [
   teamConfig,
   topicConfig,
   scorecardConfig,
+
+  {
+    title: '论文信息',
+    type: 'view',
+    name: Symbol('graduate-info'),
+    route: '/graduate-info',
+    filePath: 'view/graduate-info/index.vue',
+    inNav: true,
+    icon: 'iconfont icon-xinxi-',
+    // order: 4,
+  },
 ]
 
 // const plugins = [...pluginsConfig]

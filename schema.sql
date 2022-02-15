@@ -13,9 +13,10 @@
 
  Date: 10/05/2021 17:14:51
 */
+drop database if exists graduate_manage;
 
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
+create database graduate_manage;
+use graduate_manage;
 
 -- ----------------------------
 -- Table structure for announce

@@ -11,7 +11,7 @@ spring:
     password: Admin123
     driver-class-name: com.mysql.cj.jdbc.Driver
     # url: jdbc:mysql://localhost:3306/xmchxcoder?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8
-    url: jdbc:mysql://localhost:3306/graduate_manage1?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/graduate_manage?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true&useSSL=false
 
 # 开启权限拦截
 auth:

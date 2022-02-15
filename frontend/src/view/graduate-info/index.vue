@@ -7,6 +7,8 @@
 <script>
 import user from '@/lin/model/user'
 import scorecard from '@/model/scorecard'
+import graduateInfo from '@/model/graduateinfo'
+import student from '@/model/student'
 
 export default {
   data() {
