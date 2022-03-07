@@ -134,6 +134,11 @@ export default {
   
     this.graduateYears = res
 
+    if(res.length == 0) {
+      this.$message.info('未开启毕设!')  
+      return
+    }
+
     this.graduateInfoId = res[0].id
 
     await this.checkLoginUser()

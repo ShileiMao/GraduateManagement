@@ -5,8 +5,6 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapper;
 import io.github.talelin.autoconfigure.exception.MethodNotAllowedException;
 import io.github.talelin.core.annotation.GroupRequired;
-import io.github.talelin.core.annotation.PermissionMeta;
-import io.github.talelin.core.annotation.PermissionModule;
 import io.github.xmchxup.latticy.common.mybatis.Page;
 import io.github.xmchxup.latticy.common.util.PageUtil;
 import io.github.xmchxup.latticy.dto.ScorecardDTO;
@@ -14,7 +12,6 @@ import io.github.xmchxup.latticy.dto.validators.StudentIdsPattern;
 import io.github.xmchxup.latticy.model.ScorecardDO;
 import io.github.xmchxup.latticy.service.ScorecardService;
 import io.github.xmchxup.latticy.vo.*;
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -32,9 +29,7 @@ import java.util.stream.Collectors;
  * @since 2021-04-17
  */
 
-@Api(tags = "评分表管理")
 @Validated
-@PermissionModule(value = "评分表")
 @RestController
 @RequestMapping("/v1/scorecard")
 public class ScorecardController {
@@ -63,8 +58,6 @@ public class ScorecardController {
 
 	@PostMapping("")
 	@GroupRequired
-	@PermissionMeta(value = "指导教师")
-	@ApiOperation(value = "新增评分表", notes = "指导教师评分，并创建表")
 	public CreatedVO createByGuideTeacher(@Validated @RequestBody ScorecardDTO dto) {
 		this.scorecardService.createByGuideTeacher(dto);
 		return new CreatedVO();
@@ -73,8 +66,6 @@ public class ScorecardController {
 
 	@PutMapping("/{id}")
 	@GroupRequired
-	@PermissionMeta(value = "答辩小组")
-	@ApiOperation(value = "更新评分表", notes = "答辩小组评分，并评分表")
 	public UpdatedVO update(
 			@Validated @RequestBody ScorecardDTO dto,
 			@PathVariable @Positive(message = "{id.positive}") Integer id) {
@@ -84,8 +75,6 @@ public class ScorecardController {
 
 	@DeleteMapping("/{id}")
 	@GroupRequired
-	@PermissionMeta(value = "答辩小组")
-	@ApiOperation(value = "删除评分表", notes = "删除评分表")
 	public DeletedVO delete(@PathVariable @Positive(message = "{id.positive}") Integer id) {
 		this.scorecardService.removeById(id);
 		return new DeletedVO();
@@ -178,8 +167,6 @@ public class ScorecardController {
 
 	@PutMapping("/{id}/guide/comment")
 	@GroupRequired
-	@PermissionMeta(value = "指导教师")
-	@ApiOperation(value = "指导教师留言", notes = "指导教师留言")
 	public UpdatedVO guideTeacherComment(
 			@RequestParam(name = "comment", defaultValue = " ") String comment,
 			@PathVariable @Positive(message = "{id.positive}") Integer id) {
@@ -189,8 +176,6 @@ public class ScorecardController {
 
 	@PutMapping("/{id}/committee/comment")
 	@GroupRequired
-	@PermissionMeta(value = "答辩委员会留言")
-	@ApiOperation(value = "答辩委员会意见", notes = "答辩委员会意见")
 	public UpdatedVO committeeComment(
 			@RequestParam(name = "comment", defaultValue = " ") String comment,
 			@PathVariable @Positive(message = "{id.positive}") Integer id) {
@@ -200,8 +185,6 @@ public class ScorecardController {
 
 	@PutMapping("/{id}/judge/comment")
 	@GroupRequired
-	@PermissionMeta(value = "答辩小组")
-	@ApiOperation(value = "答辩小组留言", notes = "答辩小组留言")
 	public UpdatedVO judgeTeamComment(
 			@RequestParam(name = "comment", defaultValue = " ") String comment,
 			@PathVariable @Positive(message = "{id.positive}") Integer id) {

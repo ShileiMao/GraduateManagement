@@ -3,7 +3,6 @@ package io.github.xmchxup.latticy.controller.v1;
 
 import io.github.talelin.core.annotation.GroupRequired;
 import io.github.talelin.core.annotation.PermissionMeta;
-import io.github.talelin.core.annotation.PermissionModule;
 import io.github.xmchxup.latticy.dto.CardDTO;
 import io.github.xmchxup.latticy.model.CardDO;
 import io.github.xmchxup.latticy.service.CardService;
@@ -29,7 +28,6 @@ import java.util.List;
 @Validated
 @RestController
 @RequestMapping("/v1/card")
-@PermissionModule(value = "评分表模板")
 public class CardController {
 	@Autowired
 	private CardService cardService;
@@ -39,8 +37,6 @@ public class CardController {
 
 	@PostMapping("")
 	@GroupRequired
-	@PermissionMeta(value = "指导教师")
-	@ApiOperation(value = "创建评分表模板", notes = "创建评分表模板")
 	public CreatedVO create(@Validated @RequestBody CardDTO dto) {
 		CardDO cardDO = new CardDO();
 		BeanUtils.copyProperties(dto, cardDO);
@@ -69,7 +65,7 @@ public class CardController {
 		return null;
 	}
 
-	@GetMapping("")
+	@GetMapping("/options")
 	@ApiOperation(value = "获取所有评分表模板，带有选项信息", notes = "获取所有评分表模板，带有选项信息")
 	public List<CardVO> getAllCard() {
 		return this.cardService.getAllCardWithOptions();

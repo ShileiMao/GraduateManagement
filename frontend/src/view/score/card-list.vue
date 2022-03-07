@@ -138,8 +138,10 @@ export default {
     },
 
     async initData() {
+      console.log("card-list init data")
       if (!window.sessionStorage.getItem('cards')) {
         const res = await cardApi.getAllCardWithOptions()
+        console.log("response: " + res)
         this.cards = res
         window.sessionStorage.setItem('cards', JSON.stringify(res))
       } else {

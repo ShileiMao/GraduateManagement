@@ -10,7 +10,7 @@
         <el-option v-for="item in graduateYears" :key="item.id" :label="item.title" :value="item.id"> </el-option>
       </el-select>
 
-      <el-button class="toolbox-right" size="medium" type="primary" @click="showAddTopic">
+      <el-button class="toolbox-right" size="medium" type="primary" @click="showAddTopic" :disabled="graduateYears.length == 0">
         添加课题
       </el-button>
     </div>
@@ -72,7 +72,10 @@ export default {
   },
   async created() {
     await this.checkLoginUser()
-    await this.initData()
+    const result = await this.initData()
+    if(!result) {
+      return
+    }
     this._getTableData()
   },
   methods: {
@@ -102,7 +105,12 @@ export default {
   
       this.graduateYears = res
 
+      if (this.graduateYears.length == 0) {
+        this.$message.info('未开启毕设!')
+        return false
+      }
       this.graduateInfoId = res[0].id
+      return true
     },
 
     async checkLoginUser() {

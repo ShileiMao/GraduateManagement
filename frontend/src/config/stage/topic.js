@@ -8,14 +8,14 @@ const teamRouter = {
   order: null,
   inNav: true,
   children: [
-    {
-      title: '课题任务',
-      type: 'view',
-      route: '/topic/topic-task',
-      filePath: 'view/topic/topic-task.vue',
-      inNav: true,
-      icon: 'iconfont icon-tushuguanli',
-    },
+    // {
+    //   title: '课题任务',
+    //   type: 'view',
+    //   route: '/topic/topic-task',
+    //   filePath: 'view/topic/topic-task.vue',
+    //   inNav: true,
+    //   icon: 'iconfont icon-tushuguanli',
+    // },
     {
       title: '课题审核',
       type: 'view',

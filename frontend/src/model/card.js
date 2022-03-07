@@ -22,7 +22,8 @@ class Card {
   }
 
   static async getAllCardWithOptions() {
-    const res = await get('v1/card/')
+    console.log("get all card with options")
+    const res = await get('v1/card/options')
     return res
   }
 

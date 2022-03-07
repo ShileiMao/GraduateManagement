@@ -92,7 +92,10 @@ export default {
   },
   async created() {
     await this.checkLoginUser()
-    await this.initData()
+    const result = await this.initData()
+    if(!result) {
+      return
+    }
     await this._getTableData()
     await this.getCurrentAssign()
   },
@@ -149,11 +152,16 @@ export default {
 
     async initData() {
       const res = await graduateInfo.getGraduateInfoAll()
-      console.log("graduate info list: " + JSON.stringify(res))
-  
+      
       this.graduateYears = res
 
+      if(res.length == 0) {
+        this.$message.info('未开启毕设!')
+        return false
+      }
+
       this.graduateInfoId = res[0].id
+      return true
     },
 
     async checkLoginUser() {

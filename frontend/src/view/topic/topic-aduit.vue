@@ -89,9 +89,13 @@ export default {
   },
   async created() {
     const res = await graduateInfo.getGraduateInfoAll()
-      console.log("graduate info list: " + JSON.stringify(res))
   
     this.graduateYears = res
+
+    if(res.length == 0) {
+      this.$message.info('未开启毕设!')  
+      return
+    }
 
     this.graduateInfoId = res[0].id
     

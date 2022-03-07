@@ -9,13 +9,13 @@ const scorecardRouter = {
   inNav: true,
   children: [
     {
-      title: '评分表',
+      title: '评分准则',
       type: 'view',
-      route: '/score/scorecard',
-      filePath: 'view/score/scorecard.vue',
+      route: '/score/question',
+      filePath: 'view/score/question.vue',
       inNav: true,
       icon: 'iconfont icon-tushuguanli',
-      permission: ['指导教师', '答辩小组'],
+      permission: ['指导教师'],
     },
     {
       title: '评分表模板',
@@ -27,14 +27,15 @@ const scorecardRouter = {
       permission: ['指导教师'],
     },
     {
-      title: '评分准则',
+      title: '评分表',
       type: 'view',
-      route: '/score/question',
-      filePath: 'view/score/question.vue',
+      route: '/score/scorecard',
+      filePath: 'view/score/scorecard.vue',
       inNav: true,
       icon: 'iconfont icon-tushuguanli',
-      permission: ['指导教师'],
-    }
+      permission: ['指导教师', '答辩小组'],
+    },
+    
   ],
 }
 
