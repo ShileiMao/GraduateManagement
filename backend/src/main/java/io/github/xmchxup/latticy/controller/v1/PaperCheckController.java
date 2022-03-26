@@ -29,12 +29,12 @@ public class PaperCheckController {
     @PostMapping("/check")
     @ResponseBody
     public PaperCheckResp check(@RequestBody PaperCmpVO cmpVO) throws Exception {
-       // double similarity = paperCheckService.paperCheck(cmpVO.getPaperText(), cmpVO.getRefText());
+        // double similarity = paperCheckService.paperCheck(cmpVO.getPaperText(), cmpVO.getRefText());
         //获取机器指纹
         System.out.println("机器码：" + CheckManager.INSTANCE.getMachineCode());
         //设置授权许可证（免费获取评估许可证：https://xincheck.com/?id=7）。授权许可证只需要设置1次，整个程序运行周期内均有效
         //根据上一句输出的机器指纹，在评估许可证网站中获取RegCode,填写至下行代码
-        CheckManager.INSTANCE.setRegCode("abY3xKEdjCvkLLIcbw4JlaO7I1kqejSUxatt8G0nohEvIOTScu4B778brp6AK3mLVp/ced7330EzOhKXnA01pto+Df8rEJKI87YkzOn8Y1a2Ht6Mkdy3ZZAUhL9zXF9CN8VU8e60ix6KgOdWzhiDYtxaZEysK6NmQqeHwTJ0AKiN4E/hM0YSe9nKbZ4Cl72odMsIWVxeU62nMu4pV0VZgXdmau/Q/ADxoragS9ziFL3QZGsYaqqiAV/E5yoSOJfoFtkdEFVFGcKkhNmW5COCkyZMsvrJ/uQGfk7MIttZaQ0ABpylBhC1dSuwipYkq78Wiy5cglv6tdOe6u0VgrrtZm4o3wpAzDs8h+dU/YN9Z1uwPqo/r86Vwa0f8L8UKIB3d0lJGz250TghC1405qP0vfmWJGBOFTrf3wpneWFE5gNw7wceHhhgjemZN1WpKft8CIwoy2lafaeT/8V8V1AWg3nQ+byVCe/JmfsnDNyW+wo=");
+        CheckManager.INSTANCE.setRegCode("abY3xKEdjCvkLLIcbw4JlaO7I1kqejSUxatt8G0nohEvIOTScu4B778brp6AK3mLVp/ced7330EzOhKXnA01pto+Df8rEJKI87YkzOn8Y1a2Ht6Mkdy3ZZAUhL9zXF9CN8VU8e60ix6KgOdWzhiDYtxaZEysK6NmQqeHwTJ0AKiN4E/hM0YSe9nKbZ4Cl72odMsIWVxeU62nMu4pV0VZgXdmau/Q/ADxoragS9ziFL3QZGsYaqqiAV/E5yoSOJfoFtkdEFVFGcKkhNmW5COCkyZMsvrJ/uQGfk7MIttZaQ0ABpylBhC1dSuwipYkq78Wiy5cglv6tdOe6u0VgrrtZm4o3wpAzDs8h+dU/YN9Z1uwPqo/r86Vwa0f8L8UKIB3d0lJGz250TghC1405qP0vfmWJGBOFTrf3wpneWFE5gNw7wceHhhgjemZN1WpKft8CIwoy2lafaeT/8V8V1AWg7TSM8bnZ6qa8XBQXVvmUD4=");
 
         FileSaver fileSaver = new FileSaver();
         FileHelper fileHelper = new FileHelper();
@@ -56,7 +56,7 @@ public class PaperCheckController {
         //构建并启动任务
         CheckTask checkTask = CheckManager.INSTANCE
                 .getCheckTaskBuilder() //获取查重任务构造器
-                //.addLibrary(paperLibrary) //添加比对库。可以添加多个
+                .addLibrary(paperLibrary) //添加比对库。可以添加多个
                 .addCheckPaper(paper) //添加待查Paper。可以添加多个
                 .addCheckCore(new ContinuityCheck(CheckLevel.STRICT))
                 .build(); //构建任务，返回checkTask对象
@@ -86,7 +86,7 @@ public class PaperCheckController {
         PaperCheckResp.PaperCheckItem item3 = new PaperCheckResp.PaperCheckItem("概述", relPath3);
 
         resp.setOutputPaths(new PaperCheckResp.PaperCheckItem[] {
-            item1, item2, item3
+                item1, item2, item3
         });
 
         return resp;
