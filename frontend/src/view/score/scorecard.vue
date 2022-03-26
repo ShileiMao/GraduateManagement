@@ -28,9 +28,9 @@
       <el-table-column fixed prop="title" label="评分表标题" width="120"></el-table-column>
       <el-table-column prop="level" label="等级"></el-table-column>
       <el-table-column prop="score" label="得分"></el-table-column>
-      <el-table-column prop="comment" label="答辩委员会意见"></el-table-column>
+      <!-- <el-table-column prop="comment" label="答辩委员会意见"></el-table-column>
       <el-table-column prop="judge_advise" label="答辩组评语"></el-table-column>
-      <el-table-column prop="judge_score" label="答辩组打分"></el-table-column>
+      <el-table-column prop="judge_score" label="答辩组打分"></el-table-column> -->
       <el-table-column prop="guide_score" label="指导老师打分"></el-table-column>
       <el-table-column prop="guide_advise" label="指导老师评语"></el-table-column>
       <el-table-column label="操作" width="450">
@@ -141,6 +141,7 @@ export default {
     async _getTableData() {
       const currentPage = this.currentPage - 1
       const res = await scorecardApi.getScorecardByPage(currentPage, this.pageCount, this.query)
+      console.log("table data: " + JSON.stringify(res));
       this.tableData = res.items
       this.totalNums = res.total
     },

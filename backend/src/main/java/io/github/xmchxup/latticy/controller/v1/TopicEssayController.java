@@ -11,6 +11,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletContext;
@@ -79,9 +80,20 @@ public class TopicEssayController {
     @ApiOperation(value = "论文上传下载", notes = "论文上传下载")
     @PostMapping("/modifyEssay")
     @PermissionMeta(value = "论文上传下载")
-    public void modifyEssay(@RequestBody TopicEssayDO topicEssayDO) {
+    public void modifyEssay(@RequestBody TopicEssayDTO topicEssayDTO) throws IOException {
+        String dirPath = "essay/upload";
+
         TopicEssayDO essayDO = new TopicEssayDO();
-        BeanUtils.copyProperties(topicEssayDO, essayDO);
+        BeanUtils.copyProperties(topicEssayDTO, essayDO);
+
+        if(!StringUtils.isEmpty(topicEssayDTO.getFileContent())) {
+            String path = topicEssayDTO.saveContentToPath(dirPath);
+            if(path == null) {
+                throw new IOException("上传文件失败");
+            }
+            essayDO.setFilePath(path);
+        }
+
         this.topicEssayMapper.updateById(essayDO);
     }
 

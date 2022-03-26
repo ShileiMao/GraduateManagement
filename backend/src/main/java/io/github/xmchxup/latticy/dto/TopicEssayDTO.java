@@ -12,6 +12,8 @@ import java.util.Base64;
 @Getter
 @Setter
 public class TopicEssayDTO {
+    private Integer id;
+
     @JsonProperty("topicAssignId")
     private Integer topicAssignId;
 

@@ -650,8 +650,8 @@ VALUES (1, 1, 'USERNAME_PASSWORD', 'root',
 INSERT INTO lin_group(id, name, info, level)
 VALUES (1, 'root', '超级用户组', 1);
 
-INSERT INTO lin_group(id, name, info, level)
-VALUES (2, 'guest', '游客组', 2);
+-- INSERT INTO lin_group(id, name, info, level)
+-- VALUES (2, 'guest', '游客组', 2);
 
 
 INSERT INTO lin_group(id, name, info, level)

@@ -1,57 +1,43 @@
 <template>
   <div v-if="!showingUploadEssay && !modifyingEssay" class="container">
     <el-row :gutter="20" class="wrap">
-      
-    <div class="toolbox">
-      <div class="title">
-        <span>论文列表</span>
-      </div>
-      <div v-if="isStudent" class="toolbox-right">
-        <el-button size="medium" type="primary" @click="showUploadEssay" :disabled="hasAssign == false">
-          上传论文
-        </el-button>
-      </div>
-    </div>
+      <el-col :lg="16" :md="20" :sm="24" :xs="24">
+      <el-divider></el-divider>
+
+        <div class="title">
+          <span>论文列表</span>
+        </div>
+      </el-col>
 
 
       <div v-if="isStudent">
         <div v-if="!hasAssign">
-          您还没选课哦，请先选课
+          您无权限访问
         </div>
-        <div v-else>
-          <div class="row">
-            <label class="TitleLabel">论文课题：</label>
-            <label class="ValueLabel">{{currentAssign.name}}</label>
-          </div>
+      </div>
 
-          <div class="row">
-            <label class="TitleLabel">描述：</label>
-            <label class="ValueLabel">{{currentAssign.description}}</label>
-          </div>
-        </div>
+      <div v-else>
         <!-- 表格 老师视图 -->
         <el-table v-loading="loading" :data="tableData" stripe style="width:100%">
-          <el-table-column prop="topic_name" label="课题" min-width="100"></el-table-column>
-          <el-table-column prop="essay_title" label="论文" min-width="150"></el-table-column>
-          <el-table-column prop="teacher_name" label="指导老师" min-width="100"></el-table-column>
-          <el-table-column prop="teacher_note" label="老师反馈" min-width="200"></el-table-column>
+          <el-table-column prop="student_name" label="学生" min-width="80"></el-table-column>
+          <el-table-column prop="student_sid" label="学号" min-width="100"></el-table-column>
+          <el-table-column prop="topic_name" label="课题" min-width="150"></el-table-column>
+          <el-table-column prop="essay_title" label="论文" min-width="200"></el-table-column>
+          <el-table-column prop="teacher_note" label="留言" min-width="150"></el-table-column>
+
           <el-table-column label="操作" min-width="120">
             <template slot-scope="scope">
               <el-button @click="handleSelect(scope.row)" type="primary" plain size="mini">
                 查 看 
               </el-button>
-              <el-button @click="handleEdit(scope.row)" type="primary" plain size="mini">
-                修 改
+
+              <el-button v-if="!isStudent" @click="handleEdit(scope.row)" type="primary" plain size="mini">
+                留 言
               </el-button>
             </template>
           </el-table-column>
         </el-table>
       </div>
-
-      <div v-else>
-        <p> 没有权限 </p>
-      </div>
-
     </el-row>
   </div>
   <div v-else-if="modifyingEssay">
@@ -118,15 +104,14 @@ export default {
     async _getTableData() {
 
       if(this.loginUserType === 'student') {
-        let essayList = await essay.getEssayList(this.graduateInfoId, null, this.studentId)
-        console.log("essayList: " + JSON.stringify(essayList))
-        this.tableData = essayList
+        this.$message.info('没有权限!')
+        
         return
       } else if(this.loginUserType === 'teacher') {
-        this.$message.info('没有权限!')
+        let essayList = await essay.getEssayList(this.graduateInfoId, this.teacherId, null)
+        this.tableData = essayList
         return
       }
-      
   
       this.tableData = []
     },

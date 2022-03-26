@@ -46,7 +46,7 @@ public interface ScorecardService extends IService<ScorecardDO> {
 
 	List<ScoreCardVO> getBy(Integer graduateInfoId, Integer cardId, Integer teacherId, Integer studentId);
 
-	IPage<ScorecardDO> selectPage(Page<ScorecardDO> pager, Integer graduateInfoId, Integer teacherId);
+	IPage<ScoreCardVO> selectPage(Page<ScoreCardVO> pager, Integer graduateInfoId, Integer teacherId);
 
 	void checkNotUseByCardId(Integer id);
 }

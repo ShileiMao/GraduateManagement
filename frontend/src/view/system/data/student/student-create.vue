@@ -109,7 +109,7 @@ export default {
             const res = await student.createStudent(this.form)
             this.loading = false
             if (res.code < window.MAX_SUCCESS_CODE) {
-              this.$message.success(`${res.message}`)
+              this.$message.success(`${res.message}, 默认密码： 123456`)
               this.resetForm(formName)
             }
           } catch (error) {

@@ -17,12 +17,24 @@ class Essay {
         
         return res
     }
+
+    static async getEssay(id) {
+        let url = `/v1/topicEssay/getEssay?essayId=${id}`
+        let res = await get(url)
+        return res;
+    }
     
     static async uploadEssay(data) {
         let url = `/v1/topicEssay/uploadEssay`
         
         const res = await post(url, data)
         return res
+    }
+
+    static async updateExistingEssay(data) {
+        let url = `/v1/topicEssay/modifyEssay`
+        let res = await post(url, data);
+        return res;
     }
 }
 

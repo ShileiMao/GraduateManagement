@@ -253,7 +253,7 @@ public class ScorecardServiceImpl extends ServiceImpl<ScorecardMapper, Scorecard
 	}
 
 	@Override
-	public IPage<ScorecardDO> selectPage(Page<ScorecardDO> pager, Integer graduateInfoId, Integer teacherId) {
+	public IPage<ScoreCardVO> selectPage(Page<ScoreCardVO> pager, Integer graduateInfoId, Integer teacherId) {
 		return this.baseMapper.customSelectPage(pager, graduateInfoId, teacherId);
 	}
 

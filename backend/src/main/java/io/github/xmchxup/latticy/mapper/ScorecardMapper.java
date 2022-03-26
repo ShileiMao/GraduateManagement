@@ -22,7 +22,7 @@ public interface ScorecardMapper extends BaseMapper<ScorecardDO> {
 
 	ScorecardDO getBySid(String sid);
 
-	IPage<ScorecardDO> customSelectPage(Page<ScorecardDO> pager,
+	IPage<ScoreCardVO> customSelectPage(Page<ScoreCardVO> pager,
 										Integer graduateInfoId,
 										Integer teacherId);
 

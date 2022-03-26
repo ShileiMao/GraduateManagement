@@ -80,14 +80,17 @@ public class CardServiceImpl extends ServiceImpl<CardMapper, CardDO> implements 
 							.list();
 
 			int maxScore = 0;
+			float totalScore = 0;
 			for (OptionDO option : optionList) {
 				maxScore = Math.max(maxScore, option.getScore());
+				totalScore += option.getScore();
 			}
 
 			questionVO.setId(question.getId());
 			questionVO.setTitle(question.getTitle());
 			questionVO.setOptions(optionList);
 			questionVO.setMaxScore(maxScore);
+			questionVO.setTotalScore((int) totalScore);
 
 			questionVOS.add(questionVO);
 		});

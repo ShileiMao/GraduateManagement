@@ -141,11 +141,12 @@ export default {
       console.log("card-list init data")
       if (!window.sessionStorage.getItem('cards')) {
         const res = await cardApi.getAllCardWithOptions()
-        console.log("response: " + res)
+        console.log("response: " + JSON.stringify(res));
         this.cards = res
         window.sessionStorage.setItem('cards', JSON.stringify(res))
       } else {
         this.cards = JSON.parse(window.sessionStorage.getItem('cards'))
+        console.log("card storage: " + window.sessionStorage.getItem('cards'))
       }
 
       if (!window.sessionStorage.getItem('questions')) {

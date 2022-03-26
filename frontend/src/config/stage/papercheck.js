@@ -9,13 +9,22 @@ const paperCheckRouter = {
     inNav: true,
     children: [
       {
+        title: '论文接收',
+        type: 'view',
+        route: '/essay/essay-receive',
+        filePath: 'view/essay/essay-receive.vue',
+        inNav: true,
+        icon: 'iconfont icon-tushuguanli',
+        permission: ['指导教师', '发布选题', '答辩小组'],
+      },
+      {
         title: '论文上传',
         type: 'view',
-        route: '/essay/essay-view',
+        route: '/essay/essay-upload',
         filePath: 'view/essay/essay-view.vue',
         inNav: true,
         icon: 'iconfont icon-tushuguanli',
-        permission: ['指导教师', '答辩小组', '论文上传下载'],
+        permission: ['论文选题'],
       },
       {
         title: '查重',
@@ -24,7 +33,7 @@ const paperCheckRouter = {
         filePath: 'view/papercheck/papercheck.vue',
         inNav: true,
         icon: 'iconfont icon-tushuguanli',
-        permission: ['指导教师', '答辩小组'],
+        permission: ['论文上传下载'],
       },
     ],
   }

@@ -45,7 +45,8 @@
         WHERE student.sid = #{sid} AND scorecard.delete_time IS NULL
     </select>
 
-    <select id="customSelectPage" resultType="io.github.xmchxup.latticy.model.ScorecardDO"
+    <select id="customSelectPage" resultType="io.github.xmchxup.latticy.vo.ScoreCardVO"
+            resultMap="ScoreCardVO"
             parameterType="io.github.xmchxup.latticy.query.ScorecardQuery">
 
         select scorecard.*,
@@ -72,7 +73,7 @@
 
     </select>
 
-    <select id="selectScoreCardById" resultMap="ScoreCardVO">
+    <select id="selectScoreCardById" resultMap="ScoreCardVO" resultType="io.github.xmchxup.latticy.vo.ScoreCardVO">
         select scorecard.*,
                topic_assign.student_id, topic_assign.topic_id,
                topic_select_table.name as topic_name, topic_select_table.description as topic_desc,

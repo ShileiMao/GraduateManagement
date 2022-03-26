@@ -17,7 +17,7 @@
       <el-table-column label="操作" width="300">
         <template slot-scope="scope">
           <el-button @click="showOptions(scope.row)" type="info" plain size="mini">选项信息</el-button>
-          <el-button @click="handleEdit(scope.row)" type="primary" plain size="mini">编辑</el-button>
+          <!-- <el-button @click="handleEdit(scope.row)" type="primary" plain size="mini">编辑</el-button> -->
           <el-button @click="handleDelete(scope.row)" type="danger" size="mini" plain>删除</el-button>
         </template>
       </el-table-column>
@@ -38,7 +38,7 @@
     <el-dialog title="评分准则选项" :visible.sync="showOptionDialog">
       <el-table :data="optionData">
         <el-table-column property="content" label="选项内容" width="350"></el-table-column>
-        <el-table-column property="score" label="分值" width="200"></el-table-column>
+        <el-table-column property="score" label="权重" width="200"></el-table-column>
       </el-table>
     </el-dialog>
 
@@ -61,7 +61,7 @@
           <template v-for="idx in 4">
             <el-form-item :label="'准则选项' + idx">
               <el-input v-model="questionForm.options[idx - 1].content" size="small" placeholder="内容"></el-input>
-              <el-input v-model="questionForm.options[idx - 1].score" size="small" placeholder="分值"></el-input>
+              <el-input v-model="questionForm.options[idx - 1].score" size="small" placeholder="权重"></el-input>
             </el-form-item>
           </template>
         </el-form>

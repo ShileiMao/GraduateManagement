@@ -16,4 +16,5 @@ public class QuestionVO {
 	private String title;
 	private Integer maxScore;
 	private List<OptionDO> options;
+	private Integer totalScore;
 }

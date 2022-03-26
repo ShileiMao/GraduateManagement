@@ -16,6 +16,6 @@ public class OptionDTO {
 	@NotBlank
 	@Length(max = 300, message = "{option.ctx}")
 	private String content;
-	@Range(min = 0, max = 20, message = "{option.score}")
+	@Range(min = 0, max = 40, message = "{option.score}")
 	private Integer score;
 }

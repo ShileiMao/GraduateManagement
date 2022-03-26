@@ -1,7 +1,7 @@
 const teamRouter = {
   route: null,
   name: null,
-  title: '课题管理',
+  title: '教师评分',
   type: 'folder', // 类型: folder, tab, view
   icon: 'iconfont icon-keti',
   filePath: 'view/topic/', // 文件路径
@@ -16,15 +16,15 @@ const teamRouter = {
     //   inNav: true,
     //   icon: 'iconfont icon-tushuguanli',
     // },
-    {
-      title: '课题审核',
-      type: 'view',
-      route: '/topic/aduit',
-      filePath: 'view/topic/topic-aduit.vue',
-      inNav: true,
-      icon: 'iconfont icon-tushuguanli',
-      permission: ['指导教师'],
-    },
+    // {
+    //   title: '课题审核',
+    //   type: 'view',
+    //   route: '/topic/aduit',
+    //   filePath: 'view/topic/topic-aduit.vue',
+    //   inNav: true,
+    //   icon: 'iconfont icon-tushuguanli',
+    //   permission: ['指导教师'],
+    // },
     {
       title: '课题评分',
       type: 'view',

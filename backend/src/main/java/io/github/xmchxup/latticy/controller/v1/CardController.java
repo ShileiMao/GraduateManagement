@@ -2,13 +2,11 @@ package io.github.xmchxup.latticy.controller.v1;
 
 
 import io.github.talelin.core.annotation.GroupRequired;
-import io.github.talelin.core.annotation.PermissionMeta;
 import io.github.xmchxup.latticy.dto.CardDTO;
 import io.github.xmchxup.latticy.model.CardDO;
 import io.github.xmchxup.latticy.service.CardService;
 import io.github.xmchxup.latticy.service.ScorecardService;
 import io.github.xmchxup.latticy.vo.*;
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +22,6 @@ import java.util.List;
  * @author generator@TaleLin
  * @since 2021-02-27
  */
-@Api(tags = "评分表模板管理")
 @Validated
 @RestController
 @RequestMapping("/v1/card")
@@ -50,9 +47,7 @@ public class CardController {
 	}
 
 	@GroupRequired
-	@PermissionMeta(value = "指导教师")
 	@DeleteMapping("/{id}")
-	@ApiOperation(value = "删除评分表模板", notes = "删除评分表模板")
 	public DeletedVO delete(@PathVariable @Positive(message = "{id.positive}") Integer id) {
 		this.scorecardService.checkNotUseByCardId(id);
 

@@ -97,7 +97,7 @@ public class ScorecardController {
 
 	@GetMapping("/page")
 	@ApiOperation(value = "分页带搜索", notes = "分页带搜索")
-	public PageResponseVO<ScorecardDO> page(
+	public PageResponseVO<ScoreCardVO> page(
 			@RequestParam Integer graduateInfoId,
 			@RequestParam(required = false) Integer teacherId,
 			@RequestParam(name = "count", required = false, defaultValue = "10")
@@ -106,8 +106,8 @@ public class ScorecardController {
 			@RequestParam(name = "page", required = false, defaultValue = "0")
 			@Min(value = 0, message = "{page.number.min}") Integer page
 	) {
-		Page<ScorecardDO> pager = new Page<>(page, count);
-		IPage<ScorecardDO> paging = this.scorecardService.selectPage(pager, graduateInfoId, teacherId);
+		Page<ScoreCardVO> pager = new Page<>(page, count);
+		IPage<ScoreCardVO> paging = this.scorecardService.selectPage(pager, graduateInfoId, teacherId);
 		return PageUtil.build(paging);
 	}
 

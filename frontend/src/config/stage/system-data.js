@@ -11,6 +11,33 @@ const systemDataRouter = {
   children: [
     {
       name: null,
+      title: '学院管理',
+      type: 'view', // 取 route 为默认加载页
+      inNav: true,
+      route: '/college/list',
+      filePath: 'view/system/data/college.vue',
+    },
+
+    {
+      name: null,
+      title: '专业管理',
+      type: 'view', // 取 route 为默认加载页
+      inNav: true,
+      route: '/major/list',
+      filePath: 'view/system/data/major.vue',
+    },
+
+    {
+      name: null,
+      title: '班级管理',
+      type: 'view', // 取 route 为默认加载页
+      inNav: true,
+      route: '/class/list',
+      filePath: 'view/system/data/class.vue',
+    },
+
+    {
+      name: null,
       title: '学生管理',
       type: 'folder', // 取 route 为默认加载页
       icon: 'el-icon-user-solid',
@@ -60,33 +87,6 @@ const systemDataRouter = {
           inNav: true,
         },
       ],
-    },
-
-    {
-      name: null,
-      title: '学院管理',
-      type: 'view', // 取 route 为默认加载页
-      inNav: true,
-      route: '/college/list',
-      filePath: 'view/system/data/college.vue',
-    },
-
-    {
-      name: null,
-      title: '专业管理',
-      type: 'view', // 取 route 为默认加载页
-      inNav: true,
-      route: '/major/list',
-      filePath: 'view/system/data/major.vue',
-    },
-
-    {
-      name: null,
-      title: '班级管理',
-      type: 'view', // 取 route 为默认加载页
-      inNav: true,
-      route: '/class/list',
-      filePath: 'view/system/data/class.vue',
     },
   ],
 }
