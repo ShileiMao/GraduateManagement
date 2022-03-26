@@ -3,7 +3,7 @@ import adminConfig from './admin'
 import taskConfig from './task'
 import papercheck from './papercheck'
 import systemConfig from './system-data'
-import teamConfig from './team'
+// import teamConfig from './team'
 import scorecardConfig from './scorecard'
 import topicConfig from './topic'
 // import pluginsConfig from './plugin'
@@ -77,7 +77,7 @@ let homeRouter = [
   papercheck,
   adminConfig,
   systemConfig,
-  teamConfig,
+  // teamConfig,
   topicConfig,
   scorecardConfig,
 

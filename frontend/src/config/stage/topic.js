@@ -1,7 +1,7 @@
 const teamRouter = {
   route: null,
   name: null,
-  title: '教师评分',
+  title: '论文评分',
   type: 'folder', // 类型: folder, tab, view
   icon: 'iconfont icon-keti',
   filePath: 'view/topic/', // 文件路径
@@ -26,7 +26,7 @@ const teamRouter = {
     //   permission: ['指导教师'],
     // },
     {
-      title: '课题评分',
+      title: '教师评分',
       type: 'view',
       route: '/topic/score',
       filePath: 'view/topic/score.vue',
