@@ -33,25 +33,14 @@
         </el-form-item>
 
         
-        <el-form-item v-if="isStudent" label="选择文档"
-          :rules="[{ required: true, message: '请输选择文档', trigger: 'blur' }]"
+        <el-form-item label="选择文档"
+          :rules="[{ required: true, message: '请选择文档', trigger: 'blur' }]"
         >
           <input type="file" id="file" hidden @change="didSelectFile($event)" />
-          
           <el-input placeholder="选择文档" disabled v-model="docPath" @keyup.enter.native="updateDocPath" class="input-with-select">
             <el-button slot="append" icon="el-icon-folder" type="success" @click="selectFile"></el-button>
           </el-input>
-        </el-form-item>
-
-        <el-form-item v-else
-          prop="teacherNote"
-          :rules="[{ required: true, message: '请输入描述信息', trigger: 'blur' }]"
-          label="留言"
-        >
-            <el-input v-model="form.teacherNote" autocomplete="off"></el-input>
-        </el-form-item>
-
-        
+        </el-form-item>        
 
         <el-form-item class="submit">
           <el-button
@@ -100,7 +89,7 @@ export default {
       studentId: 0,
       teacherId: 0,
       isStudent: false,
-      docPath: '',
+      docPath: null,
       form: {
         topicAssignId: 0,
         essayTitle: '',
@@ -168,6 +157,7 @@ export default {
 
         this.teacherId = teacherInfo.id
 
+        this.$message.info('该界面老师用户不给予展示!')
         return
       }
 
@@ -244,7 +234,6 @@ export default {
           }
 
           if (res != null) {
-            this.$message.success(`${res.message}`)
             if (this.isCreate) {
               this.resetForm(formName)
             }

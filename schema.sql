@@ -261,7 +261,7 @@ BEGIN;
 -- INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (25, '查询日志记录的用户', '日志', 0);
 INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (26, '更新课题', '课题', 1);
 INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (27, '指导教师', '评分准则', 1);
-INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (28, '答辩委员会留言', '评分表', 1);
+-- INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (28, '答辩委员会留言', '评分表', 1);
 -- INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (29, '删除图书', '图书', 0);
 -- INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (30, '删除专业', '专业', 0);
 INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (31, '创建课题', '课题', 1);
@@ -275,7 +275,8 @@ INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (31, '创�
 
 INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (39, '发布选题', '论文', 1);
 INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (40, '论文选题', '论文', 1);
-INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (41, '论文上传下载', '论文', 1);
+INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (41, '论文上传', '论文', 1);
+INSERT INTO `lin_permission` (`id`, `name`, `module`, `mount`) VALUES (42, '论文接收', '论文', 1);
 COMMIT;
 -- ----------------------------
 -- Table structure for lin_user

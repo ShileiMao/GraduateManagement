@@ -34,7 +34,7 @@ public class TopicEssayController {
     ServletContext servletContext;
 
     @ApiOperation(value = "论文上传下载", notes = "论文上传下载")
-    @PermissionMeta(value = "论文上传下载")
+    @PermissionMeta(value = "论文", mount = true)
     @GetMapping("/getEssaies")
     public List<TopicEssayVO> getEssaies(@RequestParam Integer graduateInfoId, @RequestParam(required = false) Integer teacherId, @RequestParam(required = false) Integer studentId) {
         List<TopicEssayVO> topicEssayVOList = this.topicEssayMapper.listOfEssayByPeopleId(graduateInfoId, teacherId, studentId);
@@ -45,7 +45,7 @@ public class TopicEssayController {
     }
 
     @ApiOperation(value = "论文上传下载", notes = "论文上传下载")
-    @PermissionMeta(value = "论文上传下载")
+    @PermissionMeta(value = "论文")
     @GetMapping("/getEssay")
     public TopicEssayVO getEssayById(@RequestParam Integer essayId) {
         TopicEssayVO topicEssayVO = this.topicEssayMapper.getEssayById(essayId);
@@ -62,7 +62,7 @@ public class TopicEssayController {
     }
 
     @ApiOperation(value = "论文上传下载", notes = "论文上传下载")
-    @PermissionMeta(value = "论文上传下载")
+    @PermissionMeta(value = "论文")
     @PostMapping("/uploadEssay")
     public void uploadEssay(@RequestBody TopicEssayDTO topicEssayDTO) throws IOException {
         String dirPath = "essay/upload";
@@ -79,7 +79,7 @@ public class TopicEssayController {
 
     @ApiOperation(value = "论文上传下载", notes = "论文上传下载")
     @PostMapping("/modifyEssay")
-    @PermissionMeta(value = "论文上传下载")
+    @PermissionMeta(value = "论文")
     public void modifyEssay(@RequestBody TopicEssayDTO topicEssayDTO) throws IOException {
         String dirPath = "essay/upload";
 

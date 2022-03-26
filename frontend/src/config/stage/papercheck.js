@@ -33,7 +33,7 @@ const paperCheckRouter = {
         filePath: 'view/papercheck/papercheck.vue',
         inNav: true,
         icon: 'iconfont icon-tushuguanli',
-        permission: ['论文上传下载'],
+        permission: ['论文上传', '论文接收'],
       },
     ],
   }

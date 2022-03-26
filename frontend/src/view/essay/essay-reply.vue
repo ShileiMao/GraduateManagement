@@ -1,19 +1,17 @@
 <template>
   <div class="container">
     <el-row :gutter="20" class="wrap">
-      <el-col :lg="16" :md="20" :sm="24" :xs="24">
-      <el-divider></el-divider>
-
+      
+      <div class="toolbox">
         <div class="title">
           <span>上传论文</span>
         </div>
-      </el-col>
 
-      <div v-if="isStudent" class="toolbox">
-        
-        <el-button class="toolbox-right" size="medium" type="primary" @click="back">
-          返 回
-        </el-button>
+        <div v-if="isStudent" class="toolbox-right" >
+          <el-button size="medium" type="primary" @click="back">
+            返 回
+          </el-button>
+        </div>
       </div>
 
       <!-- 表单 -->
@@ -23,35 +21,25 @@
           :rules="[{ required: true, message: '请输入课题名称', trigger: 'blur' }]"
           label="论文标题"
         >
-            <el-input v-model="form.essayTitle" autocomplete="off"></el-input>
+            <el-input v-model="form.essayTitle" autocomplete="off" :disabled="!isStudent"></el-input>
         </el-form-item>
 
         <el-form-item
           prop="studentNote"
-          :rules="[{ required: true, message: '请输入描述信息', trigger: 'blur' }]"
+          :rules="[{ required: !isStudent, message: '请输入描述信息', trigger: 'blur' }]"
           label="附注信息"
         >
-            <el-input v-model="form.studentNote" autocomplete="off"></el-input>
+            <el-input v-model="form.studentNote" autocomplete="off" :disabled="!isStudent"></el-input>
         </el-form-item>
 
-        
         <el-form-item
           prop="teacherNote"
-          :rules="[{ required: false, message: '请输入描述信息', trigger: 'blur' }]"
-          label="老师留言"
+          :rules="[{ required: true, message: '请输入描述信息', trigger: 'blur' }]"
+          label="留言"
         >
             <el-input v-model="form.teacherNote" autocomplete="off"></el-input>
         </el-form-item>
 
-        <el-form-item label="选择文档"
-          :rules="[{ required: true, message: '请输选择文档', trigger: 'blur' }]"
-        >
-          <input type="file" id="file" hidden @change="didSelectFile($event)" />
-          
-          <el-input placeholder="选择文档" disabled v-model="docPath" @keyup.enter.native="updateDocPath" class="input-with-select">
-            <el-button slot="append" icon="el-icon-folder" type="success" @click="selectFile"></el-button>
-          </el-input>
-        </el-form-item>
         
 
         <el-form-item class="submit">
@@ -107,14 +95,11 @@ export default {
         essayTitle: '',
         studentNote: '',
         teacherNote: '',
-        fileContent: '',
-        fileExt: '',
-        status: 0
       },
 
       loginUsername: '',
       loginUserType: '',
-      tableData: [],
+      essay: null,
       loading: false
     }
   },
@@ -125,28 +110,24 @@ export default {
     this.graduateInfoId = res[0].id
 
     await this.checkLoginUser()
-    this._getTableData()
+    this._getData()
   },
   methods: {
     back() {
       this.$emit('editClose')
     },
 
-    async _getTableData() {
+    async _getData() {
 
-      if(this.loginUserType === 'student') {
-        let essayList = await essay.getEssayList(this.graduateInfoId, null, this.studentId)
-        console.log("essayList: " + JSON.stringify(essayList))
-        this.tableData = essayList
-        return
-      } else if(this.loginUserType === 'teacher') {
-        let essayList = await essay.getEssayList(this.graduateInfoId, this.teacherId, null)
-        this.tableData = essayList
-        return
-      }
-      
-  
-      this.tableData = []
+      if(!this.isCreate && this.essayId != null) {
+        let essayItem = await essay.getEssay(this.essayId)
+        this.essay = essayItem
+
+        this.form.topicAssignId = essayItem.topic_assign_id;
+        this.form.essayTitle = essayItem.essay_title;
+        this.form.studentNote = essayItem.student_note;
+        this.form.teacherNote = essayItem.teacher_note;
+        }
     },
 
     handleSelect(data) {
@@ -232,7 +213,7 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate(async valid => {
         if (valid) {
-          const postData = { ...this.form }
+          let postData = { ...this.form }
           let res
           console.log("is uploading essay: " + this.isCreate)
           if (this.isCreate) {
@@ -240,18 +221,17 @@ export default {
               topicAssignId: this.topicAssignId,
               essayTitle: this.form.essayTitle,
               studentNote: this.form.studentNote,
-              teacherNote: this.form.teacherNote,
               fileContent: this.form.fileContent,
               fileExt: this.form.fileExt,
               status: 0
             }
             res = await essay.uploadEssay(data)
           } else {
-            res = await essay.updateExistingTopic(postData)
+            postData.id = this.essay.id;
+            res = await essay.updateExistingEssay(postData)
           }
 
           if (res != null) {
-            this.$message.success(`${res.message}`)
             if (this.isCreate) {
               this.resetForm(formName)
             }

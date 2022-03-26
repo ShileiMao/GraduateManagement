@@ -41,10 +41,10 @@
     </el-row>
   </div>
   <div v-else-if="modifyingEssay">
-    <essay-edit @editClose="editClose" :essayId="essayId" :isUpload="isUpload" :isCreate="false" :topicAssignId="topicAssignId"></essay-edit>
+    <essay-reply @editClose="editClose" :essayId="essayId" :isUpload="isUpload" :isCreate="false" :topicAssignId="topicAssignId"></essay-reply>
   </div>
   <div v-else>
-    <essay-edit @editClose="editClose" :essayId="essayId" :isUpload="isUpload" :isCreate="true" :topicAssignId="topicAssignId"></essay-edit>
+    <essay-reply @editClose="editClose" :essayId="essayId" :isUpload="isUpload" :isCreate="true" :topicAssignId="topicAssignId"></essay-reply>
   </div>
 </template>
 
@@ -55,11 +55,11 @@ import graduateInfo from '@/model/graduateinfo'
 import student from '@/model/student'
 import teacher from '@/model/teacher'
 import essay from '@/model/essay'
-import EssayEdit from './essay-edit.vue'
+import EssayReply from './essay-reply.vue'
 
 export default {
   components: {
-    EssayEdit
+    EssayReply
   },
   data() {
     return {

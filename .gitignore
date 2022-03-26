@@ -159,3 +159,6 @@ buildNumber.properties
 # "temporary" build files
 /target
 
+backend/assets/essay/upload/*
+
+backend/assets/essay/checkOutput/*
